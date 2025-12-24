@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* CUSTOM FONT: Antique Olive Std */
+@font-face {
+  font-family: 'Antique Olive Std';
+  src: url('../fonts/Antique-Olive-Std-Light_3866.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Antique Olive Std';
+  src: url('../fonts/Antique-Olive-Std-Roman_3869.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Antique Olive Std';
+  src: url('../fonts/Antique-Olive-Std-Bold_3863.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Antique Olive Std';
+  src: url('../fonts/Antique-Olive-Std-Black_3861.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Antique Olive Std';
+  src: url('../fonts/Antique-Olive-Std-Italic_3865.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Antique Olive Std - Compact Variant */
+@font-face {
+  font-family: 'Antique Olive Compact';
+  src: url('../fonts/Antique-Olive-Std-Compact_3864.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Antique Olive Std - Bold Condensed Variant */
+@font-face {
+  font-family: 'Antique Olive Condensed';
+  src: url('../fonts/Antique-Olive-Std-Bold-Condensed_3862.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg-color: #FAFAF5;      /* Helles Beige */
+  --text-color: #111111;    /* Fast Schwarz */
+  --accent-color: #FF4D00;  /* Signal-Orange */
+  --gray-light: #e5e5e5;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; transition: color 0.2s; }
+ul { list-style: none; }
+
+/* UTILITIES */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section { padding: 6rem 0; }
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 3rem;
+  line-height: 0.9;
+  letter-spacing: -1px;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  background: rgba(250, 250, 245, 0.95);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+  border-bottom: 1px solid transparent;
+  transition: border 0.3s;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Antique Olive Compact', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: var(--text-color);
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.nav-links a:hover { color: var(--accent-color); }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero-content h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(3.5rem, 12vw, 9rem);
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
+}
+
+.hero-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--accent-color);
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-placeholder {
+  width: 100%;
+  max-width: 900px;
+  height: 50vh;
+  background-color: var(--gray-light);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--text-color);
+  transform: rotate(-1deg);
+  transition: transform 0.5s;
+}
+
+.hero-placeholder:hover { transform: rotate(0deg); }
+
+/* ABOUT */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-img-placeholder {
+  width: 100%;
+  aspect-ratio: 4/5;
+  background-color: var(--accent-color);
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* MUSIC */
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.embed-container iframe {
+  border-radius: 0;
+  border: none;
+}
+
+.apple-music-embed iframe {
+  box-shadow: 5px 5px 0px var(--text-color);
+}
+
+/* CONTACT */
+.contact-section {
+  background: var(--bg-color);
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  flex: 1;
+  min-width: 200px;
+}
+
+.btn-contact {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.contact-description {
+  display: none;
+}
+
+/* LIVE */
+.tour-list {
+  border-top: 2px solid var(--text-color);
+}
+
+.tour-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 1.5fr auto;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--gray-light);
+  align-items: baseline;
+  transition: background 0.2s;
+}
+
+.tour-row:hover { background: #fff; }
+
+.tour-date { font-weight: 900; color: var(--accent-color); }
+
+.tour-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-loc {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.tour-venue {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.tour-description {
+  font-size: 0.85rem;
+  font-weight: 600;
+  align-self: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--text-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+/* FOOTER */
+.footer {
+  font-family: 'Antique Olive Std', sans-serif;
+  padding: 4rem 0;
+  border-top: 1px solid var(--text-color);
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.social-link {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.social-link:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.copyright a {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.copyright a:hover {
+  color: var(--accent-color);
+}
+
+/* LEGAL PAGES (Impressum & Datenschutz) */
+.legal-page {
+  min-height: 80vh;
+  padding: 8rem 0 4rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--accent-color);
+}
+
+.legal-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 3rem;
+  line-height: 0.9;
+  letter-spacing: -1px;
+}
+
+.legal-section {
+  margin-bottom: 3rem;
+}
+
+.legal-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.legal-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem;
+  color: var(--text-color);
+}
+
+.legal-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.legal-section ul {
+  list-style: disc;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.legal-section li {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.legal-updated {
+  font-style: italic;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hero-content h1 { font-size: 4rem; }
+  .about-grid { grid-template-columns: 1fr; }
+  .tour-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .tour-description {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .btn { width: 100%; text-align: center; margin-top: 1rem; }
+
+  .contact-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-contact {
+    width: 100%;
+  }
+
+  .legal-title { font-size: 2.5rem; }
+  .legal-section h2 { font-size: 1.3rem; }
+  .legal-section h3 { font-size: 1.1rem; }
+}
+
