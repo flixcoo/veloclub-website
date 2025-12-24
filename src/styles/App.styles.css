@@ -1,61 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* CUSTOM FONT: Antique Olive Std */
-@font-face {
-  font-family: 'Antique Olive Std';
-  src: url('../fonts/Antique-Olive-Std-Light_3866.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Antique Olive Std';
-  src: url('../fonts/Antique-Olive-Std-Roman_3869.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Antique Olive Std';
-  src: url('../fonts/Antique-Olive-Std-Bold_3863.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Antique Olive Std';
-  src: url('../fonts/Antique-Olive-Std-Black_3861.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Antique Olive Std';
-  src: url('../fonts/Antique-Olive-Std-Italic_3865.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
 /* Antique Olive Std - Compact Variant */
 @font-face {
   font-family: 'Antique Olive Compact';
   src: url('../fonts/Antique-Olive-Std-Compact_3864.ttf') format('truetype');
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Antique Olive Std - Bold Condensed Variant */
-@font-face {
-  font-family: 'Antique Olive Condensed';
-  src: url('../fonts/Antique-Olive-Std-Bold-Condensed_3862.ttf') format('truetype');
-  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -145,7 +95,7 @@ ul { list-style: none; }
 }
 
 .hero-content h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Antique Olive Compact', sans-serif;
   font-size: clamp(3.5rem, 12vw, 9rem);
   font-weight: 900;
   line-height: 0.85;
@@ -163,12 +113,16 @@ ul { list-style: none; }
   letter-spacing: 2px;
 }
 
-.hero-placeholder {
+.hero-image-wrapper {
   width: 100%;
   max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-placeholder {
+  width: 100%;
   height: 50vh;
   background-color: var(--gray-light);
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,6 +132,14 @@ ul { list-style: none; }
 }
 
 .hero-placeholder:hover { transform: rotate(0deg); }
+
+.image-credit {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 0.5rem;
+  text-align: right;
+  font-style: italic;
+}
 
 /* ABOUT */
 .about-grid {
@@ -192,9 +154,18 @@ ul { list-style: none; }
   margin-bottom: 1.5rem;
 }
 
+.about-image-wrapper {
+  width: 100%;
+}
+
+.about-image,
 .about-img-placeholder {
   width: 100%;
   aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+.about-img-placeholder {
   background-color: var(--accent-color);
   opacity: 0.8;
   display: flex;

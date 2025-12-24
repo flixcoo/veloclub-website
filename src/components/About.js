@@ -1,6 +1,9 @@
 import React from 'react';
+import { IMAGE_CREDITS } from '../data/content';
 
 const About = () => {
+  const aboutImageData = IMAGE_CREDITS.aboutImage;
+
   return (
     <section id="about" className="section">
       <div className="container">
@@ -17,8 +20,21 @@ const About = () => {
               die Fahrt durch die Nacht und den Morgen danach.
             </p>
           </div>
-          <div className="about-img-placeholder">
-            <span>PORTRAIT PLACEHOLDER</span>
+          <div className="about-image-wrapper">
+            {aboutImageData.image ? (
+              <img
+                src={aboutImageData.image}
+                alt="Véloclub Portrait"
+                className="about-image"
+              />
+            ) : (
+              <div className="about-img-placeholder">
+                <span>PORTRAIT PLACEHOLDER</span>
+              </div>
+            )}
+            {aboutImageData.credit && (
+              <p className="image-credit">{aboutImageData.credit}</p>
+            )}
           </div>
         </div>
       </div>

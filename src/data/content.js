@@ -123,3 +123,24 @@ export const CONTACT_LINKS = [
     }
 ];
 
+/*
+ * Image credits for photos on the website
+ * Used in: Hero and About components to display photo credits
+ *
+ * Set `image` to empty string ('') to keep placeholder
+ * Set `credit` to empty string ('') or null to hide credits
+ *
+ * `image`: Path/URL to the image file (optional, empty = placeholder)
+ * `credit`: Photo credit text (optional)
+ */
+export const IMAGE_CREDITS = {
+    heroImage: {
+        image: '',
+        credit: 'Foto: Mathis Kirchner'
+    },
+    aboutImage: {
+        image: '',
+        credit: 'Foto: Mathis Kirchner'
+    }
+};
+
