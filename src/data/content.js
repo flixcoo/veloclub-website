@@ -84,6 +84,12 @@ export const SOCIALS = [
         target: '_blank'
     },
     {
+        name: 'Apple Music',
+        url: 'https://music.apple.com/de/artist/v%C3%A9loclub/1706116595',
+        icon: 'SiApplemusic',
+        target: '_blank'
+    },
+    {
         name: 'YouTube',
         url: 'https://youtube.com/@veloclubband',
         icon: 'FaYoutube',

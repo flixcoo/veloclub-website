@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {SOCIALS} from '../data/content';
 import {FaInstagram, FaTiktok, FaSpotify, FaYoutube, FaFacebook, FaEnvelope} from 'react-icons/fa';
+import {SiApplemusic} from 'react-icons/si';
 
 // Icon mapping
 const iconMap = {
@@ -10,7 +11,8 @@ const iconMap = {
     FaSpotify: FaSpotify,
     FaYoutube: FaYoutube,
     FaFacebook: FaFacebook,
-    FaEnvelope: FaEnvelope
+    FaEnvelope: FaEnvelope,
+    SiApplemusic: SiApplemusic
 };
 
 const Footer = () => {
