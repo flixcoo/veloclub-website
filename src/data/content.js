@@ -12,37 +12,47 @@
 export const LIVE_DATES = [
     {
         id: 1,
-        date: '12.04.2025',
-        city: 'Hamburg',
-        venue: 'Molotow',
-        link: 'https://tickets.de',
-        description: 'Support: The Local Band',
-        buttonText: 'Tickets'
+        date: '13.12.2025',
+        city: 'Bremen',
+        venue: 'Lila Eule',
+        description: 'JoschY EP-Releasekonzert',
+        button: {
+            text: 'Tickets',
+            link: 'https://www.eventim-light.com/de/a/58a333d705a73904c49e920f/e/68d4122aa5c93f571da2b776'
+        }
     },
     {
         id: 2,
-        date: '15.05.2025',
-        city: 'Berlin',
-        venue: 'Badehaus',
-        link: '#',
-        description: 'Akustik-Set',
-        buttonText: 'Tickets'
+        date: '22.12.2025',
+        city: 'Oldenburg',
+        venue: 'Stube',
+        description: 'Weihnachtskonzert',
+        button: {
+            text: 'Info',
+            link: 'https://www.instagram.com/stube_oldenburg/'
+        }
     },
     {
         id: 3,
-        date: '20.06.2025',
-        city: 'München',
-        venue: 'Backstage',
-        link: '#',
-        buttonText: 'Tickets'
+        date: '20.03.2026',
+        city: 'Braunschweig',
+        venue: 'Etage Eins',
+        description: 'Mittendrin Session',
+        button: {
+            text: 'Tickets',
+            link: 'http://www.etage-eins.de/',
+        }
     },
     {
         id: 4,
-        date: '05.07.2025',
-        city: 'Köln',
-        venue: 'Blue Shell',
-        link: '#',
-        buttonText: 'Info'
+        date: '05.06.2026',
+        city: 'Leipzig',
+        venue: 'Marktplatz',
+        description: 'Stadtfest Leipzig',
+        button: {
+            link: 'https://leipzigerstadtfest.de/',
+            text: 'Info'
+        }
     },
 ];
 
@@ -65,26 +75,31 @@ export const SOCIALS = [
         name: 'TikTok',
         url: 'https://tiktok.com/@veloclubband',
         icon: 'FaTiktok',
+        target: '_blank'
     },
     {
         name: 'Spotify',
         url: 'https://open.spotify.com/artist/2ATI9IAeXPE31HKReWj40a',
         icon: 'FaSpotify',
+        target: '_blank'
     },
     {
         name: 'YouTube',
         url: 'https://youtube.com/@veloclubband',
         icon: 'FaYoutube',
+        target: '_blank'
     },
     {
         name: 'Facebook',
         url: 'https://www.facebook.com/veloclubmusic',
         icon: 'FaFacebook',
+        target: '_blank'
     },
     {
         name: 'Mail',
         url: 'mailto:hi@veloclubband.de',
         icon: 'FaEnvelope',
+        target: '_blank'
     }
 ];
 

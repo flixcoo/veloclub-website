@@ -267,9 +267,19 @@ ul {
     border-top: 2px solid var(--text-color);
 }
 
+.tour-list p a {
+    text-decoration: underline;
+}
+
+.tour-list p a:hover {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+
+}
+
 .tour-row {
     display: grid;
-    grid-template-columns: 100px 1fr 1.5fr auto;
+    grid-template-columns: 100px 0.5fr 1.5fr 120px;
     gap: 1rem;
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--gray-light);
@@ -309,6 +319,14 @@ ul {
     font-size: 0.85rem;
     font-weight: 600;
     align-self: center;
+    color: #888;
+}
+
+.tour-action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 120px;
 }
 
 .btn {
