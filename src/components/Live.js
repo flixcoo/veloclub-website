@@ -15,7 +15,6 @@ const Live = () => {
                   <div className="tour-loc">{gig.city}</div>
                   <span className="tour-venue">{gig.venue}</span>
                 </div>
-                {/* Optionaler Beschreibungstext in separater Spalte */}
                 <div className="tour-description">
                   {gig.description || ''}
                 </div>

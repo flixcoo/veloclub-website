@@ -8,10 +8,10 @@ const Header = () => {
     const handleNavClick = (e, anchor) => {
         e.preventDefault();
 
-        // Wenn wir nicht auf der Home-Seite sind, navigiere erst zur Home-Seite
+        // If we're not on the home page, navigate to it first
         if (location.pathname !== '/') {
             navigate('/');
-            // Warte kurz, bis die Seite geladen ist, dann scrolle zum Anker
+            // Wait briefly until the page is loaded, then scroll to the anchor
             setTimeout(() => {
                 const element = document.querySelector(anchor);
                 if (element) {
@@ -19,7 +19,7 @@ const Header = () => {
                 }
             }, 100);
         } else {
-            // Wenn wir bereits auf der Home-Seite sind, scrolle direkt
+            // If we're already on the home page, scroll directly
             const element = document.querySelector(anchor);
             if (element) {
                 element.scrollIntoView({behavior: 'smooth'});
