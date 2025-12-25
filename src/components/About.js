@@ -19,9 +19,20 @@ const About = () => {
                             die außerhalb von Genres für Stringenz in der Musik sorgen.
                         </p>
                         <p>
-                            So spiegelt sich diese Ambivalänz auch in ihren Konzerten wieder. Véloclub spielen mal laut
-                            in Clubs, leise in Café, [...] auf Festivals. Immer drauf bedacht, ihre Musik nochmals
-                            weiterentwickelt zu spielen, um jedes Konzert einzigartig zu machen.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua.
+                        </p>
+                        <p>
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.
                         </p>
                     </div>
                     <div className="about-image-wrapper">
