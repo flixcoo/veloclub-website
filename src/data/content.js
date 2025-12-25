@@ -77,7 +77,7 @@ export const SOCIALS = [
         icon: 'FaTiktok',
         target: '_blank'
     },
-    {
+   /* {
         name: 'Spotify',
         url: 'https://open.spotify.com/artist/2ATI9IAeXPE31HKReWj40a',
         icon: 'FaSpotify',
@@ -88,7 +88,7 @@ export const SOCIALS = [
         url: 'https://music.apple.com/de/artist/v%C3%A9loclub/1706116595',
         icon: 'SiApplemusic',
         target: '_blank'
-    },
+    },*/
     {
         name: 'YouTube',
         url: 'https://youtube.com/@veloclubband',
