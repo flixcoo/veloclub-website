@@ -148,7 +148,17 @@ ul { list-style: none; }
   color: #888;
   margin-top: 0.5rem;
   text-align: right;
-  font-style: italic;
+}
+
+.image-credit a {
+  color: #888;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.image-credit a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 
 /* ABOUT */
@@ -198,7 +208,7 @@ ul { list-style: none; }
 }
 
 .apple-music-embed iframe {
-  box-shadow: 5px 5px 0px var(--text-color);
+  box-shadow: 5px 5px 0 var(--text-color);
 }
 
 /* CONTACT */

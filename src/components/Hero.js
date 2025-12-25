@@ -2,7 +2,7 @@ import React from 'react';
 import { IMAGE_CREDITS } from '../data/content';
 
 const Hero = () => {
-  const heroImageData = IMAGE_CREDITS.heroImage;
+  const imageData = IMAGE_CREDITS.heroImage;
 
   return (
     <section className="hero">
@@ -12,9 +12,9 @@ const Hero = () => {
           <p className="hero-sub">Indie / NNDW &bull; Braunschweig</p>
         </div>
         <div className="hero-image-wrapper">
-          {heroImageData.image ? (
+          {imageData.image ? (
             <img
-              src={heroImageData.image}
+              src={imageData.image}
               alt="Véloclub Band"
               className="hero-image"
             />
@@ -23,8 +23,8 @@ const Hero = () => {
               <span>BAND IMAGE PLACEHOLDER (1920x1080)</span>
             </div>
           )}
-          {heroImageData.credit && (
-            <p className="image-credit">{heroImageData.credit}</p>
+          {imageData.credit && (
+              <p className="image-credit">Foto: <a href={imageData.link}>{imageData.credit}</a></p>
           )}
         </div>
       </div>

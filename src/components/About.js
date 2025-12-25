@@ -2,7 +2,7 @@ import React from 'react';
 import { IMAGE_CREDITS } from '../data/content';
 
 const About = () => {
-  const aboutImageData = IMAGE_CREDITS.aboutImage;
+  const imageData = IMAGE_CREDITS.aboutImage;
 
   return (
     <section id="about" className="section">
@@ -21,9 +21,9 @@ const About = () => {
             </p>
           </div>
           <div className="about-image-wrapper">
-            {aboutImageData.image ? (
+            {imageData.image ? (
               <img
-                src={aboutImageData.image}
+                src={imageData.image}
                 alt="Véloclub Portrait"
                 className="about-image"
               />
@@ -32,8 +32,8 @@ const About = () => {
                 <span>PORTRAIT PLACEHOLDER</span>
               </div>
             )}
-            {aboutImageData.credit && (
-              <p className="image-credit">{aboutImageData.credit}</p>
+            {imageData.credit && (
+              <p className="image-credit">Foto: <a href={imageData.link}>{imageData.credit}</a></p>
             )}
           </div>
         </div>

@@ -136,11 +136,13 @@ export const CONTACT_LINKS = [
 export const IMAGE_CREDITS = {
     heroImage: {
         image: '/images/hero.webp',
-        credit: 'Foto: Mathis Kirchner'
+        credit: 'Mathis Kirchner',
+        link: 'https://mathiskirchner.de/',
     },
     aboutImage: {
         image: '/images/portrait.webp',
-        credit: 'Foto: Mathis Kirchner'
+        credit: 'Mathis Kirchner',
+        link: 'https://mathiskirchner.de/',
     }
 };
 
