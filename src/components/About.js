@@ -1,45 +1,48 @@
 import React from 'react';
-import { IMAGE_CREDITS } from '../data/content';
+import {IMAGE_CREDITS} from '../data/content';
 
 const About = () => {
-  const imageData = IMAGE_CREDITS.aboutImage;
+    const imageData = IMAGE_CREDITS.aboutImage;
 
-  return (
-    <section id="about" className="section">
-      <div className="container">
-        <h2 className="section-title">Die Band</h2>
-        <div className="about-grid">
-          <div className="about-text">
-            <p>
-              <strong>Véloclub</strong> – das sind Jonas, Nils, Leo und Felix.
-              Entstanden zwischen WG-Zimmern und Proberaum, bringen wir den Sound,
-              der irgendwo zwischen Indie-Pop Melancholie und NNDW-Treibkraft liegt.
-            </p>
-            <p>
-              Schlicht, direkt und manchmal ein bisschen laut. Wir machen Musik für
-              die Fahrt durch die Nacht und den Morgen danach.
-            </p>
-          </div>
-          <div className="about-image-wrapper">
-            {imageData.image ? (
-              <img
-                src={imageData.image}
-                alt="Véloclub Portrait"
-                className="about-image"
-              />
-            ) : (
-              <div className="about-img-placeholder">
-                <span>PORTRAIT PLACEHOLDER</span>
-              </div>
-            )}
-            {imageData.credit && (
-              <p className="image-credit">Foto: <a href={imageData.link}>{imageData.credit}</a></p>
-            )}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+    return (
+        <section id="about" className="section">
+            <div className="container">
+                <h2 className="section-title">Die Band</h2>
+                <div className="about-grid">
+                    <div className="about-text">
+                        <p>
+                            Zwischen Jazz-Gitarren, Post-Punk-Drums und einem Bass der beides connectet, schaffen <strong>Véloclub</strong> sich Ihre eigenen Sound.
+                            Da alle vier aus verschiedenen Musikrichtungen kommen, ist es der Band wichtig genau das in
+                            ihrer Musik unterzubringen. Wie genau die musikalischen Elemente in die Musik einfließen,
+                            ändert sich jedoch von Release zu Release. Véloclub entwickeln so wiedererkennbare Elemente,
+                            die außerhalb von Genres für Stringenz in der Musik sorgen.
+                        </p>
+                        <p>
+                            So spiegelt sich diese Ambivalänz auch in ihren Konzerten wieder. Véloclub spielen mal laut
+                            in Clubs, leise in Café, [...] auf Festivals. Immer drauf bedacht, ihre Musik nochmals
+                            weiterentwickelt zu spielen, um jedes Konzert einzigartig zu machen.
+                        </p>
+                    </div>
+                    <div className="about-image-wrapper">
+                        {imageData.image ? (
+                            <img
+                                src={imageData.image}
+                                alt="Véloclub Portrait"
+                                className="about-image"
+                            />
+                        ) : (
+                            <div className="about-img-placeholder">
+                                <span>PORTRAIT PLACEHOLDER</span>
+                            </div>
+                        )}
+                        {imageData.credit && (
+                            <p className="image-credit">Foto: <a href={imageData.link}>{imageData.credit}</a></p>
+                        )}
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default About;
