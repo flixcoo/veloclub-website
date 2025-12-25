@@ -100,6 +100,74 @@ ul {
     color: var(--accent-color);
 }
 
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 101;
+}
+
+.mobile-menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.mobile-menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Navigation Menu */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.mobile-nav.open {
+    transform: translateX(0);
+}
+
+.mobile-nav a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.mobile-nav a:hover {
+    color: var(--accent-color);
+}
+
 /* HERO */
 .hero {
     min-height: 100vh;
@@ -213,7 +281,6 @@ ul {
     font-weight: bold;
 }
 
-/* MUSIC */
 .music-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -229,7 +296,6 @@ ul {
     box-shadow: 5px 5px 0 var(--text-color);
 }
 
-/* CONTACT */
 .contact-section {
     background: var(--bg-color);
 }
@@ -345,7 +411,6 @@ ul {
     color: var(--bg-color);
 }
 
-/* FOOTER */
 .footer {
     font-family: 'Antique Olive Std', sans-serif;
     padding: 4rem 0;
@@ -387,7 +452,6 @@ ul {
     color: var(--accent-color);
 }
 
-/* LEGAL PAGES (Impressum & Datenschutz) */
 .legal-page {
     min-height: 80vh;
     padding: 8rem 0 4rem;
@@ -463,53 +527,178 @@ ul {
 
 /* MOBILE */
 @media (max-width: 768px) {
+    /* Header Mobile */
+    .header {
+        padding: 1rem 0;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        z-index: 101;
+    }
+
     .nav-links {
         display: none;
     }
 
-    .hero-content h1 {
-        font-size: 4rem;
+    .mobile-menu-toggle {
+        display: flex;
     }
 
+    .mobile-nav {
+        display: flex;
+    }
+
+    /* Reduce section padding */
+    .section {
+        padding: 3rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Hero Mobile */
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 1rem;
+        min-height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.5rem, 15vw, 4rem);
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-sub {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-image-wrapper {
+        margin-top: 2rem;
+    }
+
+    .hero-placeholder {
+        height: 40vh;
+    }
+
+    /* About Mobile */
     .about-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
+    .about-text p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Live Dates Mobile */
     .tour-row {
         grid-template-columns: 1fr;
         gap: 0.5rem;
+        padding: 1rem 0;
+    }
+
+    .tour-date {
+        font-size: 0.9rem;
+    }
+
+    .tour-loc {
+        font-size: 1rem;
+    }
+
+    .tour-venue {
+        font-size: 0.85rem;
     }
 
     .tour-description {
         align-self: flex-start;
         margin-top: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .btn {
         width: 100%;
         text-align: center;
         margin-top: 1rem;
+        padding: 0.6rem 1rem;
+        font-size: 0.75rem;
     }
 
+    /* Music Mobile */
+    .music-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .embed-container {
+        height: 400px;
+    }
+
+    /* Contact Mobile */
     .contact-grid {
         flex-direction: column;
         align-items: stretch;
+        gap: 1rem;
     }
 
     .btn-contact {
         width: 100%;
+        font-size: 0.85rem;
+        padding: 1rem;
+    }
+
+    /* Footer Mobile */
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .socials {
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .social-link {
+        font-size: 1.5rem;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+
+    /* Legal Pages Mobile */
+    .legal-page {
+        padding: 2rem 0;
     }
 
     .legal-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .legal-section {
+        margin-bottom: 2rem;
     }
 
     .legal-section h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .legal-section h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+
+    .legal-section p,
+    .legal-section li {
+        font-size: 0.9rem;
+    }
+
+    .back-link {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
     }
 }
 

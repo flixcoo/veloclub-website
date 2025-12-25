@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link, useLocation, useNavigate} from 'react-router-dom';
 
 const Header = () => {
     const location = useLocation();
     const navigate = useNavigate();
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const handleNavClick = (e, anchor) => {
         e.preventDefault();
+        setMobileMenuOpen(false); // Close mobile menu
 
         // If we're not on the home page, navigate to it first
         if (location.pathname !== '/') {
@@ -27,11 +29,36 @@ const Header = () => {
         }
     };
 
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
+    };
+
     return (
         <header className="header">
             <div className="container nav-flex">
-                <Link to="/" className="logo">véloclub</Link>
+                <Link to="/" className="logo" onClick={() => setMobileMenuOpen(false)}>véloclub</Link>
+
+                {/* Desktop Navigation */}
                 <nav className="nav-links">
+                    <a href="#about" onClick={(e) => handleNavClick(e, '#about')}>Band</a>
+                    <a href="#live" onClick={(e) => handleNavClick(e, '#live')}>Live</a>
+                    <a href="#music" onClick={(e) => handleNavClick(e, '#music')}>Musik</a>
+                    <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>Kontakt</a>
+                </nav>
+
+                {/* Mobile Hamburger Menu Button */}
+                <button
+                    className={`mobile-menu-toggle ${mobileMenuOpen ? 'open' : ''}`}
+                    onClick={toggleMobileMenu}
+                    aria-label="Toggle menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                {/* Mobile Navigation */}
+                <nav className={`mobile-nav ${mobileMenuOpen ? 'open' : ''}`}>
                     <a href="#about" onClick={(e) => handleNavClick(e, '#about')}>Band</a>
                     <a href="#live" onClick={(e) => handleNavClick(e, '#live')}>Live</a>
                     <a href="#music" onClick={(e) => handleNavClick(e, '#music')}>Musik</a>
