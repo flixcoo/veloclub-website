@@ -91,7 +91,8 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 120px;
+  padding-bottom: 2rem;
 }
 
 .hero-content h1 {
