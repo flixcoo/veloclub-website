@@ -11,7 +11,8 @@ const About = () => {
                 <div className="about-grid">
                     <div className="about-text">
                         <p>
-                            Zwischen Jazz-Gitarren, Post-Punk-Drums und einem Bass der beides connectet, schaffen <strong>Véloclub</strong> sich Ihre eigenen Sound.
+                            Zwischen Jazz-Gitarren, Post-Punk-Drums und einem Bass der beides connectet,
+                            schaffen <strong>Véloclub</strong> sich Ihre eigenen Sound.
                             Da alle vier aus verschiedenen Musikrichtungen kommen, ist es der Band wichtig genau das in
                             ihrer Musik unterzubringen. Wie genau die musikalischen Elemente in die Musik einfließen,
                             ändert sich jedoch von Release zu Release. Véloclub entwickeln so wiedererkennbare Elemente,
