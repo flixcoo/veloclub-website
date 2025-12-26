@@ -415,9 +415,18 @@ ul {
 .footer {
     font-family: 'Antique Olive Std', sans-serif;
     padding: 4rem 0;
-    border-top: 1px solid var(--text-color);
     text-align: center;
     margin-top: 4rem;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    right: 4rem;
+    border-top: 1px solid var(--text-color);
 }
 
 .socials {
@@ -732,6 +741,11 @@ ul {
 
     .legal-title {
         font-size: 1.75rem;
+    }
+
+    .footer::before {
+        left: 1rem;
+        right: 1rem;
     }
 }
 
