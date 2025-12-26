@@ -14,7 +14,7 @@ const Live = () => {
     return (
         <section id="live" className="section">
             <div className="container">
-                <h2 className="section-title">Live Termine</h2>
+                <h2 className="section-title">Live</h2>
                 <div className="tour-list">
                     {sortedDates.length > 0 ? (
                         sortedDates.map((gig) => (

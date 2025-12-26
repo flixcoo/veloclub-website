@@ -135,7 +135,7 @@ export const CONTACT_LINKS = [
         url: 'mailto:jessica@musicgrounder.de',
     },
     {
-        label: 'E-Mail an uns :)',
+        label: 'E-Mail an Véloclub',
         url: 'mailto:hi@veloclubband.de',
     },
     {
