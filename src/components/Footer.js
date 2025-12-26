@@ -40,8 +40,9 @@ const Footer = () => {
                 <p className="copyright">
                     &copy; {new Date().getFullYear()} Véloclub
                     <br/>
-                    <Link to="/impressum"> Impressum</Link> -
-                    <Link to="/datenschutz"> Datenschutz</Link>
+                    <Link to="/impressum">Impressum</Link>
+                    &nbsp;&nbsp;&nbsp;
+                    <Link to="/datenschutz">Datenschutz</Link>
                 </p>
             </div>
         </footer>
