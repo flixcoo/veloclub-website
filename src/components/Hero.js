@@ -24,7 +24,7 @@ const Hero = () => {
                         </div>
                     )}
                     {imageData.credit && (
-                        <p className="image-credit">Foto: <a href={imageData.link}>{imageData.credit}</a></p>
+                        <p className="image-credit">Foto: <a href={imageData.url}>{imageData.credit}</a></p>
                     )}
                 </div>
             </div>

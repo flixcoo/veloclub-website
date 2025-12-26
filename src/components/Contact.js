@@ -11,7 +11,6 @@ const Contact = () => {
                     {CONTACT_LINKS.map((contact, index) => (
                         <div key={index} className="contact-item">
                             {contact.mail ? (
-                                // Email Link mit Obfuscation
                                 <EmailObfuscator
                                     email={contact.mail}
                                     className="btn btn-contact"
@@ -19,7 +18,6 @@ const Contact = () => {
                                     {contact.label}
                                 </EmailObfuscator>
                             ) : (
-                                // Normaler Link (z.B. Pressekit)
                                 <a
                                     href={contact.url}
                                     className="btn btn-contact"

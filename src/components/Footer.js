@@ -20,7 +20,6 @@ const Footer = () => {
                 <div className="socials">
                     {SOCIALS.map((social, index) => {
                         const IconComponent = iconMap[social.icon];
-
                         if (social.mail) {
                             return (
                                 <EmailObfuscator

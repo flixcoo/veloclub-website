@@ -1,28 +1,22 @@
 import React from 'react';
 
 /**
- * ObfuscatedEmailLink - Simple Component for protected email links
+ * Simple Component for protected email links from bots/spam.
  *
  * Usage:
- *   <ObfuscatedEmailLink email="hi@veloclubband.de" className="btn">
+ * ```
+ *   <EmailObfuscator email="hi@veloclubband.de" className="btn">
  *     Kontakt
- *   </ObfuscatedEmailLink>
- *
- * Or with encoded email:
- *   <ObfuscatedEmailLink encoded="aGlAdmVsb2NsdWJiYW5kLmRl" className="btn">
- *     Kontakt
- *   </ObfuscatedEmailLink>
+ *   </EmailObfuscator>
+ * ```
  */
 
-const EmailObfuscator = ({ email, encoded, children, className, ...props }) => {
+const EmailObfuscator = ({ email, children, className, ...props }) => {
     const handleClick = (e) => {
         e.preventDefault();
 
-        // Decode email if encoded, otherwise use plain email
-        const decodedEmail = encoded ? atob(encoded) : email;
-
-        if (decodedEmail) {
-            window.location.href = `mailto:${decodedEmail}`;
+        if (email) {
+            window.location.href = `mailto:${email}`;
         }
     };
 

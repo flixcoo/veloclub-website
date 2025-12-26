@@ -29,7 +29,7 @@ const Live = () => {
                                 </div>
                                 <div className="tour-action">
                                     {gig.button  && (
-                                        <a href={gig.button.link} target="_blank" rel="noopener noreferrer"
+                                        <a href={gig.button.url} target="_blank" rel="noopener noreferrer"
                                            className="btn">{gig.button.text || 'Tickets'}
                                         </a>
                                     )}

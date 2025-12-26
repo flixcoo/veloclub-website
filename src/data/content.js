@@ -5,7 +5,7 @@
  * `date`: Date in format 'DD.MM.YYYY' (required) <br>
  * `city`: City of the performance (required) <br>
  * `venue`: Name of the venue/location (required) <br>
- * `link`: URL to ticket sales or more information (required) <br>
+ * `url`: URL to ticket sales or more information (required) <br>
  * `description`: Additional information about the event (optional) <br>
  * `buttonText`: Text displayed on the button (optional, default: 'Tickets')
  */
@@ -18,7 +18,7 @@ export const LIVE_DATES = [
         description: 'JoschY EP-Releasekonzert',
         button: {
             text: 'Tickets',
-            link: 'https://www.eventim-light.com/de/a/58a333d705a73904c49e920f/e/68d4122aa5c93f571da2b776'
+            url: 'https://www.eventim-light.com/de/a/58a333d705a73904c49e920f/e/68d4122aa5c93f571da2b776'
         }
     },
     {
@@ -29,7 +29,7 @@ export const LIVE_DATES = [
         description: 'Weihnachtskonzert',
         button: {
             text: 'Info',
-            link: 'https://www.instagram.com/stube_oldenburg/'
+            url: 'https://www.instagram.com/stube_oldenburg/'
         }
     },
     {
@@ -40,7 +40,7 @@ export const LIVE_DATES = [
         description: 'Mittendrin Session',
         button: {
             text: 'Tickets',
-            link: 'http://www.etage-eins.de/',
+            url: 'http://www.etage-eins.de/',
         }
     },
     {
@@ -50,7 +50,7 @@ export const LIVE_DATES = [
         venue: 'Marktplatz',
         description: 'Stadtfest Leipzig',
         button: {
-            link: 'https://leipzigerstadtfest.de/',
+            url: 'https://leipzigerstadtfest.de/',
             text: 'Info'
         }
     },
@@ -158,7 +158,7 @@ export const IMAGE_CREDITS = {
     heroImage: {
         image: '/images/hero.webp',
         credit: 'Mathis Kirchner',
-        link: 'https://mathiskirchner.de/',
+        url: 'https://mathiskirchner.de/',
     },
     aboutImage: {
         image: '/images/portrait.webp',
