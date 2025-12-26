@@ -638,10 +638,23 @@ ul {
         height: 400px;
     }
 
+    /* Contact */
+    #kontakt {
+        padding-top: 6rem;
+    }
+
+    section#kontakt .section-title {
+        margin-bottom: 1rem;
+    }
+
     /* Contact & Buttons */
     .contact-grid {
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .contact-item:first-child .btn-contact {
+        margin-top: 0;
     }
 
     .btn {
