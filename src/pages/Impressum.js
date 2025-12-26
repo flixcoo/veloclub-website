@@ -19,12 +19,12 @@ const Impressum = () => {
                     </p>
 
                     <h4>Kontakt</h4>
-                    <p>E-Mail: hi@veloclubband.de</p>
+                    <p>E-Mail: hi [at] veloclubband.de</p>
 
                     <h4>Vertreten durch die Gesellschafter</h4>
                     <p>
                         Leo Indefrey, Nils-Henning Haase, Felix Kirchner und Jonas Rautenberg<br/>
-                        Steuernummer Véloclub GbR: 231 / 155 / 14202
+                        Steuernummer: 231 / 155 / 14202
                     </p>
                 </section>
 
