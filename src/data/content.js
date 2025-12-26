@@ -103,7 +103,7 @@ export const SOCIALS = [
     },
     {
         name: 'Mail',
-        url: 'mailto:hi@veloclubband.de',
+        mail: 'hi@veloclubband.de',
         icon: 'FaEnvelope',
         target: '_blank'
     }
@@ -132,11 +132,11 @@ export const MUSIC_LINKS = {
 export const CONTACT_LINKS = [
     {
         label: 'Booking - Musicgrounder',
-        url: 'mailto:jessica@musicgrounder.de',
+        mail: 'jessica@musicgrounder.de',
     },
     {
         label: 'E-Mail an Véloclub',
-        url: 'mailto:hi@veloclubband.de',
+        mail: 'hi@veloclubband.de',
     },
     {
         label: 'Pressekit',

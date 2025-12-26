@@ -1,5 +1,6 @@
 import React from 'react';
 import {CONTACT_LINKS} from '../data/content';
+import EmailObfuscator from './EmailObfuscator';
 
 const Contact = () => {
     return (
@@ -9,14 +10,25 @@ const Contact = () => {
                 <div className="contact-grid">
                     {CONTACT_LINKS.map((contact, index) => (
                         <div key={index} className="contact-item">
-                            <a
-                                href={contact.url}
-                                className="btn btn-contact"
-                                target={contact.url.startsWith('http') ? '_blank' : '_self'}
-                                rel={contact.url.startsWith('http') ? 'noopener noreferrer' : undefined}
-                            >
-                                {contact.label}
-                            </a>
+                            {contact.mail ? (
+                                // Email Link mit Obfuscation
+                                <EmailObfuscator
+                                    email={contact.mail}
+                                    className="btn btn-contact"
+                                >
+                                    {contact.label}
+                                </EmailObfuscator>
+                            ) : (
+                                // Normaler Link (z.B. Pressekit)
+                                <a
+                                    href={contact.url}
+                                    className="btn btn-contact"
+                                    target={contact.url.startsWith('http') ? '_blank' : '_self'}
+                                    rel={contact.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                                >
+                                    {contact.label}
+                                </a>
+                            )}
                             {contact.description && (
                                 <p className="contact-description">{contact.description}</p>
                             )}
