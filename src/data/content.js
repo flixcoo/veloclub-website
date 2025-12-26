@@ -1,3 +1,5 @@
+import {FaInstagram, FaTiktok, FaYoutube, FaFacebook, FaEnvelope} from 'react-icons/fa';
+
 /* List of all live dates displayed on the website
  * Used in: Live component to display tour dates
  *
@@ -68,43 +70,31 @@ export const SOCIALS = [
     {
         name: 'Instagram',
         url: 'https://instagram.com/veloclubband',
-        icon: 'FaInstagram',
+        icon: FaInstagram,
         target: '_blank'
     },
     {
         name: 'TikTok',
         url: 'https://tiktok.com/@veloclubband',
-        icon: 'FaTiktok',
+        icon: FaTiktok,
         target: '_blank'
     },
-   /* {
-        name: 'Spotify',
-        url: 'https://open.spotify.com/artist/2ATI9IAeXPE31HKReWj40a',
-        icon: 'FaSpotify',
-        target: '_blank'
-    },
-    {
-        name: 'Apple Music',
-        url: 'https://music.apple.com/de/artist/v%C3%A9loclub/1706116595',
-        icon: 'SiApplemusic',
-        target: '_blank'
-    },*/
     {
         name: 'YouTube',
         url: 'https://youtube.com/@veloclubband',
-        icon: 'FaYoutube',
+        icon: FaYoutube,
         target: '_blank'
     },
     {
         name: 'Facebook',
         url: 'https://www.facebook.com/veloclubmusic',
-        icon: 'FaFacebook',
+        icon: FaFacebook,
         target: '_blank'
     },
     {
         name: 'Mail',
         mail: 'hi@veloclubband.de',
-        icon: 'FaEnvelope',
+        icon: FaEnvelope,
         target: '_blank'
     }
 ];
