@@ -634,8 +634,7 @@ ul {
         gap: 1rem;
     }
 
-    .btn,
-    .btn-contact {
+    .btn {
         width: 100%;
         text-align: center;
         margin-top: 1rem;
@@ -644,6 +643,9 @@ ul {
     }
 
     .btn-contact {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
         font-size: 0.85rem;
         padding: 1rem;
     }
