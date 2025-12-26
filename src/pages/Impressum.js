@@ -11,17 +11,20 @@ const Impressum = () => {
 
                 <section className="legal-section">
                     <h2>Angaben gemäß § 5 TMG</h2>
+                    <h4>Véloclub GbR</h4>
                     <p>
-                        Véloclub GbR<br/>
                         Mechlerstraße 4<br/>
-                        04105 Leipzig
+                        04105 Leipzig<br/>
+                        Deutschland
                     </p>
-                </section>
 
-                <section className="legal-section">
-                    <h2>Kontakt</h2>
+                    <h4>Kontakt</h4>
+                    <p>E-Mail: hi@veloclubband.de</p>
+
+                    <h4>Vertreten durch die Gesellschafter</h4>
                     <p>
-                        E-Mail: hi@veloclubband.de<br/>
+                        Leo Indefrey, Nils-Henning Haase, Felix Kirchner und Jonas Rautenberg<br/>
+                        Steuernummer Véloclub GbR: 231 / 155 / 14202
                     </p>
                 </section>
 
