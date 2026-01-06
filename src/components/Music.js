@@ -9,7 +9,6 @@ const Music = () => {
                 <h2 className="section-title">Musik</h2>
                 <div className="music-grid">
                     <div className="embed-container">
-                        {/* Spotify - Top Tracks */}
                         <iframe
                             style={{borderRadius: '0px'}}
                             src={MUSIC_LINKS.spotifyEmbed}
@@ -22,7 +21,6 @@ const Music = () => {
                         ></iframe>
                     </div>
                     <div className="embed-container apple-music-embed">
-                        {/* Apple Music - Specific Album */}
                         <iframe
                             allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
                             frameBorder="0"
@@ -31,6 +29,20 @@ const Music = () => {
                             sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
                             src={MUSIC_LINKS.appleMusicEmbed}
                             title="Apple Music"
+                        ></iframe>
+                    </div>
+                </div>
+                <div className="youtube-container">
+                    <div className="embed-container youtube-embed">
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src={MUSIC_LINKS.youtubeEmbed}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            loading="lazy"
+                            title="YouTube"
                         ></iframe>
                     </div>
                 </div>
