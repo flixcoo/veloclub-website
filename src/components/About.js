@@ -1,8 +1,8 @@
 import React from 'react';
-import {IMAGE_CREDITS} from '../data/content';
+import {IMAGES} from '../data/content';
 
 const About = () => {
-    const imageData = IMAGE_CREDITS.aboutImage;
+    const imageData = IMAGES.aboutImage;
 
     return (
         <section id="about" className="section">

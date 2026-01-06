@@ -1,8 +1,8 @@
 import React from 'react';
-import {IMAGE_CREDITS} from '../data/content';
+import {IMAGES} from '../data/content';
 
 const Hero = () => {
-    const imageData = IMAGE_CREDITS.heroImage;
+    const imageData = IMAGES.heroImage;
 
     return (
         <section className="hero">

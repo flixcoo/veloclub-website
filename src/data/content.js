@@ -144,7 +144,7 @@ export const CONTACT_LINKS = [
  * `image`: Path/URL to the image file (optional, empty = placeholder)
  * `credit`: Photo credit text (optional)
  */
-export const IMAGE_CREDITS = {
+export const IMAGES = {
     heroImage: {
         image: '/images/hero.webp',
         credit: 'Mathis Kirchner',
