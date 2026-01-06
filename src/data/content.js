@@ -108,7 +108,7 @@ export const SOCIALS = [
  */
 export const MUSIC_LINKS = {
     spotifyEmbed: 'https://open.spotify.com/embed/artist/2ATI9IAeXPE31HKReWj40a?utm_source=generator&theme=0',
-    appleMusicEmbed: 'https://embed.music.apple.com/de/album/egal-wie-weit-single/1848145725',
+    appleMusicEmbed: 'https://embed.music.apple.com/de/album/ich-brauch-dich-nicht-single/1860554475',
 };
 
 /*
