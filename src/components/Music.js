@@ -8,7 +8,7 @@ const Music = () => {
             <div className="container">
                 <h2 className="section-title">Musik</h2>
                 <div className="music-grid">
-                    <div className="embed-container">
+                    <div className="embed-container spotify-embed">
                         <iframe
                             style={{borderRadius: '0px'}}
                             src={MUSIC_LINKS.spotifyEmbed}
@@ -32,19 +32,17 @@ const Music = () => {
                         ></iframe>
                     </div>
                 </div>
-                <div className="youtube-container">
-                    <div className="embed-container youtube-embed">
-                        <iframe
-                            width="100%"
-                            height="100%"
-                            src={MUSIC_LINKS.youtubeEmbed}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            loading="lazy"
-                            title="YouTube"
-                        ></iframe>
-                    </div>
+                <div className="embed-container youtube-embed">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src={MUSIC_LINKS.youtubeEmbed}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        loading="lazy"
+                        title="YouTube"
+                    ></iframe>
                 </div>
             </div>
         </section>

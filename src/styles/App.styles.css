@@ -287,25 +287,20 @@ ul {
     gap: 2rem;
 }
 
-.youtube-container {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-}
-
 .youtube-embed {
+    margin: 2rem auto 0;
     width: 100%;
     max-width: 800px;
     aspect-ratio: 16 / 9;
 }
 
 .embed-container iframe {
-    border-radius: 0;
-    border: none;
+    border-radius: 20px;
 }
 
 .apple-music-embed iframe {
-    box-shadow: 5px 5px 0 var(--text-color);
+    outline: 3px solid #FC3C44;
+    border-radius: 10px;
 }
 
 .contact-section {
@@ -650,6 +645,10 @@ ul {
         height: 400px;
     }
 
+    .embed-container iframe {
+        border-radius: 8px;
+    }
+
     /* Contact */
     #kontakt {
         padding-top: 6rem;
@@ -755,14 +754,16 @@ ul {
     .about-text p {
         font-size: 0.95rem;
     }
-
-
-    .youtube-container{
-        margin-top: 1rem;
-    }
-
     .embed-container {
         height: 100%;
+    }
+
+    .spotify-embed {
+        height: 30rem;
+    }
+
+    .youtube-embed {
+        margin-top: 1rem;
     }
 
     .tour-list {
