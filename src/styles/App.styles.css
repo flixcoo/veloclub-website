@@ -756,6 +756,15 @@ ul {
         font-size: 0.95rem;
     }
 
+
+    .youtube-container{
+        margin-top: 1rem;
+    }
+
+    .embed-container {
+        height: 100%;
+    }
+
     .tour-list {
         font-size: 0.9rem;
     }
