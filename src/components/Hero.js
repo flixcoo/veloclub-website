@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="container">
                 <div className="hero-content">
                     <h1>véloclub</h1>
-                    <p className="hero-sub">Indie / NNDW &bull; Braunschweig</p>
+                    <p className="hero-sub">Indie / NNDW &bull; Leipzig</p>
                 </div>
                 <div className="hero-image-wrapper">
                     {imageData.image ? (
