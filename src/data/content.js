@@ -147,12 +147,12 @@ export const CONTACT_LINKS = [
  */
 export const IMAGES = {
     heroImage: {
-        image: '/images/hero.jpg',
+        image: '/images/hero.webp',
         credit: 'Mathis Kirchner',
         url: 'https://mathiskirchner.de/',
     },
     aboutImage: {
-        image: '/images/portrait.jpg',
+        image: '/images/portrait.webp',
         credit: 'Mathis Kirchner',
         link: 'https://mathiskirchner.de/',
     }
