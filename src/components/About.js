@@ -17,6 +17,9 @@ const About = () => {
                             ihrer Musik unterzubringen. Wie genau die musikalischen Elemente in die Musik einfließen,
                             ändert sich jedoch von Release zu Release. Véloclub entwickeln so wiedererkennbare Elemente,
                             die außerhalb von Genres für Stringenz in der Musik sorgen.
+                            So spiegelt sich diese Ambivalänz auch in ihren Konzerten wieder. Véloclub spielen mal laut
+                            in Clubs, leise in Café, gefühlvoll auf Festivals. Immer drauf bedacht, ihre Musik nochmals
+                            weiter zu entwickeln und sich im eigenen Wandel treu zu bleiben.
                         </p>
                         <p>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
@@ -25,14 +28,6 @@ const About = () => {
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                             diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                             voluptua.
-                        </p>
-                        <p>
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                            amet.
                         </p>
                     </div>
                     <div className="about-image-wrapper">
