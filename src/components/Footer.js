@@ -41,7 +41,7 @@ const Footer = () => {
                     })}
                 </div>
                 <p className="copyright">
-                    &copy; {new Date().getFullYear()} Véloclub
+                    &copy; 2025 - {new Date().getFullYear()} Véloclub
                     <br/>
                     <Link to="/impressum">Impressum</Link>
                     &nbsp;&nbsp;&nbsp;
