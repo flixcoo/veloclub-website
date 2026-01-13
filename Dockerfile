@@ -1,9 +1,6 @@
 FROM node:20-slim AS builder
 WORKDIR /app
 
-# Erhöhe Node Memory Limit
-ENV NODE_OPTIONS="--max-old-space-size=2048"
-
 COPY package*.json ./
 COPY package-lock.json ./
 
