@@ -2,8 +2,20 @@ import React from 'react';
 import {LIVE_DATES, SOCIALS} from '../data/content';
 
 const Live = () => {
-    // Sort dates chronologically (DD.MM.YYYY format)
-    const sortedDates = [...LIVE_DATES].sort((a, b) => {
+    // Sort gigs chronologically (DD.MM.YYYY format)
+    const sortedGigs = [...LIVE_DATES]
+        .filter(gig => {
+            const parseDate = (dateStr) => {
+                const [day, month, year] = dateStr.split('.').map(Number);
+                return new Date(year, month - 1, day);
+            };
+            const gigDate = parseDate(gig.date);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0); // Nur Datum vergleichen, ohne Uhrzeit
+
+            return gig.activate && gigDate >= today;
+        })
+        .sort((a, b) => {
         const parseDate = (dateStr) => {
             const [day, month, year] = dateStr.split('.').map(Number);
             return new Date(year, month - 1, day);
@@ -16,9 +28,9 @@ const Live = () => {
             <div className="container">
                 <h2 className="section-title">Live</h2>
                 <div className="tour-list">
-                    {sortedDates.length > 0 ? (
-                        sortedDates.map((gig) => (
-                            <div key={gig.id} className="tour-row">
+                    {sortedGigs.length > 0 ? (
+                        sortedGigs.map((gig) => (
+                            <div key={`${gig.date}-${gig.venue}`} className="tour-row">
                                 <div className="tour-date">{gig.date}</div>
                                 <div className="tour-info">
                                     <div className="tour-loc">{gig.city}</div>

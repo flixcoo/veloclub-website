@@ -13,29 +13,6 @@ import {FaInstagram, FaTiktok, FaYoutube, FaFacebook, FaEnvelope} from 'react-ic
  */
 export const LIVE_DATES = [
     {
-        id: 1,
-        date: '13.12.2025',
-        city: 'Bremen',
-        venue: 'Lila Eule',
-        description: 'JoschY EP-Releasekonzert',
-        button: {
-            text: 'Tickets',
-            url: 'https://www.eventim-light.com/de/a/58a333d705a73904c49e920f/e/68d4122aa5c93f571da2b776'
-        }
-    },
-    {
-        id: 2,
-        date: '22.12.2025',
-        city: 'Oldenburg',
-        venue: 'Stube',
-        description: 'Weihnachtskonzert',
-        button: {
-            text: 'Info',
-            url: 'https://www.instagram.com/stube_oldenburg/'
-        }
-    },
-    {
-        id: 3,
         date: '20.03.2026',
         city: 'Braunschweig',
         venue: 'Etage Eins',
@@ -43,10 +20,10 @@ export const LIVE_DATES = [
         button: {
             text: 'Tickets',
             url: 'http://www.etage-eins.de/',
-        }
+        },
+        activate: true,
     },
     {
-        id: 4,
         date: '05.06.2026',
         city: 'Leipzig',
         venue: 'Marktplatz',
@@ -54,7 +31,41 @@ export const LIVE_DATES = [
         button: {
             url: 'https://leipzigerstadtfest.de/',
             text: 'Info'
-        }
+        },
+        activate: true,
+    },
+    {
+        date: '18.04.2026',
+        city: 'Oldenburg',
+        venue: 'Umbaubar',
+        description: 'Support für EASY EASY',
+        button: {
+            url: 'https://umbaubar.net/',
+            text: 'Tickets'
+        },
+        activate: true,
+    },
+    {
+        date: '21.02.2026',
+        city: 'Magdeburg',
+        venue: 'Festung Mark',
+        description: 'Support für Deep in Moon Leipzig',
+        button: {
+            url: 'https://shop.deepinmoon.de/products/heatwave-tour-2026-deep-in-moon-1/',
+            text: 'Tickets'
+        },
+        activate: true,
+    },
+    {
+        date: '26.09.2026',
+        city: 'Oldenburg',
+        venue: 'Cadillac',
+        description: 'Support: JoschY',
+        button: {
+            url: 'https://veloclubband.de',
+            text: 'Tickets'
+        },
+        activate: false,
     },
 ];
 
