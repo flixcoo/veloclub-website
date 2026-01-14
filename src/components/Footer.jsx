@@ -40,13 +40,19 @@ const Footer = () => {
                         }
                     })}
                 </div>
-                <p className="copyright">
-                    &copy; 2025 - {new Date().getFullYear()} Véloclub
-                    <br/>
-                    <Link to="/impressum">Impressum</Link>
-                    &nbsp;&nbsp;&nbsp;
-                    <Link to="/datenschutz">Datenschutz</Link>
-                </p>
+                <div className="copyright-section">
+                    <p>
+                        &copy; 2025 - {new Date().getFullYear()} Véloclub
+                        <br/>
+                        <Link to="/impressum">Impressum</Link>
+                        &nbsp;&nbsp;&nbsp;
+                        <Link to="/datenschutz">Datenschutz</Link>
+                    </p>
+                    <p style={{marginTop: '0.5em'}}>
+                        Website designed and developed by&nbsp;
+                        <a href="https://felixkirchner.de" target="_blank" rel="noopener noreferrer">Felix Kirchner</a>.
+                    </p>
+                </div>
             </div>
         </footer>
     );

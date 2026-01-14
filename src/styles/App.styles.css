@@ -421,7 +421,7 @@ ul {
 
 .footer {
     font-family: 'Antique Olive Std', sans-serif;
-    padding: 4rem 0;
+    padding: 2rem 0;
     text-align: center;
     margin-top: 4rem;
     position: relative;
@@ -455,17 +455,17 @@ ul {
     text-decoration: underline;
 }
 
-.copyright {
+.copyright-section {
     font-size: 0.8rem;
     color: #888;
 }
 
-.copyright a {
+.copyright-section a {
     color: var(--text-color);
     text-decoration: underline;
 }
 
-.copyright a:hover {
+.copyright-section a:hover {
     color: var(--accent-color);
 }
 
