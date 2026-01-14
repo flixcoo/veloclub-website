@@ -39,18 +39,11 @@ fi
 
 # STEP 3: Install dependencies (unless skipped)
 step "3) Install dependencies"
-info "Attempting: npm ci"
+info "Running: npm ci"
 if npm ci; then
   success "npm ci succeeded"
 else
-  failure "npm ci failed — falling back to npm install"
-  info "Running: npm install"
-  if npm install; then
-    success "npm install succeeded"
-  else
-    failure "npm install failed — you may need to inspect the logs"
-    # don't exit; let the build step try, but warn the user
-  fi
+  failure "npm ci failed"
 fi
 
 # STEP 4: Build
@@ -64,4 +57,4 @@ else
     exit 2
 fi
 
-printf "%b\n" "${GREEN}Done. Thanks!"
+printf "%b\n" "${GREEN}Done. Thanks!${RESET}"
