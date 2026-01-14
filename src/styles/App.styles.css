@@ -41,6 +41,7 @@ ul {
     list-style: none;
 }
 
+/* ============ Homepage ============ */
 /* UTILITIES */
 .container {
     max-width: 1100px;
@@ -533,8 +534,53 @@ ul {
     margin-top: 2rem;
 }
 
+/* ============ 404 PAGE ============ */
+.not-found-page {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12rem 2rem 4rem;
+}
 
-/* ==================== RESPONSIVE: TABLET & MOBILE ==================== */
+.not-found-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.not-found-title {
+    font-family: 'Antique Olive Compact', sans-serif;
+    font-size: clamp(6rem, 15vw, 12rem);
+    font-weight: 900;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.not-found-subtitle {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.not-found-text {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+}
+
+/* =========== Responsive =========== */
+/* ========= Tablet & Mobile ======== */
 @media (max-width: 768px) {
     /* Layout */
     .container {
@@ -685,7 +731,7 @@ ul {
         margin-bottom: 1.5rem;
     }
 
-    /* Legal Pages */
+    /* =========== Legal Pages ========== */
     .legal-page {
         padding: 2rem 0;
     }
@@ -716,9 +762,28 @@ ul {
         font-size: 0.9rem;
         margin-bottom: 1.5rem;
     }
+
+    /* 404 Page */
+    .not-found-page {
+        padding: 8rem 1rem 2rem;
+    }
+
+    .not-found-title {
+        font-size: clamp(4rem, 20vw, 8rem);
+    }
+
+    .not-found-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .not-found-text {
+        font-size: 1rem;
+    }
 }
 
-/* ==================== RESPONSIVE: SMALL MOBILE ==================== */
+
+/* =========== Responsive =========== */
+/* ========== Small Mobile ========== */
 @media (max-width: 480px) {
     .section {
         padding: 2rem 0;
@@ -767,6 +832,19 @@ ul {
 
     .legal-title {
         font-size: 1.75rem;
+    }
+
+    .not-found-title {
+        font-size: clamp(3rem, 18vw, 6rem);
+    }
+
+    .not-found-subtitle {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .not-found-text {
+        font-size: 0.9rem;
     }
 
     .footer::before {

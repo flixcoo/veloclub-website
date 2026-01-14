@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Impressum = () => {
+const LegalNotice = () => {
     return (
         <div className="legal-page">
             <div className="container">
@@ -69,5 +69,5 @@ const Impressum = () => {
     );
 };
 
-export default Impressum;
+export default LegalNotice;
 

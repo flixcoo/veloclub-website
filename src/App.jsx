@@ -4,8 +4,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
-import Impressum from './pages/Impressum';
-import Datenschutz from './pages/Datenschutz';
+import LegalNotice from './pages/LegalNotice.jsx';
+import PrivacyPolicy from './pages/Datenschutz';
+import NotFoundPage from './pages/NotFoundPage.jsx';
+
 import './styles/App.styles.css';
 
 const App = () => {
@@ -16,8 +18,9 @@ const App = () => {
                 <Header/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/impressum" element={<Impressum/>}/>
-                    <Route path="/datenschutz" element={<Datenschutz/>}/>
+                    <Route path="/impressum" element={<LegalNotice/>}/>
+                    <Route path="/datenschutz" element={<PrivacyPolicy/>}/>
+                    <Route path="*" element={<NotFoundPage/>}/>
                 </Routes>
                 <Footer/>
             </div>
