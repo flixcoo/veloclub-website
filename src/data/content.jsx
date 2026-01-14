@@ -49,7 +49,7 @@ export const LIVE_DATES = [
         date: '21.02.2026',
         city: 'Magdeburg',
         venue: 'Festung Mark',
-        description: 'Support für Deep in Moon Leipzig',
+        description: 'Support für Deep in Moon',
         button: {
             url: 'https://shop.deepinmoon.de/products/heatwave-tour-2026-deep-in-moon-1/',
             text: 'Tickets'
