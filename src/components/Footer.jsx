@@ -49,7 +49,7 @@ const Footer = () => {
                         <Link to="/datenschutz">Datenschutz</Link>
                     </p>
                     <p style={{marginTop: '0.5em'}}>
-                        Website designed and developed by&nbsp;
+                        Designed & developed by&nbsp;
                         <a href="https://felixkirchner.de" target="_blank" rel="noopener noreferrer">Felix Kirchner</a>.
                     </p>
                 </div>
