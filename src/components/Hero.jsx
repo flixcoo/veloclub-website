@@ -19,7 +19,7 @@ const Hero = () => {
                             className="hero-image"
                         />
                     ) : (
-                        <div className="hero-placeholder">
+                        <div className="placeholder hero-placeholder">
                             <span>BAND IMAGE PLACEHOLDER (1920x1080)</span>
                         </div>
                     )}

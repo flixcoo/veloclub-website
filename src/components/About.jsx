@@ -36,7 +36,7 @@ const About = () => {
                                 className="about-image"
                             />
                         ) : (
-                            <div className="about-img-placeholder">
+                            <div className="placeholder about-img-placeholder">
                                 <span>PORTRAIT PLACEHOLDER</span>
                             </div>
                         )}

@@ -11,7 +11,7 @@
 }
 
 :root {
-    --bg-color: #FAFAF5; /* Light Beige */
+    --bg-color: #F9F9F9; /*#FAFAF5; /* Light Beige */
     --text-color: #111111; /* Black */
     --accent-color: #FF4D00; /* Signal Orange */
     --gray-light: #e5e5e5;
@@ -205,6 +205,17 @@ ul {
     overflow: hidden;
 }
 
+.placeholder {
+    width: 100%;
+    background-color: var(--accent-color);
+    opacity: 0.8;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero-image {
     width: 100%;
     height: auto;
@@ -214,19 +225,7 @@ ul {
 }
 
 .hero-placeholder {
-    width: 100%;
     height: 50vh;
-    background-color: var(--gray-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--text-color);
-    transform: rotate(-1deg);
-    transition: transform 0.5s;
-}
-
-.hero-placeholder:hover {
-    transform: rotate(0deg);
 }
 
 .image-credit {
@@ -271,16 +270,7 @@ ul {
     object-fit: cover;
 }
 
-.about-img-placeholder {
-    background-color: var(--accent-color);
-    opacity: 0.8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-}
-
+/* MUSIC */
 .music-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -303,6 +293,7 @@ ul {
     border-radius: 10px;
 }
 
+/* CONTACT */
 .contact-section {
     background: var(--bg-color);
 }
@@ -354,14 +345,14 @@ ul {
     display: grid;
     grid-template-columns: 100px 0.5fr 1.5fr 120px;
     gap: 1rem;
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
     border-bottom: 1px solid var(--gray-light);
     align-items: baseline;
-    transition: background 0.2s;
+    transition: background 0.3s;
 }
 
 .tour-row:hover {
-    background: #fff;
+    background: #EBEBEB;
 }
 
 .tour-date {
