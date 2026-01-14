@@ -22,12 +22,10 @@ const About = () => {
                             weiter zu entwickeln und sich im eigenen Wandel treu zu bleiben.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                            voluptua.
+                            Wer Véloclub wirklich sind, zeigt sich live. Alle vier spielen seit der Schulzeit zusammen
+                            und haben über die Jahre ihren eigenen Umgang miteinander und mit Musik gefunden. Auf der
+                            Bühne bleibt Raum für Veränderungen, ohne dass der Zusammenhalt verloren geht.
+                            Ihre Konzerte sind keine Reproduktionen, direkt, mal laut, mal leise, immer nah dran.
                         </p>
                     </div>
                     <div className="about-image-wrapper">
