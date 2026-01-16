@@ -16,10 +16,10 @@ export const LIVE_DATES = [
         date: '20.03.2026',
         city: 'Braunschweig',
         venue: 'Etage Eins',
-        description: 'Mittendrin Session',
+        description: ' MITTINDRIN Live Session ',
         button: {
             text: 'Tickets',
-            url: 'http://www.etage-eins.de/',
+            url: 'https://applaus.online-ticket.de/mittindrin-live-session-tickets-140.html#tour147',
         },
         activate: true,
     },
@@ -32,7 +32,7 @@ export const LIVE_DATES = [
             url: 'https://leipzigerstadtfest.de/',
             text: 'Info'
         },
-        activate: true,
+        activate: false,
     },
     {
         date: '18.04.2026',
@@ -43,7 +43,7 @@ export const LIVE_DATES = [
             url: 'https://umbaubar.net/',
             text: 'Tickets'
         },
-        activate: true,
+        activate: false,
     },
     {
         date: '21.02.2026',
