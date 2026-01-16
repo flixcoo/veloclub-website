@@ -32,6 +32,7 @@ const Music = () => {
                         ></iframe>
                     </div>
                 </div>
+                {MUSIC_LINKS.youtubeEmbed && MUSIC_LINKS.youtubeEmbed.trim() > '' ? (
                 <div className="embed-container youtube-embed">
                     <iframe
                         width="100%"
@@ -43,7 +44,7 @@ const Music = () => {
                         loading="lazy"
                         title="YouTube"
                     ></iframe>
-                </div>
+                </div> ) : null}
             </div>
         </section>
     );
