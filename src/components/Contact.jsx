@@ -1,6 +1,6 @@
 import React from 'react';
 import {CONTACT_LINKS} from '../data/content';
-import EmailObfuscator from './EmailObfuscator';
+import EmailObfuscator from '../utils/EmailObfuscator.jsx';
 
 const Contact = () => {
     return (

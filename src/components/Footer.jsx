@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {SOCIALS} from '../data/content';
-import EmailObfuscator from './EmailObfuscator';
+import EmailObfuscator from '../utils/EmailObfuscator.jsx';
 
 const Footer = () => {
     return (
