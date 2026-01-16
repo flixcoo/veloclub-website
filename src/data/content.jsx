@@ -16,7 +16,7 @@ export const LIVE_DATES = [
         date: '20.03.2026',
         city: 'Braunschweig',
         venue: 'Etage Eins',
-        description: ' MITTINDRIN Live Session ',
+        description: 'MITTINDRIN Live Session',
         button: {
             text: 'Tickets',
             url: 'https://applaus.online-ticket.de/mittindrin-live-session-tickets-140.html#tour147',
