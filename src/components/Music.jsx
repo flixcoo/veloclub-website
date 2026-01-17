@@ -1,5 +1,5 @@
 import React from 'react';
-import {MUSIC_LINKS} from '../data/content';
+import {MUSIC_LINKS, MUSIC_PLATFORMS} from '../data/content';
 
 const Music = () => {
 
@@ -33,18 +33,36 @@ const Music = () => {
                     </div>
                 </div>
                 {MUSIC_LINKS.youtubeEmbed && MUSIC_LINKS.youtubeEmbed.trim() > '' ? (
-                <div className="embed-container youtube-embed">
-                    <iframe
-                        width="100%"
-                        height="100%"
-                        src={MUSIC_LINKS.youtubeEmbed}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        loading="lazy"
-                        title="YouTube"
-                    ></iframe>
-                </div> ) : null}
+                    <div className="embed-container youtube-embed">
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src={MUSIC_LINKS.youtubeEmbed}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            loading="lazy"
+                            title="YouTube"
+                        ></iframe>
+                    </div>) : null}
+                <div className="music-platforms">
+                    {MUSIC_PLATFORMS.map((platform, index) => {
+                        const IconComponent = platform.icon;
+                        return (
+                            <a
+                                key={index}
+                                href={platform.url}
+                                className="platform-link"
+                                target={platform.target}
+                                rel="noopener noreferrer"
+                                aria-label={platform.name}
+                                title={platform.name}
+                            >
+                                {IconComponent && <IconComponent/>}
+                            </a>
+                        );
+                    })}
+                </div>
             </div>
         </section>
     );

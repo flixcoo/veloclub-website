@@ -1,4 +1,13 @@
-import {FaInstagram, FaTiktok, FaYoutube, FaFacebook, FaEnvelope} from 'react-icons/fa';
+import {
+    FaInstagram,
+    FaTiktok,
+    FaYoutube,
+    FaFacebook,
+    FaSoundcloud,
+    FaSpotify,
+    FaDeezer
+} from 'react-icons/fa';
+import {SiAmazonmusic, SiApplemusic, SiTidal, SiYoutubemusic} from "react-icons/si";
 
 /* List of all live dates displayed on the website
  * Used in: Live component to display tour dates
@@ -103,9 +112,48 @@ export const SOCIALS = [
         target: '_blank'
     },
     {
-        name: 'Mail',
-        mail: 'hi@veloclubband.de',
-        icon: FaEnvelope,
+        name: 'Soundcloud',
+        url: 'https://soundcloud.com/veloclubband',
+        icon: FaSoundcloud,
+        target: '_blank'
+    },
+];
+
+export const MUSIC_PLATFORMS = [
+    {
+        name: 'Spotify',
+        url: 'https://open.spotify.com/artist/2ATI9IAeXPE31HKReWj40a',
+        icon: FaSpotify,
+        target: '_blank'
+    },
+    {
+        name: 'Apple Music',
+        url: 'https://music.apple.com/de/artist/v%C3%A9loclub/1706116595',
+        icon: SiApplemusic,
+        target: '_blank'
+    },
+    {
+        name: 'Deezer',
+        url: 'https://www.deezer.com/de/artist/16120132',
+        icon: FaDeezer,
+        target: '_blank'
+    },
+    {
+        name: 'Tidal',
+        url: 'https://tidal.com/artist/41872824',
+        icon: SiTidal,
+        target: '_blank'
+    },
+    {
+        name: 'Amazon Music',
+        url: 'https://music.amazon.de/artists/B0CH91199R/v%C3%A9loclub',
+        icon: SiAmazonmusic,
+        target: '_blank'
+    },
+    {
+        name: 'Youtube Music',
+        url: 'https://music.youtube.com/channel/UCQEMKjV88u8Qrxu__8mpfeA',
+        icon: SiYoutubemusic,
         target: '_blank'
     }
 ];
