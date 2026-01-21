@@ -61,7 +61,7 @@ export const LIVE_DATES = [
         venue: 'Festung Mark',
         description: 'Support für Deep in Moon',
         button: {
-            url: 'https://shop.deepinmoon.de/products/heatwave-tour-2026-deep-in-moon-1/',
+            url: 'https://shop.deepinmoon.de/products/heatwave-tour-2026-deep-in-moon-1',
             text: 'Tickets'
         },
         activate: true,
