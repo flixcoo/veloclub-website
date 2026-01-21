@@ -707,8 +707,9 @@ ul {
     }
 
     .music-platforms {
-        gap: 2rem;
-        margin-top:6rem;
+        column-gap: 3rem;
+        row-gap: 1.5rem;
+        margin-top: 6rem;
     }
 
     .platform-link {
@@ -857,8 +858,9 @@ ul {
     }
 
     .music-platforms {
-        gap: 1.5rem;
         margin-top: 2rem;
+        column-gap: 3rem;
+        row-gap: 1.5rem;
     }
 
     .platform-link {

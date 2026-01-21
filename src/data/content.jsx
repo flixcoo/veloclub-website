@@ -111,12 +111,6 @@ export const SOCIALS = [
         icon: FaFacebook,
         target: '_blank'
     },
-    {
-        name: 'Soundcloud',
-        url: 'https://soundcloud.com/veloclubband',
-        icon: FaSoundcloud,
-        target: '_blank'
-    },
 ];
 
 export const MUSIC_PLATFORMS = [
@@ -155,7 +149,13 @@ export const MUSIC_PLATFORMS = [
         url: 'https://music.youtube.com/channel/UCQEMKjV88u8Qrxu__8mpfeA',
         icon: SiYoutubemusic,
         target: '_blank'
-    }
+    }, {
+        name: 'Soundcloud',
+        url: 'https://soundcloud.com/veloclubband',
+        icon: FaSoundcloud,
+        target: '_blank'
+    },
+
 ];
 
 /*
