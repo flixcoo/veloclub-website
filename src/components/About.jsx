@@ -21,12 +21,12 @@ const About = () => {
                             in Clubs, leise in Café, gefühlvoll auf Festivals. Immer drauf bedacht, ihre Musik nochmals
                             weiter zu entwickeln und sich im eigenen Wandel treu zu bleiben.
                         </p>
-                        <p>
+                       {/* <p>
                             Wer Véloclub wirklich sind, zeigt sich live. Alle vier spielen seit der Schulzeit zusammen
                             und haben über die Jahre ihren eigenen Umgang miteinander und mit Musik gefunden. Auf der
                             Bühne bleibt Raum für Veränderungen, ohne dass der Zusammenhalt verloren geht.
                             Ihre Konzerte sind keine Reproduktionen, direkt, mal laut, mal leise, immer nah dran.
-                        </p>
+                        </p>*/}
                     </div>
                     <div className="about-image-wrapper">
                         {imageData.image ? (
