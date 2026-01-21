@@ -7,7 +7,7 @@ import {
     FaSpotify,
     FaDeezer
 } from 'react-icons/fa';
-import {SiAmazonmusic, SiApplemusic, SiBackstage, SiTidal, SiYoutubemusic} from "react-icons/si";
+import {SiAmazonmusic, SiApplemusic, SiTidal, SiYoutubemusic} from "react-icons/si";
 
 /* List of all live dates displayed on the website
  * Used in: Live component to display tour dates
@@ -112,13 +112,7 @@ export const SOCIALS = [
         url: 'https://www.facebook.com/veloclubmusic',
         icon: FaFacebook,
         target: '_blank'
-    },
-    {
-        name: 'Backstage Pro',
-        url: 'https://www.facebook.com/veloclubmusic',
-        icon: SiBackstage,
-        target: '_blank'
-    },
+    }
 ];
 
 export const MUSIC_PLATFORMS = [
