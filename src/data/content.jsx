@@ -5,7 +5,8 @@ import {
     FaFacebook,
     FaSoundcloud,
     FaSpotify,
-    FaDeezer
+    FaDeezer,
+    //FaTree
 } from 'react-icons/fa';
 import {SiAmazonmusic, SiApplemusic, SiTidal, SiYoutubemusic} from "react-icons/si";
 
@@ -112,7 +113,13 @@ export const SOCIALS = [
         url: 'https://www.facebook.com/veloclubmusic',
         icon: FaFacebook,
         target: '_blank'
-    }
+    },
+    /*{
+        name: 'Linktree',
+        url: 'https://www.linktree.veloclubband.de',
+        icon: FaTree,
+        target: '_blank'
+    }*/
 ];
 
 export const MUSIC_PLATFORMS = [
