@@ -7,18 +7,19 @@ import {
     FaSpotify,
     FaDeezer
 } from 'react-icons/fa';
-import {SiAmazonmusic, SiApplemusic, SiTidal, SiYoutubemusic} from "react-icons/si";
+import {SiAmazonmusic, SiApplemusic, SiBackstage, SiTidal, SiYoutubemusic} from "react-icons/si";
 
 /* List of all live dates displayed on the website
  * Used in: Live component to display tour dates
  *
- * `id`: Unique identifier for each date (required) <br>
  * `date`: Date in format 'DD.MM.YYYY' (required) <br>
  * `city`: City of the performance (required) <br>
  * `venue`: Name of the venue/location (required) <br>
- * `url`: URL to ticket sales or more information (required) <br>
  * `description`: Additional information about the event (optional) <br>
- * `buttonText`: Text displayed on the button (optional, default: 'Tickets')
+ * `button`: Object containing button details (optional) <br>
+ * - `url`: URL for the button link <br>
+ * - `text`: Text displayed on the button <br>
+ * `activate`: Boolean to activate/deactivate the button (optional, default: false)
  */
 export const LIVE_DATES = [
     {
@@ -85,6 +86,7 @@ export const LIVE_DATES = [
  * `name`: Display name of the platform (required) <br>
  * `url`: URL to the social media profile or contact (required) <br>
  * `icon`: Icon identifier for react-icons (required)
+ * `target`: Link target attribute (optional, default: '_self')
  */
 export const SOCIALS = [
     {
@@ -109,6 +111,12 @@ export const SOCIALS = [
         name: 'Facebook',
         url: 'https://www.facebook.com/veloclubmusic',
         icon: FaFacebook,
+        target: '_blank'
+    },
+    {
+        name: 'Backstage Pro',
+        url: 'https://www.facebook.com/veloclubmusic',
+        icon: SiBackstage,
         target: '_blank'
     },
 ];
@@ -163,7 +171,8 @@ export const MUSIC_PLATFORMS = [
  * Used in: Music component to embed music players
  *
  * `spotifyEmbed`: Spotify embed URL for artist player (displays top tracks) <br>
- * `appleMusicEmbed`: Apple Music embed URL for artist player (displays top tracks)
+ * `appleMusicEmbed`: Apple Music embed URL for artist player (displays top tracks) <br>
+ * `youtubeEmbed`: YouTube embed URL for a specific video
  */
 export const MUSIC_LINKS = {
     spotifyEmbed: 'https://open.spotify.com/embed/artist/2ATI9IAeXPE31HKReWj40a?utm_source=generator&theme=0',
@@ -177,7 +186,6 @@ export const MUSIC_LINKS = {
  *
  * `label`: Button text (required) <br>
  * `url`: Link URL (required) <br>
- * `description`: Optional description text below the button (optional)
  */
 export const CONTACT_LINKS = [
     {
@@ -201,8 +209,9 @@ export const CONTACT_LINKS = [
  * Set `image` to empty string ('') to keep placeholder
  * Set `credit` to empty string ('') or null to hide credits
  *
- * `image`: Path/URL to the image file (optional, empty = placeholder)
- * `credit`: Photo credit text (optional)
+ * `image`: Path/URL to the image file (empty = placeholder)
+ * `credit`: Photo credit text
+ * `url`: URL to the photographer's website or profile
  */
 export const IMAGES = {
     heroImage: {
