@@ -137,7 +137,7 @@ export const MUSIC_PLATFORMS = [
     },
     {
         name: 'Deezer',
-        url: 'https://www.deezer.com/de/artist/16120132',
+        url: 'https://www.deezer.com/de/artist/229236025',
         icon: FaDeezer,
         target: '_blank'
     },
