@@ -169,7 +169,6 @@ export const MUSIC_PLATFORMS = [
 
 /*
  * Embed URLs for music players on the website
- * Used in: Music component to embed music players
  *
  * `spotifyEmbed`: Spotify embed URL for artist player (displays top tracks) <br>
  * `appleMusicEmbed`: Apple Music embed URL for artist player (displays top tracks) <br>
@@ -183,7 +182,6 @@ export const MUSIC_LINKS = {
 
 /*
  * Contact links displayed below the music section
- * Used in: Contact component to display action buttons
  *
  * `label`: Button text (required) <br>
  * `url`: Link URL (required) <br>
@@ -205,7 +203,6 @@ export const CONTACT_LINKS = [
 
 /*
  * Image credits for photos on the website
- * Used in: Hero and About components to display photo credits
  *
  * Set `image` to empty string ('') to keep placeholder
  * Set `credit` to empty string ('') or null to hide credits
