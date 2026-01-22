@@ -42,7 +42,7 @@ const Footer = () => {
                 </div>
                 <div className="copyright-section">
                     <p>
-                        &copy; 2025 - {new Date().getFullYear()} Véloclub
+                        &copy; 2023 - {new Date().getFullYear()} Véloclub
                         <br/>
                         <Link to="/impressum">Impressum</Link>
                         &nbsp;&nbsp;&nbsp;
