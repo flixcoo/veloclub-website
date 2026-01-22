@@ -51,6 +51,7 @@ ul {
 
 .section {
     padding: 2rem 0;
+    scroll-margin-top: 5rem;
 }
 
 .section-title {
@@ -609,6 +610,7 @@ ul {
 
     .section {
         padding: 3rem 0;
+        scroll-margin-top: 2rem;
     }
 
     .section-title {
