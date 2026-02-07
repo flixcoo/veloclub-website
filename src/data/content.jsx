@@ -89,7 +89,7 @@ export const LIVE_DATES = [
  * `icon`: Icon identifier for react-icons (required)
  * `target`: Link target attribute (optional, default: '_self')
  */
-export const SOCIALS = [
+export const FOOTER_LINKS = [
     {
         name: 'Instagram',
         url: 'https://instagram.com/veloclubband',
@@ -110,13 +110,13 @@ export const SOCIALS = [
     },
     {
         name: 'Facebook',
-        url: 'https://www.facebook.com/veloclubmusic',
+        url: 'https://facebook.com/veloclubmusic',
         icon: FaFacebook,
         target: '_blank'
     },
     {
         name: 'Linktree',
-        url: 'https://www.linktree.veloclubband.de',
+        url: 'https://linktree.veloclubband.de',
         icon: FaTree,
         target: '_blank'
     }

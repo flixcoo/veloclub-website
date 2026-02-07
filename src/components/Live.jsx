@@ -1,5 +1,5 @@
 import React from 'react';
-import {LIVE_DATES, SOCIALS} from '../data/content';
+import {LIVE_DATES, FOOTER_LINKS} from '../data/content';
 
 const Live = () => {
     // Sort gigs chronologically (DD.MM.YYYY format)
@@ -50,7 +50,7 @@ const Live = () => {
                         ))
                     ) : (
                         <p>
-                            Aktuell gibt es keine Live-Termine. Für aktuelle Infos schau gerne auf unserer <a href={SOCIALS.at(0).url}>Instagramseite</a> vorbei :)
+                            Aktuell gibt es keine Live-Termine. Für aktuelle Infos schau gerne auf unserer <a href={FOOTER_LINKS.at(0).url}>Instagramseite</a> vorbei :)
                         </p>
                     )}
                 </div>

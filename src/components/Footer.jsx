@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {SOCIALS} from '../data/content';
+import {FOOTER_LINKS} from '../data/content';
 import EmailObfuscator from '../utils/EmailObfuscator.jsx';
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
         <footer id="contact" className="footer">
             <div className="container">
                 <div className="socials">
-                    {SOCIALS.map((social, index) => {
+                    {FOOTER_LINKS.map((social, index) => {
                         const IconComponent = social.icon;
 
                         if (social.mail) {
