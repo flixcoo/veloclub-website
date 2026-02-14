@@ -110,7 +110,7 @@ export const FOOTER_LINKS = [
     },
     {
         name: 'Facebook',
-        url: 'https://facebook.com/veloclubmusic',
+        url: 'https://facebook.com/veloclubmusik',
         icon: FaFacebook,
         target: '_blank'
     },
