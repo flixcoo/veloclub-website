@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-Default URL: `http://localhost:5173
+Default URL: `http://localhost:5173`
 
 ### Create a production build
 ```bash
