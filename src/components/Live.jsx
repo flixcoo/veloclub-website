@@ -17,7 +17,7 @@ const Live = () => {
             return gig.activate && gigDate >= today;
         })
         .sort((a, b) => {
-        return parseDate(a.date) - parseDate(b.date);
+            return parseDate(a.date) - parseDate(b.date);
         });
 
     return (
@@ -37,7 +37,7 @@ const Live = () => {
                                     {gig.description || ''}
                                 </div>
                                 <div className="tour-action">
-                                    {gig.button  && (
+                                    {gig.button && (
                                         <a href={gig.button.url} target="_blank" rel="noopener noreferrer"
                                            className="btn">{gig.button.text || 'Tickets'}
                                         </a>
@@ -47,7 +47,9 @@ const Live = () => {
                         ))
                     ) : (
                         <p>
-                            Aktuell gibt es keine Live-Termine. Für aktuelle Infos schau gerne auf unserer <a href={FOOTER_LINKS.at(0).url}>Instagramseite</a> vorbei :)
+                            Aktuell gibt es keine Live-Termine. Für aktuelle Infos schau gerne auf unserer&nbsp;
+                            <a href={FOOTER_LINKS.find((link) => link.url.includes('instagram')).url}>Instagramseite</a> vorbei
+                            :)
                         </p>
                     )}
                 </div>
