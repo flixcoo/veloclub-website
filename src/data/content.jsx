@@ -71,9 +71,9 @@ export const LIVE_DATES = [
         date: '26.09.2026',
         city: 'Oldenburg',
         venue: 'Cadillac',
-        description: 'Support: JoschY',
+        description: '',
         button: {
-            url: 'https://veloclubband.de',
+            url: 'https://tix-ol.veloclubband.de',
             text: 'Tickets'
         },
         activate: false,
