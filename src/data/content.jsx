@@ -24,17 +24,6 @@ import {SiAmazonmusic, SiApplemusic, SiTidal, SiYoutubemusic} from "react-icons/
  */
 export const LIVE_DATES = [
     {
-        date: '20.03.2026',
-        city: 'Braunschweig',
-        venue: 'Etage Eins',
-        description: 'MITTINDRIN Live Session',
-        button: {
-            text: 'Tickets',
-            url: 'https://applaus.online-ticket.de/mittindrin-live-session-tickets-140.html#tour147',
-        },
-        activate: true,
-    },
-    {
         date: '05.06.2026',
         city: 'Leipzig',
         venue: 'Marktplatz',
@@ -46,31 +35,20 @@ export const LIVE_DATES = [
         activate: false,
     },
     {
-        date: '18.04.2026',
-        city: 'Oldenburg',
-        venue: 'Umbaubar',
-        description: 'Support für EASY EASY',
+        date: '10.07.2026',
+        city: 'Flensburg',
+        venue: 'Tableau Kulturcafé',
+        description: '',
         button: {
-            url: 'https://umbaubar.net/',
-            text: 'Tickets'
+            url: 'https://www.instagram.com/tableau_kulturcafe/',
+            text: 'Info'
         },
         activate: false,
     },
     {
-        date: '21.02.2026',
-        city: 'Magdeburg',
-        venue: 'Festung Mark',
-        description: 'Support für Deep in Moon',
-        button: {
-            url: 'https://shop.deepinmoon.de/products/heatwave-tour-2026-deep-in-moon-1',
-            text: 'Tickets'
-        },
-        activate: true,
-    },
-    {
         date: '26.09.2026',
         city: 'Oldenburg',
-        venue: 'Cadillac',
+        venue: 'umBAUbar',
         description: '',
         button: {
             url: 'https://tix-ol.veloclubband.de',

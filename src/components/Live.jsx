@@ -47,7 +47,7 @@ const Live = () => {
                         ))
                     ) : (
                         <p>
-                            Aktuell gibt es keine Live-Termine. Für aktuelle Infos schau gerne auf unserer&nbsp;
+                            Zurzeit gibt es keine Live-Termine. Für aktuelle Infos schau gerne auf unserer&nbsp;
                             <a href={FOOTER_LINKS.find((link) => link.url.includes('instagram')).url}>Instagramseite</a> vorbei
                             :)
                         </p>
