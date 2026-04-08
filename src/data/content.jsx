@@ -166,11 +166,11 @@ export const MUSIC_LINKS = {
  */
 export const CONTACT_LINKS = [
     {
-        label: 'Booking - Musicgrounder',
-        mail: 'jessica@musicgrounder.de',
+        label: 'Booking',
+        mail: 'booking@veloclubband.de',
     },
     {
-        label: 'E-Mail an Véloclub',
+        label: 'Kontakt',
         mail: 'hi@veloclubband.de',
     },
     {
