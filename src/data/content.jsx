@@ -54,7 +54,7 @@ export const LIVE_DATES = [
             url: 'https://organicbeats.org/',
             text: 'Info'
         },
-        activate: true,
+        activate: false,
     },
     {
         date: '26.09.2026',
