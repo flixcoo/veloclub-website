@@ -20,7 +20,7 @@ const Music = () => {
                             title="Spotify"
                         ></iframe>
                     </div>
-                    <div className="h-[450px] md:h-auto outline outline-[3px] outline-[#FC3C44] rounded-[10px] overflow-hidden">
+                    <div className="md:h-auto outline-4 outline-[#FC3C44] rounded-lg overflow-hidden">
                         <iframe
                             allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
                             frameBorder="0"
@@ -29,7 +29,7 @@ const Music = () => {
                             sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
                             src={MUSIC_LINKS.appleMusicEmbed}
                             title="Apple Music"
-                        ></iframe>
+                        />
                     </div>
                 </div>
                 {MUSIC_LINKS.youtubeEmbed && MUSIC_LINKS.youtubeEmbed.trim() > '' ? (
@@ -46,7 +46,7 @@ const Music = () => {
                             className="rounded-[20px]"
                         ></iframe>
                     </div>) : null}
-                <div className="flex justify-center gap-24 flex-wrap mt-12">
+                <div className="flex justify-center gap-x-24 gap-y-12 flex-wrap mt-12">
                     {MUSIC_PLATFORMS.map((platform, index) => {
                         const IconComponent = platform.icon;
                         return (
