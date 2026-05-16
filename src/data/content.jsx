@@ -27,7 +27,7 @@ export const LIVE_DATES = [
         date: '05.06.2026',
         city: 'Leipzig',
         venue: 'Stadtfest Leipzig',
-        description: '',
+        description: '19.45 Uhr - Marktplatzbühne',
         button: {
             url: 'https://leipzigerstadtfest.de/',
             text: 'Info'
@@ -49,7 +49,7 @@ export const LIVE_DATES = [
         date: '29.08.2026',
         city: 'Braunschweig',
         venue: 'Organic Beats Festival',
-        description: '19.45 Uhr - Marktplatzbühne',
+        description: '',
         button: {
             url: 'https://organicbeats.org/',
             text: 'Info'
