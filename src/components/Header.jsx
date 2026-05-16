@@ -40,10 +40,10 @@ const Header = () => {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex">
-                    <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="ml-8 text-sm font-semibold uppercase hover:text-[var(--accent-color)] transition-colors">Band</a>
-                    <a href="#live" onClick={(e) => handleNavClick(e, '#live')} className="ml-8 text-sm font-semibold uppercase hover:text-[var(--accent-color)] transition-colors">Live</a>
-                    <a href="#music" onClick={(e) => handleNavClick(e, '#music')} className="ml-8 text-sm font-semibold uppercase hover:text-[var(--accent-color)] transition-colors">Musik</a>
-                    <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="ml-8 text-sm font-semibold uppercase hover:text-[var(--accent-color)] transition-colors">Kontakt</a>
+                    <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="ml-8 text-md font-semibold uppercase hover:text-[var(--accent-color)] transition-colors">Band</a>
+                    <a href="#live" onClick={(e) => handleNavClick(e, '#live')} className="ml-8 text-md font-semibold uppercase hover:text-[var(--accent-color)] transition-colors">Live</a>
+                    <a href="#music" onClick={(e) => handleNavClick(e, '#music')} className="ml-8 text-md font-semibold uppercase hover:text-[var(--accent-color)] transition-colors">Musik</a>
+                    <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="ml-8 text-md font-semibold uppercase hover:text-[var(--accent-color)] transition-colors">Kontakt</a>
                 </nav>
 
                 {/* Mobile Hamburger Menu Button */}
