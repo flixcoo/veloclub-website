@@ -57,7 +57,7 @@ export const LIVE_DATES = [
         activate: true,
     },
     {
-        date: '26.09.2026',
+        date: '18.09.2026',
         city: 'Oldenburg',
         venue: 'umBAUbar',
         description: 'Support: tba',
