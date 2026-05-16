@@ -54,18 +54,18 @@ export const LIVE_DATES = [
             url: 'https://organicbeats.org/',
             text: 'Info'
         },
-        activate: false,
+        activate: true,
     },
     {
         date: '26.09.2026',
         city: 'Oldenburg',
         venue: 'umBAUbar',
-        description: '',
-        button: {
+        description: 'Support: tba',
+        /*button: {
             url: 'https://tix-ol.veloclubband.de',
             text: 'Tickets'
-        },
-        activate: false,
+        },*/
+        activate: true,
     },
 ];
 
