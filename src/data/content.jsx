@@ -213,3 +213,9 @@ export const IMAGES = {
     }
 };
 
+const releaseDate = new Date(2026, 6, 5, 0, 0);
+const today = new Date();
+
+// Flag to indicate the new ep is released
+export const IS_EP_RELEASE = today >= releaseDate;
+
