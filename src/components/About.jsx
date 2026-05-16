@@ -5,12 +5,12 @@ const About = () => {
     const imageData = IMAGES.aboutImage;
 
     return (
-        <section id="about" className="section">
-            <div className="container">
-                <h2 className="section-title">Die Band</h2>
-                <div className="about-grid">
-                    <div className="about-text">
-                        <p>
+        <section id="about" className="py-8 scroll-mt-20">
+            <div className="max-w-[1100px] mx-auto px-6">
+                <h2 className="text-5xl font-black uppercase text-[var(--accent-color)] mb-12 leading-[0.9] tracking-[-1px]">Die Band</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <p className="text-lg mb-6">
                             Zwischen Jazz-Gitarren, Post-Punk-Drums und einem Bass der beides connectet,
                             schaffen <strong>Véloclub</strong> sich ihren eigenen Sound.
                             Da alle vier aus verschiedenen Musikrichtungen kommen, ist es der Band wichtig genau das in
@@ -28,20 +28,20 @@ const About = () => {
                             Ihre Konzerte sind keine Reproduktionen, direkt, mal laut, mal leise, immer nah dran.
                         </p>*/}
                     </div>
-                    <div className="about-image-wrapper">
+                    <div className="w-full">
                         {imageData.image ? (
                             <img
                                 src={imageData.image}
                                 alt="Véloclub Portrait"
-                                className="about-image"
+                                className="w-full aspect-[4/5] object-cover"
                             />
                         ) : (
-                            <div className="placeholder about-img-placeholder">
+                            <div className="w-full bg-[var(--accent-color)] opacity-80 text-white font-bold flex items-center justify-center aspect-[4/5]">
                                 <span>PORTRAIT PLACEHOLDER</span>
                             </div>
                         )}
                         {imageData.credit && (
-                            <p className="image-credit">Foto: <a href={imageData.link}>{imageData.credit}</a></p>
+                            <p className="text-xs text-gray-500 mt-2 text-right">Foto: <a href={imageData.link} className="text-gray-500 hover:underline! hover:text-[var(--accent-color)] transition-all duration-300">{imageData.credit}</a></p>
                         )}
                     </div>
                 </div>

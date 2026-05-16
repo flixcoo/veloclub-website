@@ -13,3 +13,19 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+    --bg-color: #F9F9F9; /*#FAFAF5; /* Light Beige */
+    --text-color: #111111; /* Black */
+    --accent-color: #FF4D00; /* Signal Orange */
+    --gray-light: #e5e5e5;
+}
+
+/* Antique Olive Std - Compact Variant */
+@font-face {
+    font-family: 'Antique Olive Compact';
+    src: url('fonts/Antique-Olive-Std-Compact_3864.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

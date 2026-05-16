@@ -8,7 +8,6 @@ import LegalNotice from './pages/LegalNotice.jsx';
 import PrivacyPolicy from './pages/Datenschutz';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 
-import './styles/styles.css';
 
 const App = () => {
     return (
