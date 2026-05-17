@@ -13,14 +13,14 @@ const Contact = () => {
                             {contact.mail ? (
                                 <EmailObfuscator
                                     email={contact.mail}
-                                    className="inline-block py-4 px-8 border border-[var(--text-color)] uppercase font-black text-sm bg-transparent cursor-pointer w-full text-start hover:bg-[var(--text-color)] hover:text-[var(--bg-color)] transition-all duration-300"
+                                    className="inline-block py-4 px-8 border border-[var(--text-color)] uppercase font-black text-sm bg-transparent cursor-pointer w-full text-center md:text-start hover:bg-[var(--text-color)] hover:text-[var(--bg-color)] transition-all duration-300"
                                 >
                                     {contact.label}
                                 </EmailObfuscator>
                             ) : (
                                 <a
                                     href={contact.url}
-                                    className="inline-block py-4 px-8 border border-[var(--text-color)] uppercase font-black text-sm bg-transparent cursor-pointer w-full text-start hover:bg-[var(--text-color)] hover:text-[var(--bg-color)] transition-all duration-300"
+                                    className="inline-block py-4 px-8 border border-[var(--text-color)] uppercase font-black text-sm bg-transparent cursor-pointer w-full text-center md:text-start hover:bg-[var(--text-color)] hover:text-[var(--bg-color)] transition-all duration-300"
                                     target={contact.url.startsWith('http') ? '_blank' : '_self'}
                                     rel={contact.url.startsWith('http') ? 'noopener noreferrer' : undefined}
                                 >

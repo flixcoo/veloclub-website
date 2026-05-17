@@ -52,7 +52,7 @@ const Live = () => {
                                 <div className="flex justify-end md:justify-self-end">
                                     {gig.button && (
                                         <a href={gig.button.url} target="_blank" rel="noopener noreferrer"
-                                           className="inline-block w-full py-3 px-10 border border-[var(--text-color)] uppercase font-black text-xs bg-transparent cursor-pointer hover:bg-[var(--text-color)] hover:text-[var(--bg-color)] transition-all duration-300 whitespace-nowrap">{gig.button.text || 'Tickets'}
+                                           className="inline-block w-full py-3 px-10 border border-[var(--text-color)] text-center uppercase font-black text-xs bg-transparent cursor-pointer hover:bg-[var(--text-color)] hover:text-[var(--bg-color)] transition-all duration-300 whitespace-nowrap">{gig.button.text || 'Tickets'}
                                         </a>
                                     )}
                                 </div>
