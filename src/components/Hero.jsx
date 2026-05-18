@@ -2,10 +2,9 @@ import React from 'react';
 import {IMAGES, IS_EP_RELEASE} from '../data/content';
 
 const Hero = () => {
-    const imageData = IMAGES.heroImage;
+    const heroImg = IMAGES.heroImage;
+    const epImg = IMAGES.epImage;
 
-    const releaseLink = 'https://ffm.to/gefuehle-an-gefuehle-aus'
-    const creditLink = 'https://www.instagram.com/atelier.teufel/'
 
     return (
         <section className="min-h-[80vh] flex items-center justify-center text-center pt-[120px]">
@@ -19,7 +18,7 @@ const Hero = () => {
                         <div className="pt-[80px]">
                             <div className="flex flex-col items-center justify-center -mt-20 space-y-4">
                                 <div className="flex flex-col items-center">
-                                    <a href={releaseLink} target="_blank" rel="noopener noreferrer">
+                                    <a href={epImg.releaseUrl} target="_blank" rel="noopener noreferrer">
                                         <img src="/images/ep-cover.webp"
                                              className="w-200 shadow-xl shadow-black/20 hover:shadow-black/30 hover:scale-105 transition-all duration-500 ease-in-out"
                                              alt="Das Cover Artwork der EP Gefühle an, Gefühle aus">
@@ -27,15 +26,15 @@ const Hero = () => {
                                     </a>
                                     <div className="flex flex-col items-end w-full pt-2">
                                         <span className="text-xs text-gray-400">Artwork:&nbsp;
-                                            <a href={creditLink}>
-                                                <span className="hover:underline!">David Schleiermann</span>
+                                            <a href={epImg.url} className="hover:text-[var(--accent-color)] transition-colors">
+                                                <span className="hover:underline!">{epImg.credit}</span>
                                             </a>
                                         </span>
                                     </div>
                                 </div>
 
                                 <h2 className="text-center w-fit text-xl md:text-3xl font-bold text-[var(--text-color)]">Gefühle an, Gefühle aus</h2>
-                                <a href={releaseLink} target="_blank" rel="noopener noreferrer">
+                                <a href={epImg.releaseUrl} target="_blank" rel="noopener noreferrer">
                                     <span className="w-fit text-base md:text-lg text-[var(--text-color)] underline! hover:text-[var(--accent-color)] transition-colors">
                                         Hier anhören
                                     </span>
@@ -44,9 +43,9 @@ const Hero = () => {
                         </div>
                     ) :
                     <div className="w-full max-w-[900px] mx-auto overflow-hidden">
-                        {imageData.image ? (
+                        {heroImg.image ? (
                             <img
-                                src={imageData.image}
+                                src={heroImg.image}
                                 alt="Véloclub Band"
                                 className="w-full h-auto max-w-full block object-cover"
                             />
@@ -55,9 +54,9 @@ const Hero = () => {
                                 <span>BAND IMAGE PLACEHOLDER (1920x1080)</span>
                             </div>
                         )}
-                        {imageData.credit && (
+                        {heroImg.credit && (
                             <p className="text-xs text-gray-500 mt-2 text-right">
-                                Foto: <a href={imageData.url} className="text-gray-500 hover:underline! hover:text-[var(--accent-color)] transition-all duration-300">{imageData.credit}</a>
+                                Foto: <a href={heroImg.url} className="text-gray-500 hover:underline! hover:text-[var(--accent-color)] transition-all duration-300">{heroImg.credit}</a>
                             </p>
                         )}
                     </div>}

@@ -202,6 +202,12 @@ export const CONTACT_LINKS = [
  * `url`: URL to the photographer's website or profile
  */
 export const IMAGES = {
+    epImage: {
+        image: '/images/ep-cover.webp',
+        credit: 'David Schleiermann',
+        url: 'https://www.instagram.com/atelier.teufel2/',
+        releaseUrl: 'https://ffm.to/gefuehle-an-gefuehle-aus2'
+    },
     heroImage: {
         image: '/images/hero.webp',
         credit: 'Mathis Kirchner',
