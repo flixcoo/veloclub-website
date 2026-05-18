@@ -51,8 +51,8 @@ export const LIVE_DATES = [
         venue: 'Organic Beats Festival',
         description: '',
         button: {
-            url: 'https://organicbeats.org/',
-            text: 'Info'
+            //url: 'https://organicbeats.org/tickets',
+            text: 'Tickets'
         },
         activate: true,
     },
@@ -61,10 +61,11 @@ export const LIVE_DATES = [
         city: 'Oldenburg',
         venue: 'umBAUbar',
         description: 'Support: tba',
-        /*button: {
-            url: 'https://tix-ol.veloclubband.de',
+        button: {
+            //url: 'https://tix-ol.veloclubband.de',
+            url: 'https://rausgegangen.de/events/konzert-velo-club-0/',
             text: 'Tickets'
-        },*/
+        },
         activate: true,
     },
 ];
