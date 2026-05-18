@@ -63,7 +63,7 @@ export const LIVE_DATES = [
         description: 'Support: tba',
         button: {
             //url: 'https://tix-ol.veloclubband.de',
-            url: 'https://rausgegangen.de/events/konzert-velo-club-0/',
+            //url: 'https://rausgegangen.de/events/konzert-velo-club-0/',
             text: 'Tickets'
         },
         activate: true,
