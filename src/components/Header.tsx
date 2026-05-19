@@ -33,10 +33,10 @@ const Header = () => {
 
     return (
         <header className="fixed top-0 w-full py-6 bg-white z-[100]">
-            <div className="max-w-[1100px] mx-auto px-6 flex justify-between items-center">
+            <div className="max-w-[1100px] mx-auto px-6 flex justify-end md:justify-between items-center">
                 <Link
                     to="/"
-                    className="font-['Antique_Olive_Compact',sans-serif] font-normal text-4xl tracking-[2px] text-[var(--text-color)] z-[101]"
+                    className="hidden md:block font-['Antique_Olive_Compact',sans-serif] font-normal text-4xl tracking-[2px] text-[var(--text-color)] z-[101]"
                     onClick={() => setMobileMenuOpen(false)}
                 >
                     véloclub
@@ -50,14 +50,14 @@ const Header = () => {
                 </nav>
 
                 <button
-                    className={`md:hidden flex flex-col justify-around w-[30px] h-[25px] bg-transparent border-none cursor-pointer p-0 z-[101] ${mobileMenuOpen ? '[&>span:nth-child(1)]:rotate-45 [&>span:nth-child(1)]:translate-x-[5px] [&>span:nth-child(1)]:translate-y-[5px] [&>span:nth-child(2)]:opacity-0 [&>span:nth-child(3)]:-rotate-45 [&>span:nth-child(3)]:translate-x-[7px] [&>span:nth-child(3)]:-translate-y-[7px]' : ''}`}
+                    className="md:hidden relative w-[30px] h-[21px] bg-transparent border-none cursor-pointer p-0 z-[101]"
                     onClick={toggleMobileMenu}
                     aria-label="Toggle menu"
                     type="button"
                 >
-                    <span className="w-[30px] h-[3px] bg-[var(--text-color)] rounded-[3px] transition-all duration-300 origin-center"></span>
-                    <span className="w-[30px] h-[3px] bg-[var(--text-color)] rounded-[3px] transition-all duration-300 origin-center"></span>
-                    <span className="w-[30px] h-[3px] bg-[var(--text-color)] rounded-[3px] transition-all duration-300 origin-center"></span>
+                    <span className={`absolute left-0 w-[30px] h-[3px] bg-[var(--text-color)] rounded-[3px] origin-center transition-all duration-300 ${mobileMenuOpen ? 'top-[9px] rotate-45' : 'top-0'}`}/>
+                    <span className={`absolute left-0 top-[9px] w-[30px] h-[3px] bg-[var(--text-color)] rounded-[3px] origin-center transition-all duration-200 ${mobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}/>
+                    <span className={`absolute left-0 w-[30px] h-[3px] bg-[var(--text-color)] rounded-[3px] origin-center transition-all duration-300 ${mobileMenuOpen ? 'top-[9px] -rotate-45' : 'top-[18px]'}`}/>
                 </button>
 
                 <nav className={`md:hidden fixed top-0 left-0 w-full h-screen bg-[var(--bg-color)] flex flex-col justify-center items-center gap-8 transition-transform duration-300 ease-in-out z-[100] ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>

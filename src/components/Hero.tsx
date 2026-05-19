@@ -5,7 +5,7 @@ const Hero = () => {
     const epImg = IMAGES.epImage;
 
     return (
-        <section className="min-h-[80vh] flex items-center justify-center text-center pt-[120px]">
+        <section className="flex items-center justify-center text-center pt-[120px]">
             <div className="max-w-[1100px] mx-auto px-6">
                 <div className="mb-8">
                     <h1 className="font-['Antique_Olive_Compact',sans-serif] text-[clamp(3.5rem,12vw,9rem)] font-black leading-[0.85] tracking-[-0.04em] mb-4">véloclub</h1>
