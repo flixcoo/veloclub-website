@@ -12,7 +12,6 @@ const Music = () => {
                             src={MUSIC_LINKS.spotifyEmbed}
                             width="100%"
                             height="100%"
-                            frameBorder="0"
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                             loading="lazy"
                             title="Spotify"
@@ -21,7 +20,6 @@ const Music = () => {
                     <div className="md:h-auto outline-4 outline-[#FC3C44] rounded-lg overflow-hidden">
                         <iframe
                             allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
-                            frameBorder="0"
                             height="450"
                             className="w-full max-w-[660px] overflow-hidden bg-transparent"
                             sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
@@ -36,7 +34,6 @@ const Music = () => {
                             width="100%"
                             height="100%"
                             src={MUSIC_LINKS.youtubeEmbed}
-                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                             loading="lazy"
