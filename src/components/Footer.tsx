@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { FOOTER_LINKS } from '../data/content';
-import EmailObfuscator from '../utils/EmailObfuscator';
 
 const Footer = () => {
     return (
@@ -9,20 +8,6 @@ const Footer = () => {
                 <div className="flex justify-center gap-8 flex-wrap mb-8">
                     {FOOTER_LINKS.map((social, index) => {
                         const IconComponent = social.icon;
-
-                        if (social.mail) {
-                            return (
-                                <EmailObfuscator
-                                    key={index}
-                                    email={social.mail}
-                                    className="text-2xl font-black uppercase hover:text-[var(--accent-color)] hover:underline! transition-colors"
-                                    aria-label={social.name}
-                                    title={social.name}
-                                >
-                                    {IconComponent && <IconComponent />}
-                                </EmailObfuscator>
-                            );
-                        }
 
                         if (!social.url) {
                             return null;
@@ -33,7 +18,7 @@ const Footer = () => {
                                 key={index}
                                 href={social.url}
                                 className="text-2xl font-black uppercase hover:text-[var(--accent-color)] hover:underline! transition-colors"
-                                target={social.target}
+                                target={'_blank'}
                                 rel="noopener noreferrer"
                                 aria-label={social.name}
                                 title={social.name}

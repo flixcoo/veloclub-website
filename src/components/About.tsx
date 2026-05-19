@@ -34,7 +34,7 @@ const About = () => {
                             </div>
                         )}
                         {imageData.credit && (
-                            <p className="text-xs text-gray-500 mt-2 text-right">Foto: <a href={imageData.link ?? '#'} className="text-gray-500 hover:underline! hover:text-[var(--accent-color)] transition-all duration-300">{imageData.credit}</a></p>
+                            <p className="text-xs text-gray-500 mt-2 text-right">Foto: <a href={imageData.url ?? '#'} className="text-gray-500 hover:underline! hover:text-[var(--accent-color)] transition-all duration-300">{imageData.credit}</a></p>
                         )}
                     </div>
                 </div>

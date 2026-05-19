@@ -1,8 +1,8 @@
 import type {IconType} from "react-icons";
 
 export type GigButton = {
-    url?: string;
     text: string;
+    url?: string;
 };
 
 export type LiveDate = {
@@ -14,12 +14,10 @@ export type LiveDate = {
     activate: boolean;
 };
 
-export type FooterLink = {
+export type IconLink = {
     name: string;
     icon: IconType;
-    target?: '_blank' | '_self';
     url?: string;
-    mail?: string;
 };
 
 export type MusicLinks = {
@@ -28,7 +26,7 @@ export type MusicLinks = {
     youtubeEmbed: string;
 };
 
-export type ContactLink = {
+export type LabelLink = {
     label: string;
     mail?: string;
     url?: string;

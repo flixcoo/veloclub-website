@@ -1,4 +1,4 @@
-import {IMAGES, IS_EP_RELEASE} from '../data/content';
+import {IMAGES, IS_EP_RELEASE, releaseUrl} from '../data/content';
 
 const Hero = () => {
     const heroImg = IMAGES.heroImage;
@@ -15,7 +15,7 @@ const Hero = () => {
                     <div className="pt-[80px]">
                         <div className="flex flex-col items-center justify-center -mt-20 space-y-4">
                             <div className="flex flex-col items-center">
-                                <a href={epImg.releaseUrl ?? '#'} target="_blank" rel="noopener noreferrer">
+                                <a href={releaseUrl} target="_blank" rel="noopener noreferrer">
                                     <img
                                         src="/images/ep-cover.webp"
                                         className="w-200 shadow-xl shadow-black/20 hover:shadow-black/30 hover:scale-105 transition-all duration-500 ease-in-out"
@@ -32,7 +32,7 @@ const Hero = () => {
                             </div>
 
                             <h2 className="text-center w-fit text-xl md:text-3xl font-bold text-[var(--text-color)]">Gefühle an, Gefühle aus</h2>
-                            <a href={epImg.releaseUrl ?? '#'} target="_blank" rel="noopener noreferrer">
+                            <a href={releaseUrl} target="_blank" rel="noopener noreferrer">
                                 <span className="w-fit text-base md:text-lg text-[var(--text-color)] underline! hover:text-[var(--accent-color)] transition-colors">
                                     Hier anhören
                                 </span>

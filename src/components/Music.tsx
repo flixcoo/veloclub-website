@@ -56,7 +56,7 @@ const Music = () => {
                                 key={index}
                                 href={platform.url}
                                 className="text-4xl font-black uppercase hover:text-[var(--accent-color)] hover:underline! transition-colors"
-                                target={platform.target}
+                                target={'_blank'}
                                 rel="noopener noreferrer"
                                 aria-label={platform.name}
                                 title={platform.name}

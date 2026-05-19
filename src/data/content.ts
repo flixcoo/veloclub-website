@@ -1,6 +1,6 @@
 import { FaDeezer, FaFacebook, FaInstagram, FaSoundcloud, FaSpotify, FaTiktok, FaTree, FaYoutube } from 'react-icons/fa';
 import { SiAmazonmusic, SiApplemusic, SiTidal, SiYoutubemusic } from 'react-icons/si';
-import {ContactLink, FooterLink, LiveDate, MusicLinks, Images} from "./types";
+import {LabelLink, IconLink, LiveDate, MusicLinks, Images} from "./types";
 
 export const LIVE_DATES: LiveDate[] = [
     {
@@ -47,81 +47,69 @@ export const LIVE_DATES: LiveDate[] = [
     },
 ];
 
-export const FOOTER_LINKS: FooterLink[] = [
+export const FOOTER_LINKS: IconLink[] = [
     {
         name: 'Instagram',
         url: 'https://instagram.com/veloclubband',
         icon: FaInstagram,
-        target: '_blank',
     },
     {
         name: 'TikTok',
         url: 'https://tiktok.com/@veloclubband',
         icon: FaTiktok,
-        target: '_blank',
     },
     {
         name: 'YouTube',
         url: 'https://youtube.com/@veloclubband',
         icon: FaYoutube,
-        target: '_blank',
     },
     {
         name: 'Facebook',
         url: 'https://facebook.com/veloclubmusik',
         icon: FaFacebook,
-        target: '_blank',
     },
     {
         name: 'Linktree',
         url: 'https://linktree.veloclubband.de',
         icon: FaTree,
-        target: '_blank',
     },
 ];
 
-export const MUSIC_PLATFORMS: FooterLink[] = [
+export const MUSIC_PLATFORMS: IconLink[] = [
     {
         name: 'Spotify',
         url: 'https://open.spotify.com/artist/2ATI9IAeXPE31HKReWj40a',
         icon: FaSpotify,
-        target: '_blank',
     },
     {
         name: 'Apple Music',
         url: 'https://music.apple.com/de/artist/v%C3%A9loclub/1706116595',
         icon: SiApplemusic,
-        target: '_blank',
     },
     {
         name: 'Deezer',
         url: 'https://www.deezer.com/de/artist/229236025',
         icon: FaDeezer,
-        target: '_blank',
     },
     {
         name: 'Tidal',
         url: 'https://tidal.com/artist/41872824',
         icon: SiTidal,
-        target: '_blank',
     },
     {
         name: 'Amazon Music',
         url: 'https://music.amazon.de/artists/B0CH91199R/v%C3%A9loclub',
         icon: SiAmazonmusic,
-        target: '_blank',
     },
     {
         name: 'Youtube Music',
         url: 'https://music.youtube.com/channel/UCQEMKjV88u8Qrxu__8mpfeA',
         icon: SiYoutubemusic,
-        target: '_blank',
     },
     {
         name: 'Soundcloud',
         url: 'https://soundcloud.com/veloclubband',
         icon: FaSoundcloud,
-        target: '_blank',
     },
 ];
 
@@ -131,7 +119,7 @@ export const MUSIC_LINKS: MusicLinks = {
     youtubeEmbed: '',
 };
 
-export const CONTACT_LINKS: ContactLink[] = [
+export const CONTACT_LINKS: LabelLink[] = [
     {
         label: 'Booking',
         mail: 'booking@veloclubband.de',
