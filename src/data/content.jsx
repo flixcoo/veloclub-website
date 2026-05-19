@@ -27,7 +27,7 @@ export const LIVE_DATES = [
         date: '05.06.2026',
         city: 'Leipzig',
         venue: 'Stadtfest Leipzig',
-        description: '19.45 Uhr',
+        description: '18.45 Uhr, Marktplatzbühne',
         button: {
             url: 'https://leipzigerstadtfest.de/',
             text: 'Info'
