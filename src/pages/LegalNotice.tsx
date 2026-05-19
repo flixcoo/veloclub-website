@@ -1,4 +1,3 @@
-import React from 'react';
 import {Link} from 'react-router-dom';
 
 const LegalNotice = () => {
@@ -13,8 +12,8 @@ const LegalNotice = () => {
                     <h2 className="text-2xl font-bold mb-4 text-[var(--text-color)]">Angaben gemäß § 5 TMG</h2>
                     <h4 className="text-xl font-semibold my-6 text-[var(--text-color)]">Véloclub GbR</h4>
                     <p className="text-base leading-relaxed mb-4 text-gray-800">
-                        Mechlerstraße 4<br/>
-                        04105 Leipzig<br/>
+                        Mechlerstraße 4<br />
+                        04105 Leipzig<br />
                         Deutschland
                     </p>
 
@@ -23,7 +22,7 @@ const LegalNotice = () => {
 
                     <h4 className="text-xl font-semibold my-6 text-[var(--text-color)]">Vertreten durch die Gesellschafter</h4>
                     <p className="text-base leading-relaxed mb-4 text-gray-800">
-                        Leo Indefrey, Nils-Henning Haase, Felix Kirchner und Jonas Rautenberg<br/>
+                        Leo Indefrey, Nils-Henning Haase, Felix Kirchner und Jonas Rautenberg<br />
                         Steuernummer: 231 / 155 / 14202
                     </p>
                 </section>
@@ -70,4 +69,3 @@ const LegalNotice = () => {
 };
 
 export default LegalNotice;
-

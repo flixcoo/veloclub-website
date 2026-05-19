@@ -1,24 +1,24 @@
-import React from 'react';
-import {LIVE_DATES, FOOTER_LINKS} from '../data/content';
+import { FOOTER_LINKS, LIVE_DATES } from '../data/content';
+import type { LiveDate } from '../data/types';
 
 const Live = () => {
-    // Helper function to parse date strings in "DD.MM.YYYY" format
-    const parseDate = (dateStr) => {
+    const parseDate = (dateStr: string): Date => {
         const [day, month, year] = dateStr.split('.').map(Number);
         return new Date(year, month - 1, day);
     };
 
-    // Upcoming gigs sorted in ascending order
     const upcomingGigs = LIVE_DATES
-        .filter(gig => {
+        .filter((gig: LiveDate) => {
             const gigDate = parseDate(gig.date);
             const today = new Date();
             today.setHours(0, 0, 0, 0);
             return gig.activate && gigDate >= today;
         })
         .sort((a, b) => {
-            return parseDate(a.date) - parseDate(b.date);
+            return parseDate(a.date).getTime() - parseDate(b.date).getTime();
         });
+
+    const instagramUrl = FOOTER_LINKS.find((link) => link.url?.includes('instagram'))?.url ?? '#';
 
     return (
         <section id="live" className="py-8 scroll-mt-20">
@@ -28,27 +28,17 @@ const Live = () => {
                     {upcomingGigs.length > 0 ? (
                         upcomingGigs.map((gig) => (
                             <div key={`${gig.date}-${gig.venue}`} className="grid grid-cols-1 md:grid-cols-[100px_200px_1.5fr_auto] gap-4 py-6 px-4 border-b border-[var(--gray-light)] items-baseline hover:bg-gray-100 transition-colors">
-                                {/* date */}
                                 <div className="font-black text-[var(--accent-color)]">{gig.date}</div>
 
                                 <div className="flex flex-col">
-                                    {/* city */}
-                                    {gig.city.trim() !== '' &&
-                                        <div className="font-semibold uppercase text-xl">{gig.city}</div>
-                                    }
-
-                                    {/* venue */}
-                                    {gig.venue.trim() !== '' &&
-                                        <span className="block text-sm font-normal text-gray-600 mt-1">{gig.venue}</span>
-                                    }
+                                    {gig.city.trim() !== '' && <div className="font-semibold uppercase text-xl">{gig.city}</div>}
+                                    {gig.venue.trim() !== '' && <span className="block text-sm font-normal text-gray-600 mt-1">{gig.venue}</span>}
                                 </div>
 
-                                {/* description */}
                                 <div className="text-sm font-semibold self-start md:self-center text-gray-500 mt-2 md:mt-0">
                                     {gig.description}
                                 </div>
 
-                                {/* action button */}
                                 <div className="flex justify-end md:justify-self-end">
                                     {gig.button && (
                                         gig.button.url?.trim() ? (
@@ -77,7 +67,7 @@ const Live = () => {
                     ) : (
                         <p className="py-6">
                             Zurzeit gibt es keine Live-Termine. Für aktuelle Infos schau gerne auf unserer&nbsp;
-                            <a href={FOOTER_LINKS.find((link) => link.url.includes('instagram')).url} className="underline! hover:text-[var(--accent-color)] transition-colors">Instagramseite</a> vorbei
+                            <a href={instagramUrl} className="underline! hover:text-[var(--accent-color)] transition-colors">Instagramseite</a> vorbei
                             :)
                         </p>
                     )}
@@ -88,4 +78,3 @@ const Live = () => {
 };
 
 export default Live;
-

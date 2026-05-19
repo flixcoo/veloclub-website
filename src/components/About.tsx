@@ -1,4 +1,3 @@
-import React from 'react';
 import {IMAGES} from '../data/content';
 
 const About = () => {
@@ -21,12 +20,6 @@ const About = () => {
                             in Clubs, leise in Cafés, gefühlvoll auf Festivals. Immer drauf bedacht, ihre Musik nochmals
                             weiter zu entwickeln und sich im eigenen Wandel treu zu bleiben.
                         </p>
-                        {/* <p>
-                            Wer Véloclub wirklich sind, zeigt sich live. Alle vier spielen seit der Schulzeit zusammen
-                            und haben über die Jahre ihren eigenen Umgang miteinander und mit Musik gefunden. Auf der
-                            Bühne bleibt Raum für Veränderungen, ohne dass der Zusammenhalt verloren geht.
-                            Ihre Konzerte sind keine Reproduktionen, direkt, mal laut, mal leise, immer nah dran.
-                        </p>*/}
                     </div>
                     <div className="w-full">
                         {imageData.image ? (
@@ -41,7 +34,7 @@ const About = () => {
                             </div>
                         )}
                         {imageData.credit && (
-                            <p className="text-xs text-gray-500 mt-2 text-right">Foto: <a href={imageData.link} className="text-gray-500 hover:underline! hover:text-[var(--accent-color)] transition-all duration-300">{imageData.credit}</a></p>
+                            <p className="text-xs text-gray-500 mt-2 text-right">Foto: <a href={imageData.link ?? '#'} className="text-gray-500 hover:underline! hover:text-[var(--accent-color)] transition-all duration-300">{imageData.credit}</a></p>
                         )}
                     </div>
                 </div>
@@ -51,4 +44,3 @@ const About = () => {
 };
 
 export default About;
-

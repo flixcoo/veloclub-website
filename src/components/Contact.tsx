@@ -1,6 +1,5 @@
-import React from 'react';
-import {CONTACT_LINKS} from '../data/content';
-import EmailObfuscator from '../utils/EmailObfuscator.jsx';
+import { CONTACT_LINKS } from '../data/content';
+import EmailObfuscator from '../utils/EmailObfuscator';
 
 const Contact = () => {
     return (
@@ -17,7 +16,7 @@ const Contact = () => {
                                 >
                                     {contact.label}
                                 </EmailObfuscator>
-                            ) : (
+                            ) : contact.url ? (
                                 <a
                                     href={contact.url}
                                     className="inline-block py-4 px-8 border border-[var(--text-color)] uppercase font-black text-sm bg-transparent cursor-pointer w-full text-center md:text-start hover:bg-[var(--text-color)] hover:text-[var(--bg-color)] transition-all duration-300"
@@ -26,10 +25,8 @@ const Contact = () => {
                                 >
                                     {contact.label}
                                 </a>
-                            )}
-                            {contact.description && (
-                                <p className="hidden">{contact.description}</p>
-                            )}
+                            ) : null}
+                            {contact.description && <p className="hidden">{contact.description}</p>}
                         </div>
                     ))}
                 </div>
@@ -39,4 +36,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

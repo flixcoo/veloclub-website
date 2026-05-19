@@ -1,7 +1,6 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import {FOOTER_LINKS} from '../data/content';
-import EmailObfuscator from '../utils/EmailObfuscator.jsx';
+import { Link } from 'react-router-dom';
+import { FOOTER_LINKS } from '../data/content';
+import EmailObfuscator from '../utils/EmailObfuscator';
 
 const Footer = () => {
     return (
@@ -20,30 +19,34 @@ const Footer = () => {
                                     aria-label={social.name}
                                     title={social.name}
                                 >
-                                    {IconComponent && <IconComponent/>}
+                                    {IconComponent && <IconComponent />}
                                 </EmailObfuscator>
                             );
-                        } else {
-                            return (
-                                <a
-                                    key={index}
-                                    href={social.url}
-                                    className="text-2xl font-black uppercase hover:text-[var(--accent-color)] hover:underline! transition-colors"
-                                    target={social.target}
-                                    rel="noopener noreferrer"
-                                    aria-label={social.name}
-                                    title={social.name}
-                                >
-                                    {IconComponent && <IconComponent/>}
-                                </a>
-                            );
                         }
+
+                        if (!social.url) {
+                            return null;
+                        }
+
+                        return (
+                            <a
+                                key={index}
+                                href={social.url}
+                                className="text-2xl font-black uppercase hover:text-[var(--accent-color)] hover:underline! transition-colors"
+                                target={social.target}
+                                rel="noopener noreferrer"
+                                aria-label={social.name}
+                                title={social.name}
+                            >
+                                {IconComponent && <IconComponent />}
+                            </a>
+                        );
                     })}
                 </div>
                 <div className="text-xs text-gray-500">
                     <p>
                         &copy; 2023 - {new Date().getFullYear()} Véloclub
-                        <br/>
+                        <br />
                         <Link to="/impressum" className="text-[var(--text-color)] hover:text-[var(--accent-color)] underline transition-colors">Impressum</Link>
                         &nbsp;&nbsp;&nbsp;
                         <Link to="/datenschutz" className="text-[var(--text-color)] underline! hover:text-[var(--accent-color)] transition-colors">Datenschutz</Link>
@@ -59,4 +62,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

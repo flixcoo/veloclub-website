@@ -1,8 +1,6 @@
-import React from 'react';
 import {MUSIC_LINKS, MUSIC_PLATFORMS} from '../data/content';
 
 const Music = () => {
-
     return (
         <section id="music" className="py-8 scroll-mt-20">
             <div className="max-w-[1100px] mx-auto px-6">
@@ -32,7 +30,7 @@ const Music = () => {
                         />
                     </div>
                 </div>
-                {MUSIC_LINKS.youtubeEmbed && MUSIC_LINKS.youtubeEmbed.trim() > '' ? (
+                {MUSIC_LINKS.youtubeEmbed && MUSIC_LINKS.youtubeEmbed.trim() !== '' ? (
                     <div className="mt-8 md:mt-8 mx-auto w-full max-w-[800px] aspect-video">
                         <iframe
                             width="100%"
@@ -45,10 +43,14 @@ const Music = () => {
                             title="YouTube"
                             className="rounded-[20px]"
                         ></iframe>
-                    </div>) : null}
+                    </div>
+                ) : null}
                 <div className="flex justify-center gap-x-24 gap-y-12 flex-wrap mt-12">
                     {MUSIC_PLATFORMS.map((platform, index) => {
                         const IconComponent = platform.icon;
+                        if (!platform.url) {
+                            return null;
+                        }
                         return (
                             <a
                                 key={index}
@@ -59,7 +61,7 @@ const Music = () => {
                                 aria-label={platform.name}
                                 title={platform.name}
                             >
-                                {IconComponent && <IconComponent/>}
+                                {IconComponent && <IconComponent />}
                             </a>
                         );
                     })}
@@ -70,4 +72,3 @@ const Music = () => {
 };
 
 export default Music;
-
