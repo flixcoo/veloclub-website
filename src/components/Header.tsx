@@ -32,7 +32,7 @@ const Header = () => {
     };
 
     return (
-        <header className="fixed top-0 w-full py-6 bg-white z-[100]">
+        <header className="sticky top-0 left-0 w-full py-6 bg-gray-50/90 backdrop-blur-sm z-[100]">
             <div className="max-w-[1100px] mx-auto px-6 flex justify-end md:justify-between items-center">
                 <Link
                     to="/"
