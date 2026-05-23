@@ -27,7 +27,7 @@ const Live = () => {
                 <div className="border-t-2 border-[var(--text-color)]">
                     {upcomingGigs.length > 0 ? (
                         upcomingGigs.map((gig) => (
-                            <div key={`${gig.date}-${gig.venue}`} className="grid grid-cols-1 md:grid-cols-[100px_200px_1.5fr_auto] gap-4 py-6 px-4 border-b border-[var(--gray-light)] items-baseline hover:bg-gray-100 transition-colors">
+                            <div key={`${gig.date}-${gig.venue}`} className="grid grid-cols-1 md:grid-cols-[100px_200px_1.5fr_auto] gap-4 py-6 px-4 border-b border-gray-200 items-baseline hover:bg-gray-100 transition-colors">
                                 <div className="font-black text-[var(--accent-color)]">{gig.date}</div>
 
                                 <div className="flex flex-col">

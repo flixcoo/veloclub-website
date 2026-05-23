@@ -16,9 +16,9 @@ code {
 }
 
 :root {
-    --text-color: #111111; /* Black */
-    --accent-color: #FF4D00; /* Signal Orange */
-    --gray-light: #e5e5e5;
+    --bg-color:  var(--color-gray-50);
+    --text-color: var(--color-black);
+    --accent-color:var(--color-orange-600);
 }
 
 /* Antique Olive Std - Compact Variant */
