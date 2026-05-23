@@ -11,7 +11,7 @@ const App = () => {
     return (
         <Router>
             <ScrollToTop />
-            <div className="App">
+            <div className="App bg-gray-50">
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />

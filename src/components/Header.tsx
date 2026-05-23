@@ -34,6 +34,7 @@ const Header = () => {
     return (
         <header className="sticky top-0 left-0 w-full py-6 bg-gray-50/90 backdrop-blur-sm z-[100]">
             <div className="max-w-[1100px] mx-auto px-6 flex justify-end md:justify-between items-center">
+                {/*Bandname*/}
                 <Link
                     to="/"
                     className="hidden md:block font-['Antique_Olive_Compact',sans-serif] font-normal text-4xl tracking-[2px] text-[var(--text-color)] z-[101]"
@@ -42,6 +43,7 @@ const Header = () => {
                     véloclub
                 </Link>
 
+                {/*desktop header links*/}
                 <nav className="hidden md:flex">
                     <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="ml-8 text-md font-semibold uppercase hover:text-[var(--accent-color)] transition-colors">Band</a>
                     <a href="#live" onClick={(e) => handleNavClick(e, '#live')} className="ml-8 text-md font-semibold uppercase hover:text-[var(--accent-color)] transition-colors">Live</a>
@@ -49,6 +51,7 @@ const Header = () => {
                     <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="ml-8 text-md font-semibold uppercase hover:text-[var(--accent-color)] transition-colors">Kontakt</a>
                 </nav>
 
+                {/*mobile menu icon*/}
                 <button
                     className="md:hidden relative w-[30px] h-[21px] bg-transparent border-none cursor-pointer p-0 z-[101]"
                     onClick={toggleMobileMenu}
@@ -60,7 +63,8 @@ const Header = () => {
                     <span className={`absolute left-0 w-[30px] h-[3px] bg-[var(--text-color)] rounded-[3px] origin-center transition-all duration-300 ${mobileMenuOpen ? 'top-[9px] -rotate-45' : 'top-[18px]'}`}/>
                 </button>
 
-                <nav className={`md:hidden fixed top-0 left-0 w-full h-screen bg-[var(--bg-color)] flex flex-col justify-center items-center gap-8 transition-transform duration-300 ease-in-out z-[100] ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                {/*mobile menu*/}
+                <nav className={`md:hidden fixed  top-0 left-0 w-full h-screen bg-gray-50 flex flex-col justify-center items-center gap-8 transition-transform duration-300 ease-in-out z-[100] ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                     <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="text-2xl font-semibold uppercase text-[var(--text-color)] hover:text-[var(--accent-color)] transition-colors">Band</a>
                     <a href="#live" onClick={(e) => handleNavClick(e, '#live')} className="text-2xl font-semibold uppercase text-[var(--text-color)] hover:text-[var(--accent-color)] transition-colors">Live</a>
                     <a href="#music" onClick={(e) => handleNavClick(e, '#music')} className="text-2xl font-semibold uppercase text-[var(--text-color)] hover:text-[var(--accent-color)] transition-colors">Musik</a>
