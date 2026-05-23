@@ -26,7 +26,7 @@ const About = () => {
                             <img
                                 src={imageData.image}
                                 alt="Véloclub Portrait"
-                                className="w-full aspect-[4/5] object-cover"
+                                className="w-full aspect-[4/5] object-cover pointer-events-none"
                             />
                         ) : (
                             <div className="w-full bg-[var(--accent-color)] opacity-80 text-white font-bold flex items-center justify-center aspect-[4/5]">
