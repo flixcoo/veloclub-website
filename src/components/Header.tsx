@@ -7,6 +7,11 @@ const Header = () => {
     const navigate = useNavigate();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+    // Vite flags this as true only in dev; hostname gate keeps it local-only.
+    const isLocalDev =
+        import.meta.env.DEV &&
+        (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
     const handleNavClick = (e: MouseEvent<HTMLAnchorElement>, anchor: string): void => {
         e.preventDefault();
         setMobileMenuOpen(false);
@@ -35,13 +40,22 @@ const Header = () => {
         <header className="sticky top-0 left-0 w-full py-6 bg-gray-50/90 backdrop-blur-sm z-100">
             <div className="max-w-275 mx-auto px-6 flex justify-end md:justify-between items-center">
                 {/*Bandname*/}
-                <Link
-                    to="/"
-                    className="hidden md:block font-['Antique_Olive_Compact',sans-serif] font-normal text-4xl tracking-[2px] text-(--text-color) z-101"
-                    onClick={() => setMobileMenuOpen(false)}
-                >
-                    véloclub
-                </Link>
+                <div className="hidden md:flex items-center gap-3 z-101">
+                    <Link
+                        to="/"
+                        className="font-['Antique_Olive_Compact',sans-serif] font-normal text-4xl tracking-[2px] text-(--text-color)"
+                        onClick={() => setMobileMenuOpen(false)}
+                    >
+                        véloclub
+                    </Link>
+
+                    {/*Local flag*/}
+                    {isLocalDev && (
+                        <span className="text-2xl font-semibold underline align-start text-(--accent-color)">
+                            local
+                        </span>
+                    )}
+                </div>
 
                 {/*desktop header links*/}
                 <nav className="hidden md:flex">
