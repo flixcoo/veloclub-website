@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Datenschutz = () => {
+const Privacy = () => {
     return (
         <div className="min-h-[70vh] md:py-15">
             <div className="max-w-275 mx-auto px-6">
@@ -122,4 +122,4 @@ const Datenschutz = () => {
     );
 };
 
-export default Datenschutz;
+export default Privacy;
