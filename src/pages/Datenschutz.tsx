@@ -2,9 +2,12 @@ import { Link } from 'react-router-dom';
 
 const Datenschutz = () => {
     return (
-        <div className="min-h-[80vh] py-12 px-0 md:py-32">
+        <div className="min-h-[70vh] md:py-15">
             <div className="max-w-275 mx-auto px-6">
-                <Link to="/" className="inline-block mb-8 mt-20 md:mt-0 text-sm md:text-md text-base font-semibold text-(--text-color) hover:text-[var(--accent-color)] transition-colors">← Zurück zur Startseite</Link>
+                {/*Back to homepage button*/}
+                <Link to="/" className="flex items-center mb-8 md:mt-0 text-sm md:text-md font-semibold text-(--text-color) hover:text-(--accent-color) transition-colors">
+                    <span className={'text-lg md:text-sm'}>← Zurück</span>&nbsp;<span className={'hidden md:block'}>zur Startseite</span>
+                </Link>
 
                 <h1 className="text-2xl md:text-6xl font-black uppercase text-(--accent-color) mb-12 leading-[0.9] tracking-[-1px]">Datenschutzerklärung</h1>
 
