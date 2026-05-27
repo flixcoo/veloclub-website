@@ -22,13 +22,13 @@ const Live = () => {
 
     return (
         <section id="live" className="py-8 scroll-mt-20">
-            <div className="max-w-[1100px] mx-auto px-6">
-                <h2 className="text-5xl font-black uppercase text-[var(--accent-color)] mb-12 leading-[0.9] tracking-[-1px]">Live</h2>
-                <div className="border-t-2 border-[var(--text-color)]">
+            <div className="max-w-275 mx-auto px-6">
+                <h2 className="text-5xl font-black uppercase text-(--accent-color) mb-12 leading-[0.9] tracking-[-1px]">Live</h2>
+                <div className="border-t-2 border-(--text-color)">
                     {upcomingGigs.length > 0 ? (
                         upcomingGigs.map((gig) => (
                             <div key={`${gig.date}-${gig.venue}`} className="grid grid-cols-1 md:grid-cols-[100px_200px_1.5fr_auto] gap-4 py-6 px-4 border-b border-gray-200 items-baseline hover:bg-gray-100 transition-colors">
-                                <div className="font-black text-[var(--accent-color)]">{gig.date}</div>
+                                <div className="font-black text-(--accent-color)">{gig.date}</div>
 
                                 <div className="flex flex-col">
                                     {gig.city.trim() !== '' && <div className="font-semibold uppercase text-xl">{gig.city}</div>}
@@ -46,7 +46,7 @@ const Live = () => {
                                                 href={gig.button.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-block min-w-40 w-full py-3 px-10 border border-[var(--text-color)] text-center uppercase font-black text-xs bg-transparent cursor-pointer hover:bg-[var(--text-color)] hover:text-[var(--bg-color)] transition-all duration-300 whitespace-nowrap"
+                                                className="inline-block min-w-40 w-full py-3 px-10 border border-(--text-color) text-center uppercase font-black text-xs bg-transparent cursor-pointer hover:bg-(--text-color) hover:text-(--bg-color) transition-all duration-300 whitespace-nowrap"
                                             >
                                                 {gig.button.text || 'Tickets'}
                                             </a>
@@ -67,7 +67,7 @@ const Live = () => {
                     ) : (
                         <p className="py-6">
                             Zurzeit gibt es keine Live-Termine. Für aktuelle Infos schau gerne auf unserer&nbsp;
-                            <a href={instagramUrl} className="underline! hover:text-[var(--accent-color)] transition-colors">Instagramseite</a> vorbei
+                            <a href={instagramUrl} className="underline! hover:text-(--accent-color) transition-colors">Instagramseite</a> vorbei
                             :)
                         </p>
                     )}

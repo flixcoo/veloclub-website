@@ -5,8 +5,8 @@ const About = () => {
 
     return (
         <section id="about" className="py-8 scroll-mt-20">
-            <div className="max-w-[1100px] mx-auto px-6">
-                <h2 className="text-5xl font-black uppercase text-[var(--accent-color)] mb-12 leading-[0.9] tracking-[-1px]">Die Band</h2>
+            <div className="max-w-275 mx-auto px-6">
+                <h2 className="text-5xl font-black uppercase text-(--accent-color) mb-12 leading-[0.9] tracking-[-1px]">Die Band</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <div>
                         <p className="text-lg mb-6">
@@ -26,15 +26,15 @@ const About = () => {
                             <img
                                 src={imageData.image}
                                 alt="Véloclub Portrait"
-                                className="w-full aspect-[4/5] object-cover pointer-events-none"
+                                className="w-full aspect-4/5 object-cover pointer-events-none"
                             />
                         ) : (
-                            <div className="w-full bg-[var(--accent-color)] opacity-80 text-white font-bold flex items-center justify-center aspect-[4/5]">
+                            <div className="w-full bg-(--accent-color) opacity-80 text-white font-bold flex items-center justify-center aspect-4/5">
                                 <span>PORTRAIT PLACEHOLDER</span>
                             </div>
                         )}
                         {imageData.credit && (
-                            <p className="text-xs text-gray-500 mt-2 text-right">Foto: <a href={imageData.url ?? '#'} className="text-gray-500 hover:underline! hover:text-[var(--accent-color)] transition-all duration-300">{imageData.credit}</a></p>
+                            <p className="text-xs text-gray-500 mt-2 text-right">Foto: <a href={imageData.url ?? '#'} className="text-gray-500 hover:underline! hover:text-(--accent-color) transition-all duration-300">{imageData.credit}</a></p>
                         )}
                     </div>
                 </div>
