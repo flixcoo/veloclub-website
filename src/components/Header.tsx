@@ -45,10 +45,10 @@ const Header = () => {
 
                 {/*desktop header links*/}
                 <nav className="hidden md:flex">
-                    <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="ml-8 text-md font-semibold uppercase hover:text-(--accent-color) transition-colors">Band</a>
-                    <a href="#live" onClick={(e) => handleNavClick(e, '#live')} className="ml-8 text-md font-semibold uppercase hover:text-(--accent-color) transition-colors">Live</a>
-                    <a href="#music" onClick={(e) => handleNavClick(e, '#music')} className="ml-8 text-md font-semibold uppercase hover:text-(--accent-color) transition-colors">Musik</a>
-                    <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="ml-8 text-md font-semibold uppercase hover:text-(--accent-color) transition-colors">Kontakt</a>
+                    <a href={"#about"} onClick={(e) => handleNavClick(e, '#about')} className="ml-8 text-md font-semibold uppercase hover:text-(--accent-color) transition-colors">Band</a>
+                    <a href={"#live"} onClick={(e) => handleNavClick(e, '#live')} className="ml-8 text-md font-semibold uppercase hover:text-(--accent-color) transition-colors">Live</a>
+                    <a href={"#music"} onClick={(e) => handleNavClick(e, '#music')} className="ml-8 text-md font-semibold uppercase hover:text-(--accent-color) transition-colors">Musik</a>
+                    <a href={"#contact"} onClick={(e) => handleNavClick(e, '#contact')} className="ml-8 text-md font-semibold uppercase hover:text-(--accent-color) transition-colors">Kontakt</a>
                 </nav>
 
                 {/*mobile menu icon*/}
@@ -65,10 +65,10 @@ const Header = () => {
 
                 {/*mobile menu*/}
                 <nav className={`md:hidden fixed  top-0 left-0 w-full h-screen bg-gray-50 flex flex-col justify-center items-center gap-8 transition-transform duration-300 ease-in-out z-100 ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                    <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="text-2xl font-semibold uppercase text-(--text-color) hover:text-(--accent-color) transition-colors">Band</a>
-                    <a href="#live" onClick={(e) => handleNavClick(e, '#live')} className="text-2xl font-semibold uppercase text-(--text-color) hover:text-(--accent-color) transition-colors">Live</a>
-                    <a href="#music" onClick={(e) => handleNavClick(e, '#music')} className="text-2xl font-semibold uppercase text-(--text-color) hover:text-(--accent-color) transition-colors">Musik</a>
-                    <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="text-2xl font-semibold uppercase text-(--text-color) hover:text-(--accent-color) transition-colors">Kontakt</a>
+                    <a href={"#about"} onClick={(e) => handleNavClick(e, '#about')} className="text-2xl font-semibold uppercase text-(--text-color) hover:text-(--accent-color) transition-colors">Band</a>
+                    <a href={"#live"} onClick={(e) => handleNavClick(e, '#live')} className="text-2xl font-semibold uppercase text-(--text-color) hover:text-(--accent-color) transition-colors">Live</a>
+                    <a href={"#music"} onClick={(e) => handleNavClick(e, '#music')} className="text-2xl font-semibold uppercase text-(--text-color) hover:text-(--accent-color) transition-colors">Musik</a>
+                    <a href={"#contact"} onClick={(e) => handleNavClick(e, '#contact')} className="text-2xl font-semibold uppercase text-(--text-color) hover:text-(--accent-color) transition-colors">Kontakt</a>
                 </nav>
             </div>
         </header>
