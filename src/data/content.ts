@@ -42,6 +42,7 @@ export const LIVE_DATES: LiveDate[] = [
         description: 'Support: tba',
         button: {
             text: 'Tickets',
+            url: 'https://rausgegangen.de/events/konzert-velo-club-0/'
         },
         activate: true,
     },
