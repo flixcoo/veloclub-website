@@ -35,7 +35,7 @@ const Hero = () => {
                                 </div>
                             </div>
 
-                            <h2 className="text-center w-fit text-xl md:text-3xl font-bold text-(--text-color)">Gefühle an, Gefühle aus</h2>
+                            <h2 className="text-center w-fit text-xl md:text-3xl font-bold text-(--text-color)">gefühle an, gefühle aus</h2>
 
                             {/* Release Link */}
                             <a href={releaseUrl} target="_blank" rel="noopener noreferrer">
@@ -46,7 +46,7 @@ const Hero = () => {
                         </div>
                     </div>
                 ) : (
-                    /*Hero Image */
+                    /* Hero Image */
                     <div className="w-full max-w-225 mx-auto overflow-hidden">
                         {heroImg.image ? (
                             <img
