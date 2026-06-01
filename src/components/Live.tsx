@@ -46,7 +46,7 @@ const Live = () => {
                                                 href={gig.button.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-block min-w-40 w-full py-3 px-10 border border-(--text-color) text-center uppercase font-black text-xs bg-transparent cursor-pointer hover:bg-(--text-color) hover:text-(--bg-color) transition-all duration-300 whitespace-nowrap"
+                                                className="inline-block min-w-40 w-full py-3 px-10 border border-(--text-color) text-center uppercase font-black text-xs bg-white cursor-pointer hover:bg-(--text-color) hover:text-(--bg-color) transition-all duration-300 whitespace-nowrap"
                                             >
                                                 {gig.button.text || 'Tickets'}
                                             </a>
