@@ -20,12 +20,6 @@ export type IconLink = {
     url?: string;
 };
 
-export type MusicLinks = {
-    spotifyEmbed: string;
-    appleMusicEmbed: string;
-    youtubeEmbed: string;
-};
-
 export type LabelLink = {
     label: string;
     mail?: string;

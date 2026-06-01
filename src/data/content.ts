@@ -1,6 +1,6 @@
 import { FaDeezer, FaFacebook, FaInstagram, FaSoundcloud, FaSpotify, FaTiktok, FaTree, FaYoutube } from 'react-icons/fa';
 import { SiAmazonmusic, SiApplemusic, SiTidal, SiYoutubemusic } from 'react-icons/si';
-import {LabelLink, IconLink, LiveDate, MusicLinks, Images} from "./types";
+import {LabelLink, IconLink, LiveDate, Images} from "./types";
 
 export const LIVE_DATES: LiveDate[] = [
     {
@@ -114,11 +114,9 @@ export const MUSIC_PLATFORMS: IconLink[] = [
     },
 ];
 
-export const MUSIC_LINKS: MusicLinks = {
-    spotifyEmbed: 'https://open.spotify.com/embed/artist/2ATI9IAeXPE31HKReWj40a?theme=0',
-    appleMusicEmbed: 'https://embed.music.apple.com/de/album/der-unwissende-single/1877074594',
-    youtubeEmbed: '',
-};
+export const SPOTIFY_EMBED_URL: string = 'https://open.spotify.com/embed/artist/2ATI9IAeXPE31HKReWj40a?theme=0';
+export const APPLE_MUSIC_EMBED_URL: string = 'https://embed.music.apple.com/de/album/der-unwissende-single/1877074594';
+export const YOUTUBE_EMBED_URL: string = ''
 
 export const CONTACT_LINKS: LabelLink[] = [
     {
