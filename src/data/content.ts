@@ -7,9 +7,9 @@ export const LIVE_DATES: LiveDate[] = [
         date: '05.06.2026',
         city: 'Leipzig',
         venue: 'Stadtfest Leipzig',
-        description: '18.45 Uhr, Marktplatzbühne',
+        description: '19.00 Uhr, Marktplatzbühne',
         button: {
-            url: 'https://leipzigerstadtfest.de/',
+            url: 'https://leipzigerstadtfest.de/events/warm-up-351-940/',
             text: 'Info',
         },
         activate: true,
@@ -116,7 +116,7 @@ export const MUSIC_PLATFORMS: IconLink[] = [
 
 export const SPOTIFY_EMBED_URL: string = 'https://open.spotify.com/embed/artist/2ATI9IAeXPE31HKReWj40a?theme=0';
 export const APPLE_MUSIC_EMBED_URL: string = 'https://embed.music.apple.com/de/album/der-unwissende-single/1877074594';
-export const YOUTUBE_EMBED_URL: string = ''
+export const YOUTUBE_EMBED_URL: string = '';//'https://youtu.be/mW8woxPvl-I?si=ClO5HnWELS3C8Xoi';
 
 export const CONTACT_LINKS: LabelLink[] = [
     {
