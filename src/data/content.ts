@@ -115,7 +115,7 @@ export const MUSIC_PLATFORMS: IconLink[] = [
 ];
 
 export const SPOTIFY_EMBED_URL: string = 'https://open.spotify.com/embed/artist/2ATI9IAeXPE31HKReWj40a?theme=0';
-export const APPLE_MUSIC_EMBED_URL: string = 'https://embed.music.apple.com/de/album/der-unwissende-single/1877074594';
+export const APPLE_MUSIC_EMBED_URL: string = 'https://embed.music.apple.com/de/album/gef%C3%BChle-an-gef%C3%BChle-aus/6770928701';
 export const YOUTUBE_EMBED_URL: string = 'https://www.youtube.com/embed/mW8woxPvl-I'
 
 export const CONTACT_LINKS: LabelLink[] = [
