@@ -116,7 +116,7 @@ export const MUSIC_PLATFORMS: IconLink[] = [
 
 export const SPOTIFY_EMBED_URL: string = 'https://open.spotify.com/embed/artist/2ATI9IAeXPE31HKReWj40a?theme=0';
 export const APPLE_MUSIC_EMBED_URL: string = 'https://embed.music.apple.com/de/album/der-unwissende-single/1877074594';
-export const YOUTUBE_EMBED_URL: string = 'https://youtu.be/mW8woxPvl-I?si=ClO5HnWELS3C8Xoi'
+export const YOUTUBE_EMBED_URL: string = 'https://www.youtube.com/embed/mW8woxPvl-I'
 
 export const CONTACT_LINKS: LabelLink[] = [
     {

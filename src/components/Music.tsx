@@ -40,12 +40,13 @@ const Music = () => {
                             width="100%"
                             height="100%"
                             src={YOUTUBE_EMBED_URL}
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            title=" Véloclub - renn los // MITTINDRIN Live Sessions "
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
                             loading="lazy"
-                            title="YouTube"
-                            className="rounded-[20px]"
-                        ></iframe>
+                            className="rounded-md sm:rounded-xl"
+                        />
                     </div>
                 ) : null}
 
