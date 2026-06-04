@@ -152,8 +152,8 @@ export const IMAGES: Images = {
     },
 };
 
-const releaseDate = new Date(2026, 6, 5, 0, 0);
+const releaseDate = new Date(2026, 5, 5, 0, 0);
 const today = new Date();
 
-export const releaseUrl = 'https://push.fm/ps/8ghuier5';
+export const releaseUrl = 'https://push.fm/fl/p4vwfpwf';
 export const IS_EP_RELEASE = today >= releaseDate;
