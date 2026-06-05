@@ -15,7 +15,7 @@ export const LIVE_DATES: LiveDate[] = [
         activate: true,
     },
     {
-        date: '10.07.2026',
+        date: '09.07.2026',
         city: 'Flensburg',
         venue: 'Tableau Kulturcafé',
         description: '',
@@ -23,7 +23,7 @@ export const LIVE_DATES: LiveDate[] = [
             url: 'https://www.instagram.com/tableau_kulturcafe/',
             text: 'Info',
         },
-        activate: false,
+        activate: true,
     },
     {
         date: '29.08.2026',
