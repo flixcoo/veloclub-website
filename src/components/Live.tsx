@@ -21,21 +21,21 @@ const Live = () => {
     const instagramUrl = FOOTER_LINKS.find((link) => link.url?.includes('instagram'))?.url ?? '#';
 
     return (
-        <section id="live" className="py-8 scroll-mt-20">
-            <div className="max-w-275 mx-auto px-6">
-                <h2 className="text-5xl font-black uppercase text-(--accent-color) mb-12 leading-[0.9] tracking-[-1px]">Live</h2>
+        <section id="live" className="scroll-mt-20 py-8">
+            <div className="mx-auto max-w-275 px-6">
+                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase">Live</h2>
                 <div className="border-t-2 border-(--text-color)">
                     {upcomingGigs.length > 0 ? (
                         upcomingGigs.map((gig) => (
-                            <div key={`${gig.date}-${gig.venue}`} className="grid grid-cols-1 md:grid-cols-[100px_200px_1.5fr_auto] gap-4 py-6 px-4 border-b border-gray-200 items-baseline hover:bg-gray-100 transition-colors">
+                            <div key={`${gig.date}-${gig.venue}`} className="grid grid-cols-1 items-baseline gap-4 border-b border-gray-200 px-4 py-6 transition-colors hover:bg-gray-100 md:grid-cols-[100px_200px_1.5fr_auto]">
                                 <div className="font-black text-(--accent-color)">{gig.date}</div>
 
                                 <div className="flex flex-col">
-                                    {gig.city.trim() !== '' && <div className="font-semibold uppercase text-xl">{gig.city}</div>}
-                                    {gig.venue.trim() !== '' && <span className="block text-sm font-normal text-gray-600 mt-1">{gig.venue}</span>}
+                                    {gig.city.trim() !== '' && <div className="text-xl font-semibold uppercase">{gig.city}</div>}
+                                    {gig.venue.trim() !== '' && <span className="mt-1 block text-sm font-normal text-gray-600">{gig.venue}</span>}
                                 </div>
 
-                                <div className="text-sm font-semibold self-start md:self-center text-gray-500 mt-2 md:mt-0">
+                                <div className="mt-2 self-start text-sm font-semibold text-gray-500 md:mt-0 md:self-center">
                                     {gig.description}
                                 </div>
 
@@ -46,7 +46,7 @@ const Live = () => {
                                                 href={gig.button.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-block min-w-40 w-full py-3 px-10 border border-(--text-color) text-center uppercase font-black text-xs bg-white cursor-pointer hover:bg-(--text-color) hover:text-(--bg-color) transition-all duration-300 whitespace-nowrap"
+                                                className="inline-block w-full min-w-40 cursor-pointer border border-(--text-color) bg-white px-10 py-3 text-center text-xs font-black whitespace-nowrap uppercase transition-all duration-300 hover:bg-(--text-color) hover:text-(--bg-color)"
                                             >
                                                 {gig.button.text || 'Tickets'}
                                             </a>
@@ -55,7 +55,7 @@ const Live = () => {
                                                 type="button"
                                                 disabled
                                                 aria-disabled="true"
-                                                className="inline-block min-w-40 w-full py-3 px-10 border border-gray-200 text-center uppercase font-black text-xs bg-white text-gray-300 cursor-not-allowed whitespace-nowrap"
+                                                className="inline-block w-full min-w-40 cursor-not-allowed border border-gray-200 bg-white px-10 py-3 text-center text-xs font-black whitespace-nowrap text-gray-300 uppercase"
                                             >
                                                 {gig.button.text || 'Tickets'}
                                             </button>
@@ -67,7 +67,7 @@ const Live = () => {
                     ) : (
                         <p className="py-6">
                             Zurzeit gibt es keine Live-Termine. Für aktuelle Infos schau gerne auf unserer&nbsp;
-                            <a href={instagramUrl} className="underline! hover:text-(--accent-color) transition-colors">Instagramseite</a> vorbei
+                            <a href={instagramUrl} className="underline! transition-colors hover:text-(--accent-color)">Instagramseite</a> vorbei
                             :)
                         </p>
                     )}

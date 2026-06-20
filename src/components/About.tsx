@@ -4,12 +4,12 @@ const About = () => {
     const imageData = IMAGES.aboutImage;
 
     return (
-        <section id="about" className="py-8 scroll-mt-20">
-            <div className="max-w-275 mx-auto px-6">
-                <h2 className="text-5xl font-black uppercase text-(--accent-color) mb-12 leading-[0.9] tracking-[-1px]">Die Band</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <section id="about" className="scroll-mt-20 py-8">
+            <div className="mx-auto max-w-275 px-6">
+                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase">Die Band</h2>
+                <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-2">
                     <div>
-                        <p className="text-lg mb-6">
+                        <p className="mb-6 text-lg">
                             Zwischen Jazz-Gitarren, Post-Punk-Drums und einem Bass der beides connectet,
                             schaffen <strong>Véloclub</strong> sich ihren eigenen Sound.
                             Da alle vier aus verschiedenen Musikrichtungen kommen, ist es der Band wichtig genau das in
@@ -26,15 +26,15 @@ const About = () => {
                             <img
                                 src={imageData.image}
                                 alt="Véloclub Portrait"
-                                className="w-full aspect-4/5 object-cover pointer-events-none"
+                                className="pointer-events-none aspect-4/5 w-full object-cover"
                             />
                         ) : (
-                            <div className="w-full bg-(--accent-color) opacity-80 text-white font-bold flex items-center justify-center aspect-4/5">
+                            <div className="flex aspect-4/5 w-full items-center justify-center bg-(--accent-color) font-bold text-white opacity-80">
                                 <span>PORTRAIT PLACEHOLDER</span>
                             </div>
                         )}
                         {imageData.credit && (
-                            <p className="text-xs text-gray-500 mt-2 text-right">Foto: <a href={imageData.url ?? '#'} className="text-gray-500 hover:underline! hover:text-(--accent-color) transition-all duration-300">{imageData.credit}</a></p>
+                            <p className="mt-2 text-right text-xs text-gray-500">Foto: <a href={imageData.url ?? '#'} className="text-gray-500 transition-all duration-300 hover:text-(--accent-color) hover:underline!">{imageData.credit}</a></p>
                         )}
                     </div>
                 </div>

@@ -2,10 +2,10 @@ import {SPOTIFY_EMBED_URL, APPLE_MUSIC_EMBED_URL, YOUTUBE_EMBED_URL, MUSIC_PLATF
 
 const Music = () => {
     return (
-        <section id="music" className="py-8 scroll-mt-20">
-            <div className="max-w-275 mx-auto px-6">
-                <h2 className="text-5xl font-black uppercase text-(--accent-color) mb-12 leading-[0.9] tracking-[-1px]">Musik</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section id="music" className="scroll-mt-20 py-8">
+            <div className="mx-auto max-w-275 px-6">
+                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase">Musik</h2>
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
 
                     {/*Spotify Top Tracks Embed*/}
                     <div className="h-112.5 md:h-auto">
@@ -21,7 +21,7 @@ const Music = () => {
                     </div>
 
                     {/*Apple Music Embed*/}
-                    <div className="md:h-auto -outline-offset-4 outline-4 outline-[#FC3C44] rounded-lg overflow-hidden">
+                    <div className="overflow-hidden rounded-lg outline-4 -outline-offset-4 outline-[#FC3C44] md:h-auto">
                         <iframe
                             allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
                             height="450"
@@ -35,7 +35,7 @@ const Music = () => {
 
                {/* Youtube Video Embed */}
                 {YOUTUBE_EMBED_URL && YOUTUBE_EMBED_URL.trim() !== '' ? (
-                    <div className="mt-8 md:mt-8 mx-auto w-full max-w-200 aspect-video">
+                    <div className="mx-auto mt-8 aspect-video w-full max-w-200 md:mt-8">
                         <iframe
                             width="100%"
                             height="100%"
@@ -51,7 +51,7 @@ const Music = () => {
                 ) : null}
 
                 {/*Streaming services icons*/}
-                <div className="flex justify-center gap-x-24 gap-y-12 flex-wrap mt-12">
+                <div className="mt-12 flex flex-wrap justify-center gap-x-24 gap-y-12">
                     {MUSIC_PLATFORMS.map((platform, index) => {
                         const IconComponent = platform.icon;
                         if (!platform.url) {
@@ -61,7 +61,7 @@ const Music = () => {
                             <a
                                 key={index}
                                 href={platform.url}
-                                className="text-4xl font-black uppercase hover:text-(--accent-color) hover:underline! transition-colors"
+                                className="text-4xl font-black uppercase transition-colors hover:text-(--accent-color) hover:underline!"
                                 target={'_blank'}
                                 rel="noopener noreferrer"
                                 aria-label={platform.name}

@@ -4,9 +4,9 @@ import {FOOTER_LINKS} from '../data/content';
 const Footer = () => {
     return (
         <footer id="contact"
-                className="font-['Antique_Olive_Std',sans-serif] py-8 text-center mt-16 relative before:content-[''] before:absolute before:top-0 before:left-16 before:right-16 before:border-t before:border-(--text-color)">
-            <div className="max-w-275 mx-auto px-6">
-                <div className="flex justify-center gap-8 flex-wrap mb-8">
+                className="relative mt-16 py-8 text-center font-['Antique_Olive_Std',sans-serif] before:absolute before:inset-x-16 before:top-0 before:border-t before:border-(--text-color) before:content-['']">
+            <div className="mx-auto max-w-275 px-6">
+                <div className="mb-8 flex flex-wrap justify-center gap-8">
                     {FOOTER_LINKS.map((social, index) => {
                         const IconComponent = social.icon;
 
@@ -18,7 +18,7 @@ const Footer = () => {
                             <a
                                 key={index}
                                 href={social.url}
-                                className="text-2xl font-black uppercase hover:text-(--accent-color) hover:underline! transition-colors"
+                                className="text-2xl font-black uppercase transition-colors hover:text-(--accent-color) hover:underline!"
                                 target={'_blank'}
                                 rel="noopener noreferrer"
                                 aria-label={social.name}
@@ -29,19 +29,19 @@ const Footer = () => {
                         );
                     })}
                 </div>
-                <div className="text-xs text-gray-500 flex items-center flex-col gap-1">
+                <div className="flex flex-col items-center gap-1 text-xs text-gray-500">
                     {/* Design flag*/}
                     <span>Designed & developed by&nbsp;
                         <a href="https://felixkirchner.de" target="_blank" rel="noopener noreferrer"
-                           className="text-(--text-color) underline! hover:text-(--accent-color) transition-colors">Felix Kirchner</a>.
+                           className="text-(--text-color) underline! transition-colors hover:text-(--accent-color)">Felix Kirchner</a>.
                     </span>
 
                     {/* Legal & Privacy */}
                     <div className={"flex items-center gap-4"}>
                         <Link to="/impressum"
-                              className="text-(--text-color) hover:text-(--accent-color) underline transition-colors">Impressum</Link>
+                              className="text-(--text-color) underline transition-colors hover:text-(--accent-color)">Impressum</Link>
                         <Link to="/datenschutz"
-                              className="text-(--text-color) underline! hover:text-(--accent-color) transition-colors">Datenschutz</Link>
+                              className="text-(--text-color) underline! transition-colors hover:text-(--accent-color)">Datenschutz</Link>
                     </div>
 
                     {/* Copyright */}
