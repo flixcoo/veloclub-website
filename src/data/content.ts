@@ -4,28 +4,6 @@ import {LabelLink, IconLink, LiveDate, Images} from "./types";
 
 export const LIVE_DATES: LiveDate[] = [
     {
-        date: '05.06.2026',
-        city: 'Leipzig',
-        venue: 'Stadtfest Leipzig',
-        description: '19.00 Uhr, Marktplatzbühne',
-        button: {
-            url: 'https://leipzigerstadtfest.de/events/warm-up-351-940/',
-            text: 'Info',
-        },
-        activate: true,
-    },
-    {
-        date: '09.07.2026',
-        city: 'Flensburg',
-        venue: 'Tableau Kulturcafé',
-        description: '',
-        button: {
-            url: 'https://www.instagram.com/tableau_kulturcafe/',
-            text: 'Info',
-        },
-        activate: true,
-    },
-    {
         date: '29.08.2026',
         city: 'Braunschweig',
         venue: 'Organic Beats Festival',
