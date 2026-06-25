@@ -1,29 +1,50 @@
 # Véloclub - Website
 
-This repository contains the React website for the band "Véloclub", built with React and Vite. Its deployed version can be found at [veloclubband.de](https://veloclubband.de).
+This repository contains the React linktree website for the band "Véloclub", built with React and Vite. Its deployed
+version can be found at [veloclubband.de](https://veloclubband.de).
 
-## Requirements
-- Node.js (recommended: 18.x or newer LTS)
+## Development
+
+### Requirements
+
+- Node.js
 - pnpm
 
-## Quick start
+### Setup
 
-### Install dependencies
+**Install dependencies**
+
 ```bash
 pnpm install
 ```
 
+**Start development server**
 
-### Start development server
 ```bash
 pnpm run dev
 ```
 
 Default URL: `http://localhost:5173`
 
-### Create a production build
+**Create a production build**
+
 ```bash
 pnpm run build
-```
+````
 
 Output directory: `/build`
+
+## Production
+
+### Requirements
+
+- Docker Compose
+
+### Setup
+
+```bash
+docker compose up --build
+```
+
+Runs on Port `8081`
+
