@@ -10,6 +10,7 @@ export const LIVE_DATES: LiveDate[] = [
         description: '',
         button: {
             text: 'Tickets',
+            url: 'https://organicbeats.org/tickets/'
         },
         activate: true,
     },
