@@ -34,7 +34,7 @@ Default URL: `http://localhost:5173`
 
 ```bash
 pnpm run build
-````
+```
 
 Output directory: `/build`
 
@@ -51,4 +51,3 @@ docker compose up --build
 ```
 
 Runs on Port `8081`
-

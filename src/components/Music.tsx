@@ -4,9 +4,10 @@ const Music = () => {
     return (
         <section id="music" className="scroll-mt-20 py-8">
             <div className="mx-auto max-w-275 px-6">
-                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase">Musik</h2>
+                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase">
+                    Musik
+                </h2>
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-
                     {/*Spotify Top Tracks Embed*/}
                     <div className="h-112.5 md:h-auto">
                         <iframe
@@ -33,7 +34,7 @@ const Music = () => {
                     </div>
                 </div>
 
-               {/* Youtube Video Embed */}
+                {/* Youtube Video Embed */}
                 {YOUTUBE_EMBED_URL && YOUTUBE_EMBED_URL.trim() !== '' ? (
                     <div className="mx-auto mt-8 aspect-video w-full max-w-200 md:mt-8">
                         <iframe

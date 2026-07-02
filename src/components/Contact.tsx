@@ -1,11 +1,13 @@
-import { CONTACT_LINKS } from '../data/content';
+import {CONTACT_LINKS} from '../data/content';
 import EmailObfuscator from '../utils/EmailObfuscator';
 
 const Contact = () => {
     return (
         <section id="kontakt" className="scroll-mt-20 py-8">
             <div className="mx-auto max-w-275 px-6">
-                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase">Kontakt</h2>
+                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase">
+                    Kontakt
+                </h2>
                 <div className="mt-8 flex flex-row flex-wrap justify-between gap-6">
                     {CONTACT_LINKS.map((contact, index) => (
                         <div key={index} className="flex min-w-50 flex-1">
