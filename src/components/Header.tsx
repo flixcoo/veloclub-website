@@ -50,9 +50,9 @@ const Header = () => {
 
                     {/* Local flag */}
                     {isLocalDev && (
-                        <span className="align-start text-2xl font-semibold text-(--accent-color) underline">
-                            local
-                        </span>
+                        <div className={'rounded-lg bg-orange-600 px-3 py-1.5 select-none'}>
+                            <span className="align-start text-2xl font-bold text-white">local</span>
+                        </div>
                     )}
                 </div>
 
