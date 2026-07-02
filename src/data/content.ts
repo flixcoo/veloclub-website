@@ -1,6 +1,16 @@
-import { FaDeezer, FaFacebook, FaInstagram, FaSoundcloud, FaSpotify, FaTiktok, FaTree, FaYoutube } from 'react-icons/fa';
-import { SiAmazonmusic, SiApplemusic, SiTidal, SiYoutubemusic } from 'react-icons/si';
-import {LabelLink, IconLink, LiveDate, Images} from "./types";
+import {
+    FaAmazon,
+    FaDeezer,
+    FaFacebook,
+    FaInstagram,
+    FaSoundcloud,
+    FaSpotify,
+    FaTiktok,
+    FaTree,
+    FaYoutube,
+} from 'react-icons/fa';
+import {SiAmazonmusic, SiApplemusic, SiTidal, SiYoutubemusic} from 'react-icons/si';
+import {LabelLink, IconLink, LiveDate, Images} from './types';
 
 export const LIVE_DATES: LiveDate[] = [
     {
@@ -10,7 +20,7 @@ export const LIVE_DATES: LiveDate[] = [
         description: '',
         button: {
             text: 'Tickets',
-            url: 'https://organicbeats.org/tickets/'
+            url: 'https://organicbeats.org/tickets/',
         },
         activate: true,
     },
@@ -21,7 +31,7 @@ export const LIVE_DATES: LiveDate[] = [
         description: 'Support: tba',
         button: {
             text: 'Tickets',
-            url: 'https://rausgegangen.de/events/konzert-velo-club-0/'
+            url: 'https://rausgegangen.de/events/konzert-velo-club-0/',
         },
         activate: true,
     },
@@ -79,7 +89,7 @@ export const MUSIC_PLATFORMS: IconLink[] = [
     {
         name: 'Amazon Music',
         url: 'https://music.amazon.de/artists/B0CH91199R/v%C3%A9loclub',
-        icon: SiAmazonmusic,
+        icon: FaAmazon,
     },
     {
         name: 'Youtube Music',
@@ -94,8 +104,9 @@ export const MUSIC_PLATFORMS: IconLink[] = [
 ];
 
 export const SPOTIFY_EMBED_URL: string = 'https://open.spotify.com/embed/artist/2ATI9IAeXPE31HKReWj40a?theme=0';
-export const APPLE_MUSIC_EMBED_URL: string = 'https://embed.music.apple.com/de/album/gef%C3%BChle-an-gef%C3%BChle-aus/6770928701';
-export const YOUTUBE_EMBED_URL: string = 'https://www.youtube.com/embed/mW8woxPvl-I'
+export const APPLE_MUSIC_EMBED_URL: string =
+    'https://embed.music.apple.com/de/album/gef%C3%BChle-an-gef%C3%BChle-aus/6770928701';
+export const YOUTUBE_EMBED_URL: string = 'https://www.youtube.com/embed/mW8woxPvl-I';
 
 export const CONTACT_LINKS: LabelLink[] = [
     {
@@ -117,7 +128,6 @@ export const IMAGES: Images = {
         image: '/images/ep-cover.webp',
         credit: 'David Schleiermann',
         url: 'https://www.instagram.com/atelier.teufel2/',
-
     },
     heroImage: {
         image: '/images/hero.webp',
