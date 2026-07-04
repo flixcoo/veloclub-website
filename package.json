@@ -22,8 +22,8 @@
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
-        "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-        "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
         "prettier": "./node_modules/.bin/prettier '**/*.{js,ts,tsx,json,css,html,md}' --write",
         "format": "prettier --write \"**/*.{js,ts,tsx,json,css,html,md}\""
     },

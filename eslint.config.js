@@ -4,31 +4,29 @@ import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
 import eslintPluginTailwindcss from 'eslint-plugin-tailwindcss';
-import {fixupPluginRules} from '@eslint/compat';
+import json from '@eslint/json';
+import markdown from '@eslint/markdown';
+import css from '@eslint/css';
 
-export default tseslint.config(
+export default [
     {
         ignores: ['dist', 'build', 'node_modules'],
     },
-    js.configs.recommended,
     ...tseslint.configs.recommended,
     {
-        files: ['**/*.{ts,tsx}'],
+        files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
         plugins: {
-            'react-hooks': fixupPluginRules(reactHooks),
+            js,
+            'react-hooks': reactHooks,
             'react-refresh': reactRefresh,
-            'tailwindcss': eslintPluginTailwindcss,
+            tailwindcss: eslintPluginTailwindcss,
         },
         languageOptions: {
             globals: globals.browser,
         },
-        settings: {
-            tailwindcss: {
-                config: './tailwind.config.js',
-                cssFiles: ['./src/style.css'],
-            },
-        },
         rules: {
+            ...js.configs.recommended.rules,
+            'no-unused-vars': 'off',
             ...reactHooks.configs.recommended.rules,
             'react-refresh/only-export-components': ['warn', {allowConstantExport: true}],
             'tailwindcss/classnames-order': 'warn',
@@ -40,5 +38,13 @@ export default tseslint.config(
             'tailwindcss/no-contradicting-classname': 'error',
             '@typescript-eslint/no-unused-vars': ['warn', {argsIgnorePattern: '^_'}],
         },
-    }
-);
+    },
+    {...json.configs.recommended, files: ['**/*.json'], language: 'json/json'},
+    {...json.configs.recommended, files: ['**/*.jsonc'], language: 'json/jsonc'},
+    {...json.configs.recommended, files: ['**/*.json5'], language: 'json/json5'},
+    {
+        ...markdown.configs.recommended[0],
+        language: 'markdown/gfm',
+    },
+    {...css.configs.recommended, files: ['**/*.css'], language: 'css/css'},
+];
