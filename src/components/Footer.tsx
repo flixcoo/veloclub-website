@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer
             id="contact"
-            className="relative mt-16 py-8 text-center font-['Antique_Olive_Std',sans-serif] before:absolute before:inset-x-16 before:top-0 before:border-t before:border-(--text-color) before:content-['']"
+            className="relative mt-16 py-8 text-center font-['Antique_Olive_Std',sans-serif] before:absolute before:inset-x-16 before:top-0 before:border-t before:border-black before:content-['']"
         >
             <div className="mx-auto max-w-275 px-6">
                 <div className="mb-8 flex flex-wrap justify-center gap-8">
@@ -20,7 +20,7 @@ const Footer = () => {
                             <a
                                 key={index}
                                 href={social.url}
-                                className="text-2xl font-black uppercase transition-colors hover:text-(--accent-color) hover:underline!"
+                                className="text-2xl font-black uppercase transition-colors hover:text-orange-600 hover:underline!"
                                 target={'_blank'}
                                 rel="noopener noreferrer"
                                 aria-label={social.name}
@@ -39,7 +39,7 @@ const Footer = () => {
                             href="https://felixkirchner.de"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-(--text-color) underline! transition-colors hover:text-(--accent-color)"
+                            className="text-black underline! transition-colors hover:text-orange-600"
                         >
                             Felix Kirchner
                         </a>
@@ -48,15 +48,12 @@ const Footer = () => {
 
                     {/* Legal & Privacy */}
                     <div className={'flex items-center gap-4'}>
-                        <Link
-                            to="/impressum"
-                            className="text-(--text-color) underline transition-colors hover:text-(--accent-color)"
-                        >
+                        <Link to="/impressum" className="text-black underline transition-colors hover:text-orange-600">
                             Impressum
                         </Link>
                         <Link
                             to="/datenschutz"
-                            className="text-(--text-color) underline! transition-colors hover:text-(--accent-color)"
+                            className="text-black underline! transition-colors hover:text-orange-600"
                         >
                             Datenschutz
                         </Link>

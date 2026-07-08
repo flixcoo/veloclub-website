@@ -4,7 +4,7 @@ const Music = () => {
     return (
         <section id="music" className="scroll-mt-20 py-8">
             <div className="mx-auto max-w-275 px-6">
-                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase">
+                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-orange-600 uppercase">
                     Musik
                 </h2>
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -62,7 +62,7 @@ const Music = () => {
                             <a
                                 key={index}
                                 href={platform.url}
-                                className="text-4xl font-black uppercase transition-colors hover:text-(--accent-color) hover:underline!"
+                                className="text-4xl font-black uppercase transition-colors hover:text-orange-600 hover:underline!"
                                 target={'_blank'}
                                 rel="noopener noreferrer"
                                 aria-label={platform.name}

@@ -16,12 +16,6 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-:root {
-    --bg-color: var(--color-gray-50);
-    --text-color: var(--color-black);
-    --accent-color: var(--color-orange-600);
-}
-
 /* Antique Olive Std - Compact Variant */
 @font-face {
     font-family: 'Antique Olive Compact';

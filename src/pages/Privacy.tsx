@@ -7,19 +7,19 @@ const Privacy = () => {
                 {/*Back to homepage button*/}
                 <Link
                     to="/"
-                    className="mb-8 flex items-center text-sm font-semibold text-(--text-color) transition-colors hover:text-(--accent-color) md:mt-0 md:text-base"
+                    className="mb-8 flex items-center text-sm font-semibold text-black transition-colors hover:text-orange-600 md:mt-0 md:text-base"
                 >
                     <span className={'text-lg md:text-sm'}>← Zurück</span>&nbsp;
                     <span className={'hidden md:block'}>zur Startseite</span>
                 </Link>
 
-                <h1 className="mb-12 text-2xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase md:text-6xl">
+                <h1 className="mb-12 text-2xl leading-[0.9] font-black tracking-[-1px] text-orange-600 uppercase md:text-6xl">
                     Datenschutzerklärung
                 </h1>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-(--text-color)">1. Datenschutz auf einen Blick</h2>
-                    <h3 className="my-6 text-xl font-semibold text-(--text-color)">Allgemeine Hinweise</h3>
+                    <h2 className="mb-4 text-2xl font-bold text-black">1. Datenschutz auf einen Blick</h2>
+                    <h3 className="my-6 text-xl font-semibold text-black">Allgemeine Hinweise</h3>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen
                         Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit
@@ -28,10 +28,8 @@ const Privacy = () => {
                 </section>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-(--text-color)">
-                        2. Datenerfassung auf dieser Website
-                    </h2>
-                    <h3 className="my-6 text-xl font-semibold text-(--text-color)">
+                    <h2 className="mb-4 text-2xl font-bold text-black">2. Datenerfassung auf dieser Website</h2>
+                    <h3 className="my-6 text-xl font-semibold text-black">
                         Wer ist verantwortlich für die Datenerfassung auf dieser Website?
                     </h3>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
@@ -39,7 +37,7 @@ const Privacy = () => {
                         können Sie dem Impressum dieser Website entnehmen.
                     </p>
 
-                    <h3 className="my-6 text-xl font-semibold text-(--text-color)">Wie erfassen wir Ihre Daten?</h3>
+                    <h3 className="my-6 text-xl font-semibold text-black">Wie erfassen wir Ihre Daten?</h3>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich
                         z.B. um Daten handeln, die Sie per E-Mail an uns senden.
@@ -52,10 +50,10 @@ const Privacy = () => {
                 </section>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-(--text-color)">
+                    <h2 className="mb-4 text-2xl font-bold text-black">
                         3. Allgemeine Hinweise und Pflichtinformationen
                     </h2>
-                    <h3 className="my-6 text-xl font-semibold text-(--text-color)">Datenschutz</h3>
+                    <h3 className="my-6 text-xl font-semibold text-black">Datenschutz</h3>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln
                         Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen
@@ -68,8 +66,8 @@ const Privacy = () => {
                 </section>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-(--text-color)">4. Eingebettete Inhalte</h2>
-                    <h3 className="my-6 text-xl font-semibold text-(--text-color)">Spotify</h3>
+                    <h2 className="mb-4 text-2xl font-bold text-black">4. Eingebettete Inhalte</h2>
+                    <h3 className="my-6 text-xl font-semibold text-black">Spotify</h3>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Auf dieser Website sind Funktionen des Musik-Dienstes Spotify eingebunden. Anbieter ist die
                         Spotify AB, Birger Jarlsgatan 61, 113 56 Stockholm, Schweden.
@@ -80,7 +78,7 @@ const Privacy = () => {
                         Ihrer IP-Adresse diese Website besucht haben.
                     </p>
 
-                    <h3 className="my-6 text-xl font-semibold text-(--text-color)">Apple Music</h3>
+                    <h3 className="my-6 text-xl font-semibold text-black">Apple Music</h3>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Auf dieser Website sind Funktionen von Apple Music eingebunden. Anbieter ist die Apple Inc., One
                         Apple Park Way, Cupertino, CA 95014, USA.
@@ -92,7 +90,7 @@ const Privacy = () => {
                 </section>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-(--text-color)">5. Server-Log-Dateien</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-black">5. Server-Log-Dateien</h2>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten
                         Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
@@ -113,7 +111,7 @@ const Privacy = () => {
                 </section>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-(--text-color)">6. Ihre Rechte</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-black">6. Ihre Rechte</h2>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten
                         personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie

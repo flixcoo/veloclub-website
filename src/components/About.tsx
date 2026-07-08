@@ -6,7 +6,7 @@ const About = () => {
     return (
         <section id="about" className="scroll-mt-20 py-8">
             <div className="mx-auto max-w-275 px-6">
-                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase">
+                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-orange-600 uppercase">
                     Die Band
                 </h2>
                 <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-2">
@@ -31,7 +31,7 @@ const About = () => {
                                 className="pointer-events-none aspect-4/5 w-full object-cover"
                             />
                         ) : (
-                            <div className="flex aspect-4/5 w-full items-center justify-center bg-(--accent-color) font-bold text-white opacity-80">
+                            <div className="flex aspect-4/5 w-full items-center justify-center bg-orange-600 font-bold text-white opacity-80">
                                 <span>PORTRAIT PLACEHOLDER</span>
                             </div>
                         )}
@@ -40,7 +40,7 @@ const About = () => {
                                 Foto:{' '}
                                 <a
                                     href={imageData.url ?? '#'}
-                                    className="text-gray-500 transition-all duration-300 hover:text-(--accent-color) hover:underline!"
+                                    className="text-gray-500 transition-all duration-300 hover:text-orange-600 hover:underline!"
                                 >
                                     {imageData.credit}
                                 </a>

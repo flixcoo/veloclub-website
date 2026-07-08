@@ -7,19 +7,19 @@ const LegalNotice = () => {
                 {/*Back to homepage button*/}
                 <Link
                     to="/"
-                    className="mb-8 flex items-center text-sm font-semibold text-(--text-color) transition-colors hover:text-(--accent-color) md:mt-0 md:text-base"
+                    className="mb-8 flex items-center text-sm font-semibold text-black transition-colors hover:text-orange-600 md:mt-0 md:text-base"
                 >
                     <span className={'text-lg md:text-sm'}>← Zurück</span>&nbsp;
                     <span className={'hidden md:block'}>zur Startseite</span>
                 </Link>
 
-                <h1 className="mb-12 text-2xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase md:text-6xl">
+                <h1 className="mb-12 text-2xl leading-[0.9] font-black tracking-[-1px] text-orange-600 uppercase md:text-6xl">
                     Impressum
                 </h1>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-(--text-color)">Angaben gemäß § 5 TMG</h2>
-                    <h4 className="my-6 text-xl font-semibold text-(--text-color)">Véloclub GbR</h4>
+                    <h2 className="mb-4 text-2xl font-bold text-black">Angaben gemäß § 5 TMG</h2>
+                    <h4 className="my-6 text-xl font-semibold text-black">Véloclub GbR</h4>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Mechlerstraße 4<br />
                         04105 Leipzig
@@ -27,12 +27,10 @@ const LegalNotice = () => {
                         Deutschland
                     </p>
 
-                    <h4 className="my-6 text-xl font-semibold text-(--text-color)">Kontakt</h4>
+                    <h4 className="my-6 text-xl font-semibold text-black">Kontakt</h4>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">E-Mail: hi [at] veloclubband.de</p>
 
-                    <h4 className="my-6 text-xl font-semibold text-(--text-color)">
-                        Vertreten durch die Gesellschafter
-                    </h4>
+                    <h4 className="my-6 text-xl font-semibold text-black">Vertreten durch die Gesellschafter</h4>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Leo Indefrey, Nils-Henning Haase, Felix Kirchner und Jonas Rautenberg
                         <br />
@@ -41,7 +39,7 @@ const LegalNotice = () => {
                 </section>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-(--text-color)">Haftung für Inhalte</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-black">Haftung für Inhalte</h2>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
                         allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch
@@ -57,7 +55,7 @@ const LegalNotice = () => {
                 </section>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-(--text-color)">Haftung für Links</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-black">Haftung für Links</h2>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss
                         haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die
@@ -67,7 +65,7 @@ const LegalNotice = () => {
                 </section>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-(--text-color)">Urheberrecht</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-black">Urheberrecht</h2>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
                         deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der

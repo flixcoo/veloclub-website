@@ -42,7 +42,7 @@ const Header = () => {
                 <div className="z-101 hidden items-center gap-3 md:flex">
                     <Link
                         to="/"
-                        className="font-['Antique_Olive_Compact',sans-serif] text-4xl font-normal tracking-[2px] text-(--text-color)"
+                        className="font-['Antique_Olive_Compact',sans-serif] text-4xl font-normal tracking-[2px] text-black"
                         onClick={() => setMobileMenuOpen(false)}
                     >
                         véloclub
@@ -61,28 +61,28 @@ const Header = () => {
                     <a
                         href={'#about'}
                         onClick={(e) => handleNavClick(e, '#about')}
-                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-(--accent-color)"
+                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-orange-600"
                     >
                         Band
                     </a>
                     <a
                         href={'#live'}
                         onClick={(e) => handleNavClick(e, '#live')}
-                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-(--accent-color)"
+                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-orange-600"
                     >
                         Live
                     </a>
                     <a
                         href={'#music'}
                         onClick={(e) => handleNavClick(e, '#music')}
-                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-(--accent-color)"
+                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-orange-600"
                     >
                         Musik
                     </a>
                     <a
                         href={'#contact'}
                         onClick={(e) => handleNavClick(e, '#contact')}
-                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-(--accent-color)"
+                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-orange-600"
                     >
                         Kontakt
                     </a>
@@ -96,13 +96,13 @@ const Header = () => {
                     type="button"
                 >
                     <span
-                        className={`absolute left-0 h-0.75 w-7.5 origin-center rounded-[3px] bg-(--text-color) transition-all duration-300 ${mobileMenuOpen ? 'top-2.25 rotate-45' : 'top-0'}`}
+                        className={`absolute left-0 h-0.75 w-7.5 origin-center rounded-[3px] bg-black transition-all duration-300 ${mobileMenuOpen ? 'top-2.25 rotate-45' : 'top-0'}`}
                     />
                     <span
-                        className={`absolute top-2.25 left-0 h-0.75 w-7.5 origin-center rounded-[3px] bg-(--text-color) transition-all duration-200 ${mobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}
+                        className={`absolute top-2.25 left-0 h-0.75 w-7.5 origin-center rounded-[3px] bg-black transition-all duration-200 ${mobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}
                     />
                     <span
-                        className={`absolute left-0 h-0.75 w-7.5 origin-center rounded-[3px] bg-(--text-color) transition-all duration-300 ${mobileMenuOpen ? 'top-2.25 -rotate-45' : 'top-4.5'}`}
+                        className={`absolute left-0 h-0.75 w-7.5 origin-center rounded-[3px] bg-black transition-all duration-300 ${mobileMenuOpen ? 'top-2.25 -rotate-45' : 'top-4.5'}`}
                     />
                 </button>
 
@@ -113,28 +113,28 @@ const Header = () => {
                     <a
                         href={'#about'}
                         onClick={(e) => handleNavClick(e, '#about')}
-                        className="text-2xl font-semibold text-(--text-color) uppercase transition-colors hover:text-(--accent-color)"
+                        className="text-2xl font-semibold text-black uppercase transition-colors hover:text-orange-600"
                     >
                         Band
                     </a>
                     <a
                         href={'#live'}
                         onClick={(e) => handleNavClick(e, '#live')}
-                        className="text-2xl font-semibold text-(--text-color) uppercase transition-colors hover:text-(--accent-color)"
+                        className="text-2xl font-semibold text-black uppercase transition-colors hover:text-orange-600"
                     >
                         Live
                     </a>
                     <a
                         href={'#music'}
                         onClick={(e) => handleNavClick(e, '#music')}
-                        className="text-2xl font-semibold text-(--text-color) uppercase transition-colors hover:text-(--accent-color)"
+                        className="text-2xl font-semibold text-black uppercase transition-colors hover:text-orange-600"
                     >
                         Musik
                     </a>
                     <a
                         href={'#contact'}
                         onClick={(e) => handleNavClick(e, '#contact')}
-                        className="text-2xl font-semibold text-(--text-color) uppercase transition-colors hover:text-(--accent-color)"
+                        className="text-2xl font-semibold text-black uppercase transition-colors hover:text-orange-600"
                     >
                         Kontakt
                     </a>

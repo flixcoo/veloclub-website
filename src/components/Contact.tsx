@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <section id="kontakt" className="scroll-mt-20 py-8">
             <div className="mx-auto max-w-275 px-6">
-                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-(--accent-color) uppercase">
+                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-orange-600 uppercase">
                     Kontakt
                 </h2>
                 <div className="mt-8 flex flex-row flex-wrap justify-between gap-6">
@@ -14,14 +14,14 @@ const Contact = () => {
                             {contact.mail ? (
                                 <EmailObfuscator
                                     email={contact.mail}
-                                    className="inline-block w-full cursor-pointer border border-(--text-color) bg-transparent px-8 py-4 text-center text-sm font-black uppercase transition-all duration-300 hover:bg-(--text-color) hover:text-(--bg-color) md:text-start"
+                                    className="inline-block w-full cursor-pointer border border-black bg-transparent px-8 py-4 text-center text-sm font-black uppercase transition-all duration-300 hover:bg-black hover:text-gray-50 md:text-start"
                                 >
                                     {contact.label}
                                 </EmailObfuscator>
                             ) : contact.url ? (
                                 <a
                                     href={contact.url}
-                                    className="inline-block w-full cursor-pointer border border-(--text-color) bg-transparent px-8 py-4 text-center text-sm font-black uppercase transition-all duration-300 hover:bg-(--text-color) hover:text-(--bg-color) md:text-start"
+                                    className="inline-block w-full cursor-pointer border border-black bg-transparent px-8 py-4 text-center text-sm font-black uppercase transition-all duration-300 hover:bg-black hover:text-gray-50 md:text-start"
                                     target={contact.url.startsWith('http') ? '_blank' : '_self'}
                                     rel={contact.url.startsWith('http') ? 'noopener noreferrer' : undefined}
                                 >
