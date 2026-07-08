@@ -7,7 +7,7 @@ const Privacy = () => {
                 {/*Back to homepage button*/}
                 <Link
                     to="/"
-                    className="md:text-md mb-8 flex items-center text-sm font-semibold text-(--text-color) transition-colors hover:text-(--accent-color) md:mt-0"
+                    className="mb-8 flex items-center text-sm font-semibold text-(--text-color) transition-colors hover:text-(--accent-color) md:mt-0 md:text-base"
                 >
                     <span className={'text-lg md:text-sm'}>← Zurück</span>&nbsp;
                     <span className={'hidden md:block'}>zur Startseite</span>

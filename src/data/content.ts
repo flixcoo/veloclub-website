@@ -9,7 +9,7 @@ import {
     FaTree,
     FaYoutube,
 } from 'react-icons/fa';
-import {SiAmazonmusic, SiApplemusic, SiTidal, SiYoutubemusic} from 'react-icons/si';
+import {SiApplemusic, SiTidal, SiYoutubemusic} from 'react-icons/si';
 import {LabelLink, IconLink, LiveDate, Images} from './types';
 
 export const LIVE_DATES: LiveDate[] = [

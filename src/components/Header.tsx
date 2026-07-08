@@ -51,7 +51,7 @@ const Header = () => {
                     {/* Local flag */}
                     {isLocalDev && (
                         <div className={'rounded-lg bg-orange-600 px-3 py-1.5 select-none'}>
-                            <span className="align-start text-2xl font-bold text-white">local</span>
+                            <span className="align-top text-2xl font-bold text-white">local</span>
                         </div>
                     )}
                 </div>
@@ -61,28 +61,28 @@ const Header = () => {
                     <a
                         href={'#about'}
                         onClick={(e) => handleNavClick(e, '#about')}
-                        className="text-md ml-8 font-semibold uppercase transition-colors hover:text-(--accent-color)"
+                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-(--accent-color)"
                     >
                         Band
                     </a>
                     <a
                         href={'#live'}
                         onClick={(e) => handleNavClick(e, '#live')}
-                        className="text-md ml-8 font-semibold uppercase transition-colors hover:text-(--accent-color)"
+                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-(--accent-color)"
                     >
                         Live
                     </a>
                     <a
                         href={'#music'}
                         onClick={(e) => handleNavClick(e, '#music')}
-                        className="text-md ml-8 font-semibold uppercase transition-colors hover:text-(--accent-color)"
+                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-(--accent-color)"
                     >
                         Musik
                     </a>
                     <a
                         href={'#contact'}
                         onClick={(e) => handleNavClick(e, '#contact')}
-                        className="text-md ml-8 font-semibold uppercase transition-colors hover:text-(--accent-color)"
+                        className="ml-8 text-base font-semibold uppercase transition-colors hover:text-(--accent-color)"
                     >
                         Kontakt
                     </a>
