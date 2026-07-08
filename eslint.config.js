@@ -19,10 +19,15 @@ export default [
             js,
             'react-hooks': reactHooks,
             'react-refresh': reactRefresh,
-            tailwindcss: eslintPluginTailwindcss,
+            'tailwindcss': eslintPluginTailwindcss,
         },
         languageOptions: {
             globals: globals.browser,
+        },
+        settings: {
+            tailwindcss: {
+                cssConfigPath: './src/index.css',
+            },
         },
         rules: {
             ...js.configs.recommended.rules,
@@ -31,15 +36,13 @@ export default [
             'react-refresh/only-export-components': ['warn', {allowConstantExport: true}],
             'tailwindcss/classnames-order': 'warn',
             'tailwindcss/no-arbitrary-value': 'warn',
-            'tailwindcss/no-custom-classname': [
-                'warn',
-                {whitelist: ['App', 'custom\\-*', 'text-md', 'md:text-md', 'align-start']},
-            ],
+            'tailwindcss/no-custom-classname': ['warn', {whitelist: ['App', 'custom\\-*', 'link-intro']}],
             'tailwindcss/no-contradicting-classname': 'error',
             '@typescript-eslint/no-unused-vars': ['warn', {argsIgnorePattern: '^_'}],
         },
     },
     {...json.configs.recommended, files: ['**/*.json'], language: 'json/json'},
+    {...json.configs.recommended, files: ['tsconfig*.json'], language: 'json/jsonc'},
     {...json.configs.recommended, files: ['**/*.jsonc'], language: 'json/jsonc'},
     {...json.configs.recommended, files: ['**/*.json5'], language: 'json/json5'},
     {
@@ -47,4 +50,10 @@ export default [
         language: 'markdown/gfm',
     },
     {...css.configs.recommended, files: ['**/*.css'], language: 'css/css'},
+    {
+        files: ['src/index.css'],
+        rules: {
+            'css/no-invalid-at-rules': 'off',
+        },
+    },
 ];
