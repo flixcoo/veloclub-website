@@ -1,12 +1,16 @@
+name: "veloclub-website"
+
 services:
-  veloclub-website:
+  website:
     build: .
-    container_name: veloclub-website
+    image: "veloclub-website:latest"
+    container_name: "veloclub-website"
     restart: unless-stopped
     ports:
       - "8081:80"
     networks:
       - web
+
 networks:
   web:
     external: true
