@@ -9,8 +9,6 @@ jobs:
   format:
     name: "Format code"
     runs-on: ubuntu-latest
-    container:
-      image: node:22
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
