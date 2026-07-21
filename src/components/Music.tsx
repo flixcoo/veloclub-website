@@ -4,7 +4,7 @@ const Music = () => {
     return (
         <section id="music" className="scroll-mt-20 py-8">
             <div className="mx-auto max-w-275 px-6">
-                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-orange-600 uppercase selection:bg-black!">
+                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-orange-600 uppercase">
                     Musik
                 </h2>
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">

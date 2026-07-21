@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <section id="kontakt" className="scroll-mt-20 py-8">
             <div className="mx-auto max-w-275 px-6">
-                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-orange-600 uppercase selection:bg-black!">
+                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-orange-600 uppercase">
                     Kontakt
                 </h2>
                 <div className="mt-8 flex flex-row flex-wrap justify-between gap-6">

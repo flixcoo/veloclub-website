@@ -24,3 +24,8 @@ code {
     font-style: normal;
     font-display: swap;
 }
+
+::selection {
+    background: var(--color-orange-600);
+    color: contrast-color(var(--color-orange-600));
+}
