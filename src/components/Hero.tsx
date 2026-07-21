@@ -11,7 +11,7 @@ const Hero = () => {
                     <h1 className="mb-4 font-['Antique_Olive_Compact',sans-serif] text-[clamp(3.5rem,12vw,9rem)] leading-[0.85] font-black tracking-[-0.04em]">
                         véloclub
                     </h1>
-                    <p className="mb-12 font-['Inter',sans-serif] text-xl font-normal tracking-[2px] text-orange-600 uppercase">
+                    <p className="mb-12 font-['Inter',sans-serif] text-xl font-normal tracking-[2px] text-orange-600 uppercase selection:bg-black">
                         Indie / NNDW &bull; Leipzig
                     </p>
                 </div>
