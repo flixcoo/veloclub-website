@@ -25,6 +25,7 @@ code {
     font-display: swap;
 }
 
+/* eslint-disable css/use-baseline, css/no-invalid-properties */
 ::selection {
     background: var(--color-orange-600);
     color: contrast-color(var(--color-orange-600));
