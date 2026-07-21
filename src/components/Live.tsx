@@ -21,7 +21,7 @@ const Live = () => {
     return (
         <section id="live" className="scroll-mt-20 py-8">
             <div className="mx-auto max-w-275 px-6">
-                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-orange-600 uppercase">
+                <h2 className="mb-12 text-5xl leading-[0.9] font-black tracking-[-1px] text-orange-600 uppercase selection:bg-black!">
                     Live
                 </h2>
                 <div className="border-t-2 border-black">
@@ -31,7 +31,7 @@ const Live = () => {
                                 key={`${gig.date}-${gig.venue}`}
                                 className="grid grid-cols-1 items-baseline gap-4 border-b border-gray-200 px-4 py-6 transition-colors hover:bg-gray-100 md:grid-cols-[100px_200px_1.5fr_auto]"
                             >
-                                <div className="font-black text-orange-600">{gig.date}</div>
+                                <div className="font-black text-orange-600 selection:bg-black!">{gig.date}</div>
 
                                 <div className="flex flex-col">
                                     {gig.city.trim() !== '' && (
