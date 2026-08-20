@@ -34,7 +34,6 @@ type ImageData = {
 };
 
 export type Images = {
-    epImage: ImageData;
     heroImage: ImageData;
     aboutImage: ImageData;
 };

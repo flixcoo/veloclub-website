@@ -124,25 +124,14 @@ export const CONTACT_LINKS: LabelLink[] = [
 ];
 
 export const IMAGES: Images = {
-    epImage: {
-        image: '/images/ep-cover.webp',
-        credit: 'David Schleiermann',
-        url: 'https://www.instagram.com/atelier.teufel2/',
-    },
     heroImage: {
         image: '/images/hero.webp',
-        credit: 'Mathis Kirchner',
-        url: 'https://mathiskirchner.de/',
+        credit: 'David Schleiermann',
+        url: 'https://www.instagram.com/atelier.teufel/',
     },
     aboutImage: {
         image: '/images/portrait.webp',
-        credit: 'Mathis Kirchner',
-        url: 'https://mathiskirchner.de/',
+        credit: 'David Schleiermann',
+        url: 'https://www.instagram.com/atelier.teufel/',
     },
 };
-
-const releaseDate = new Date(2026, 5, 5, 0, 0);
-const today = new Date();
-
-export const releaseUrl = 'https://push.fm/fl/p4vwfpwf';
-export const IS_EP_RELEASE = today >= releaseDate;

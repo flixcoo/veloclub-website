@@ -5,9 +5,8 @@ body,
 root {
     margin: 0;
     padding: 0;
-    font-family:
-        -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-        'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -16,7 +15,7 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* Antique Olive Std - Compact Variant */
+/* Antique Olive Std */
 @font-face {
     font-family: 'Antique Olive Compact';
     src: url('fonts/Antique-Olive-Std-Compact_3864.ttf') format('truetype');
