@@ -55,7 +55,7 @@ export const FOOTER_LINKS: IconLink[] = [
     },
     {
         name: 'Facebook',
-        url: 'https://facebook.com/veloclubmusik',
+        url: 'https://facebook.com/veloclubband',
         icon: FaFacebook,
     },
     {
