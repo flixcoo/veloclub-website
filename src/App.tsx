@@ -13,7 +13,7 @@ const App = () => {
             <ScrollToTop />
             <div className="App flex min-h-screen flex-col bg-gray-50">
                 <Header />
-                <main className="flex-grow">
+                <main className="grow">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/impressum" element={<LegalNotice />} />
