@@ -11,14 +11,16 @@ const App = () => {
     return (
         <Router>
             <ScrollToTop />
-            <div className="App bg-gray-50">
+            <div className="App bg-gray-50 flex flex-col min-h-screen">
                 <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/impressum" element={<LegalNotice />} />
-                    <Route path="/datenschutz" element={<PrivacyPolicy />} />
-                    <Route path="*" element={<NotFoundPage />} />
-                </Routes>
+                <main className="flex-grow">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/impressum" element={<LegalNotice />} />
+                        <Route path="/datenschutz" element={<PrivacyPolicy />} />
+                        <Route path="*" element={<NotFoundPage />} />
+                    </Routes>
+                </main>
                 <Footer />
             </div>
         </Router>
