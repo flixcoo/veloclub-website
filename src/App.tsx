@@ -11,7 +11,7 @@ const App = () => {
     return (
         <Router>
             <ScrollToTop />
-            <div className="App bg-gray-50 flex flex-col min-h-screen">
+            <div className="App flex min-h-screen flex-col bg-gray-50">
                 <Header />
                 <main className="flex-grow">
                     <Routes>
