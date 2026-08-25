@@ -25,6 +25,11 @@ code {
     font-display: swap;
 }
 
+@theme {
+    --font-olive: 'Antique Olive Compact', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+}
+
 /* eslint-disable css/use-baseline, css/no-invalid-properties */
 ::selection {
     background: var(--color-orange-600);

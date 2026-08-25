@@ -42,7 +42,7 @@ const Header = () => {
                 <div className="z-101 hidden items-center gap-3 md:flex">
                     <Link
                         to="/"
-                        className="font-['Antique_Olive_Compact',sans-serif] text-4xl font-normal tracking-[2px] text-black"
+                        className="font-olive text-4xl font-normal tracking-[2px] text-black"
                         onClick={() => setMobileMenuOpen(false)}
                     >
                         véloclub

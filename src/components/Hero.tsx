@@ -7,10 +7,10 @@ const Hero = () => {
         <section className="flex items-center justify-center pt-30 text-center">
             <div className="mx-auto max-w-275 px-6">
                 <div className="mb-8">
-                    <h1 className="mb-4 font-['Antique_Olive_Compact',sans-serif] text-[clamp(3.5rem,12vw,9rem)] leading-[0.85] font-black tracking-[-0.04em] lowercase">
+                    <h1 className="font-olive mb-4 text-[clamp(3.5rem,12vw,9rem)] leading-[0.85] font-black tracking-[-0.04em] lowercase">
                         Véloclub
                     </h1>
-                    <p className="mb-12 font-['Inter',sans-serif] text-xl font-normal tracking-[2px] text-orange-600 uppercase">
+                    <p className="font-inter mb-12 text-xl font-normal tracking-[2px] text-orange-600 uppercase">
                         Alternative / NNDW &bull; Leipzig
                     </p>
                 </div>
