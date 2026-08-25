@@ -24,8 +24,7 @@
         "preview": "vite preview",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "prettier": "./node_modules/.bin/prettier '**/*.{js,ts,tsx,json,css,html,md}' --write",
-        "format": "prettier --write \"**/*.{js,ts,tsx,json,css,html,md}\""
+        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,html,md}\""
     },
     "browserslist": {
         "production": [
