@@ -24,17 +24,12 @@ const About = () => {
                         </p>
                     </div>
                     <div className="w-full">
-                        {imageData.image ? (
-                            <img
-                                src={imageData.image}
-                                alt="Véloclub Portrait"
-                                className="pointer-events-none aspect-4/5 w-full object-cover"
-                            />
-                        ) : (
-                            <div className="flex aspect-4/5 w-full items-center justify-center bg-orange-600 font-bold text-white opacity-80">
-                                <span>PORTRAIT PLACEHOLDER</span>
-                            </div>
-                        )}
+                        <img
+                            src={imageData.image}
+                            alt="Véloclub Portrait"
+                            className="pointer-events-none aspect-4/5 w-full object-cover"
+                        />
+
                         {imageData.credit && (
                             <p className="mt-2 text-right text-xs text-gray-500">
                                 Foto:{' '}
