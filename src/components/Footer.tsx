@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer id="contact" className="relative mx-4 mt-16 border-t border-black py-8 text-center sm:mx-16">
             <div className="mx-auto max-w-275 px-6">
-                <div className="mb-8 flex flex-wrap justify-center gap-8">
+                <div className="mb-6 flex flex-wrap justify-center gap-8">
                     {FOOTER_LINKS.map((social, index) => {
                         const IconComponent = social.icon;
 
@@ -29,20 +29,6 @@ const Footer = () => {
                     })}
                 </div>
                 <div className="flex flex-col items-center gap-1 text-xs text-gray-500">
-                    {/* Design flag*/}
-                    <span>
-                        Designed & developed by&nbsp;
-                        <a
-                            href="https://felixkirchner.de"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-black underline! transition-colors hover:text-orange-600"
-                        >
-                            Felix Kirchner
-                        </a>
-                        .
-                    </span>
-
                     {/* Legal & Privacy */}
                     <div className={'flex items-center gap-4'}>
                         <Link to="/impressum" className="text-black underline transition-colors hover:text-orange-600">
@@ -58,6 +44,20 @@ const Footer = () => {
 
                     {/* Copyright */}
                     <span className={'mt-2'}>&copy; 2023 - {new Date().getFullYear()} Véloclub</span>
+
+                    {/* Design flag*/}
+                    <span>
+                        Designed & developed by&nbsp;
+                        <a
+                            href="https://felixkirchner.de"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-black underline! transition-colors hover:text-orange-600"
+                        >
+                            Felix Kirchner
+                        </a>
+                        .
+                    </span>
                 </div>
             </div>
         </footer>
