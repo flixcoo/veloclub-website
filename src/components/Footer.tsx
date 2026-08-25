@@ -3,10 +3,7 @@ import {FOOTER_LINKS} from '../data/content';
 
 const Footer = () => {
     return (
-        <footer
-            id="contact"
-            className="font-olive relative mt-16 py-8 text-center before:absolute before:inset-x-16 before:top-0 before:border-t before:border-black before:content-['']"
-        >
+        <footer id="contact" className="relative mx-4 mt-16 border-t border-black py-8 text-center sm:mx-16">
             <div className="mx-auto max-w-275 px-6">
                 <div className="mb-8 flex flex-wrap justify-center gap-8">
                     {FOOTER_LINKS.map((social, index) => {
