@@ -4,7 +4,7 @@ const Hero = () => {
     const heroImg = IMAGES.heroImage;
 
     return (
-        <section className="flex items-center justify-center pt-30 text-center">
+        <section className="flex items-center justify-center pt-5 text-center sm:pt-30">
             <div className="mx-auto max-w-275 px-6">
                 <div className="mb-8">
                     <h1 className="font-olive mb-4 text-[clamp(3.5rem,12vw,9rem)] leading-[0.85] font-black tracking-[-0.04em] lowercase">
