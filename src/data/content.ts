@@ -126,12 +126,12 @@ export const CONTACT_LINKS: LabelLink[] = [
 export const IMAGES: Images = {
     heroImage: {
         image: '/images/hero.webp',
-        credit: 'David Schleiermann',
+        credit: 'David Scheiermann',
         url: 'https://www.instagram.com/atelier.teufel/',
     },
     aboutImage: {
         image: '/images/portrait.webp',
-        credit: 'David Schleiermann',
+        credit: 'David Scheiermann',
         url: 'https://www.instagram.com/atelier.teufel/',
     },
 };
