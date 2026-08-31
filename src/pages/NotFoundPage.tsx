@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 const NotFoundPage = () => {
     return (
         <div className="flex min-h-[70vh] items-center justify-center px-8 py-48 text-center md:px-8 md:py-32">
+            <title>Seite nicht gefunden - Véloclub</title>
             <div className="mx-auto max-w-275">
                 <div className="mx-auto max-w-150">
                     <h1 className="font-olive mb-4 text-[clamp(6rem,15vw,12rem)] leading-[0.85] font-black tracking-[-0.04em] text-orange-600">
