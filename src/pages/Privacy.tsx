@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 const Privacy = () => {
     return (
         <div className="min-h-[70vh] md:py-15">
+            <title>Datenschutzerklärung - Véloclub</title>
             <div className="mx-auto max-w-275 px-6">
                 {/*Back to homepage button*/}
                 <Link

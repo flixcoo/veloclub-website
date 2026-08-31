@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 const LegalNotice = () => {
     return (
         <div className="min-h-[70vh] md:py-15">
+            <title>Impressum - Véloclub</title>
             <div className="mx-auto max-w-275 px-6">
                 {/*Back to homepage button*/}
                 <Link
