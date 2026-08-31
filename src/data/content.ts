@@ -28,7 +28,7 @@ export const LIVE_DATES: LiveDate[] = [
         date: '18.09.2026',
         city: 'Oldenburg',
         venue: 'umBAUbar',
-        description: 'Support: tba',
+        description: 'Support: maresa',
         button: {
             text: 'Tickets',
             url: 'https://rausgegangen.de/events/konzert-velo-club-0/',
