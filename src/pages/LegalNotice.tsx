@@ -19,7 +19,7 @@ const LegalNotice = () => {
                 </h1>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-black">Angaben gemäß § 5 TMG</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-black">Angaben gemäß § 5 DDG</h2>
                     <h4 className="my-6 text-xl font-semibold text-black">Véloclub GbR</h4>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Mechlerstraße 4<br />
@@ -42,10 +42,10 @@ const LegalNotice = () => {
                 <section className="mb-12">
                     <h2 className="mb-4 text-2xl font-bold text-black">Haftung für Inhalte</h2>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
-                        allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch
-                        nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach
-                        Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+                        Für eigene Inhalte auf diesen Seiten sind wir nach den allgemeinen Gesetzen verantwortlich. Nach
+                        Art. 8 der Verordnung (EU) 2022/2065 (Digital Services Act) sind wir jedoch nicht verpflichtet,
+                        übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu
+                        forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
                     </p>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
                         Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen
