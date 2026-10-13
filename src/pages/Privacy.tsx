@@ -19,113 +19,125 @@ const Privacy = () => {
                 </h1>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-black">1. Datenschutz auf einen Blick</h2>
-                    <h3 className="my-6 text-xl font-semibold text-black">Allgemeine Hinweise</h3>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen
-                        Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit
-                        denen Sie persönlich identifiziert werden können.
+                        Diese Datenschutzerklärung gilt für{' '}
+                        <a href="https://veloclubband.de" className="underline transition-colors hover:text-orange-600">
+                            veloclubband.de
+                        </a>{' '}
+                        und{' '}
+                        <a
+                            href="https://linktree.veloclubband.de"
+                            className="underline transition-colors hover:text-orange-600"
+                        >
+                            linktree.veloclubband.de
+                        </a>
+                        . Wir erfassen auf diesen Websites so wenig Daten wie möglich. Es gibt keine Kontaktformulare,
+                        keine Benutzerkonten und keine Tracking-Cookies. Im Folgenden erklären wir kurz, welche Daten
+                        trotzdem anfallen und warum.
                     </p>
                 </section>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-black">2. Datenerfassung auf dieser Website</h2>
-                    <h3 className="my-6 text-xl font-semibold text-black">
-                        Wer ist verantwortlich für die Datenerfassung auf dieser Website?
-                    </h3>
+                    <h2 className="mb-4 text-2xl font-bold text-black">1. Verantwortlich</h2>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten
-                        können Sie dem Impressum dieser Website entnehmen.
-                    </p>
-
-                    <h3 className="my-6 text-xl font-semibold text-black">Wie erfassen wir Ihre Daten?</h3>
-                    <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich
-                        z.B. um Daten handeln, die Sie per E-Mail an uns senden.
-                    </p>
-                    <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch
-                        unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser,
-                        Betriebssystem oder Uhrzeit des Seitenaufrufs).
+                        Véloclub GbR
+                        <br />
+                        Mechlerstraße 4<br />
+                        04105 Leipzig
+                        <br />
+                        E-Mail: hi [at] veloclubband.de
                     </p>
                 </section>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-black">
-                        3. Allgemeine Hinweise und Pflichtinformationen
-                    </h2>
-                    <h3 className="my-6 text-xl font-semibold text-black">Datenschutz</h3>
+                    <h2 className="mb-4 text-2xl font-bold text-black">2. Hosting & Bereitstellung</h2>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln
-                        Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen
-                        Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+                        Diese Website läuft auf einem eigenen Server (VPS) der IONOS SE, Elgendorfer Str. 57, 56410
+                        Montabaur. Der Server steht in Deutschland. Mit IONOS besteht ein Vertrag zur
+                        Auftragsverarbeitung nach Art. 28 DSGVO.
                     </p>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben.
-                        Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können.
+                        Beim Aufruf der Website verarbeitet der Server technisch notwendige Daten wie IP-Adresse, Datum
+                        und Uhrzeit, aufgerufene Seite, Referrer sowie Browser und Betriebssystem. Diese Daten werden
+                        nur genutzt, um die Website auszuliefern und den sicheren Betrieb zu gewährleisten, und nicht
+                        mit anderen Daten zusammengeführt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
+                    </p>
+                </section>
+
+                <section className="mb-12">
+                    <h2 className="mb-4 text-2xl font-bold text-black">3. Analyse der Daten</h2>
+                    <p className="mb-4 text-base leading-relaxed text-gray-800">
+                        Um zu verstehen, wie unsere Website genutzt wird, verwenden wir das Open-Source-Tool Umami.
+                        Umami wird von uns selbst betrieben, die Daten werden also nicht an Dritte weitergegeben. Umami
+                        setzt keine Cookies und speichert keine IP-Adressen. Besuche werden über eine anonyme
+                        Sitzungskennung zugeordnet, die keine Wiedererkennung über andere Websites hinweg erlaubt.
+                    </p>
+                    <p className="mb-4 text-base leading-relaxed text-gray-800">Umami erfasst dabei:</p>
+                    <ul className="mb-4 ml-8 list-disc">
+                        <li className="mb-2 text-base leading-relaxed text-gray-800">
+                            <strong>Statistiken:</strong> aufgerufene Seiten, Referrer, Browser, Betriebssystem,
+                            Gerätetyp, Bildschirmgröße, Sprache und ungefähre Herkunft (Land, Region).
+                        </li>
+                        <li className="mb-2 text-base leading-relaxed text-gray-800">
+                            <strong>Heatmaps:</strong> Klicks und Scrolltiefe. Diese Daten werden nur zusammengefasst
+                            ausgewertet, einzelne Besuche sind darin nicht erkennbar.
+                        </li>
+                        <li className="mb-2 text-base leading-relaxed text-gray-800">
+                            <strong>Sitzungsaufzeichnungen:</strong> Bei etwa 20&nbsp;% der Besuche wird der Ablauf
+                            aufgezeichnet, also Mausbewegungen, Klicks, Scrollen und Seitenwechsel, für maximal 5
+                            Minuten. Eingaben in Formularfelder werden dabei immer unkenntlich gemacht. Die
+                            Aufzeichnungen werden nach 30 Tagen automatisch gelöscht.
+                        </li>
+                    </ul>
+                    <p className="mb-4 text-base leading-relaxed text-gray-800">
+                        Wir nutzen diese Daten ausschließlich, um die Website zu verbessern, und versuchen nicht,
+                        einzelne Personen zu identifizieren. Rechtsgrundlage ist unser berechtigtes Interesse (Art. 6
+                        Abs. 1 lit. f DSGVO). Du kannst dem jederzeit widersprechen, zum Beispiel indem du in deinem
+                        Browser einen Tracking-Blocker verwendest.
                     </p>
                 </section>
 
                 <section className="mb-12">
                     <h2 className="mb-4 text-2xl font-bold text-black">4. Eingebettete Inhalte</h2>
-                    <h3 className="my-6 text-xl font-semibold text-black">Spotify</h3>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Auf dieser Website sind Funktionen des Musik-Dienstes Spotify eingebunden. Anbieter ist die
-                        Spotify AB, Birger Jarlsgatan 61, 113 56 Stockholm, Schweden.
-                    </p>
-                    <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Wenn Sie eine Seite mit dem Spotify-Plugin besuchen, wird eine direkte Verbindung zwischen Ihrem
-                        Browser und dem Spotify-Server hergestellt. Spotify erhält dadurch die Information, dass Sie mit
-                        Ihrer IP-Adresse diese Website besucht haben.
-                    </p>
-
-                    <h3 className="my-6 text-xl font-semibold text-black">Apple Music</h3>
-                    <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Auf dieser Website sind Funktionen von Apple Music eingebunden. Anbieter ist die Apple Inc., One
-                        Apple Park Way, Cupertino, CA 95014, USA.
-                    </p>
-                    <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Beim Besuch einer Seite mit eingebetteten Apple Music Inhalten können Daten an Apple übertragen
-                        werden.
-                    </p>
-                </section>
-
-                <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-black">5. Server-Log-Dateien</h2>
-                    <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten
-                        Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+                        Auf der Webseite binden wir Musik und Videos von folgenden Anbietern ein:
                     </p>
                     <ul className="mb-4 ml-8 list-disc">
-                        <li className="mb-2 text-base leading-relaxed text-gray-800">Browsertyp und Browserversion</li>
-                        <li className="mb-2 text-base leading-relaxed text-gray-800">verwendetes Betriebssystem</li>
-                        <li className="mb-2 text-base leading-relaxed text-gray-800">Referrer URL</li>
                         <li className="mb-2 text-base leading-relaxed text-gray-800">
-                            Hostname des zugreifenden Rechners
+                            Spotify (Spotify AB, Regeringsgatan 19, 111 53 Stockholm, Schweden)
                         </li>
-                        <li className="mb-2 text-base leading-relaxed text-gray-800">Uhrzeit der Serveranfrage</li>
-                        <li className="mb-2 text-base leading-relaxed text-gray-800">IP-Adresse</li>
+                        <li className="mb-2 text-base leading-relaxed text-gray-800">
+                            Apple Music (Apple Distribution International Ltd., Hollyhill Industrial Estate, Cork,
+                            Irland)
+                        </li>
+                        <li className="mb-2 text-base leading-relaxed text-gray-800">
+                            YouTube (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland)
+                        </li>
+                        <li className="mb-2 text-base leading-relaxed text-gray-800">
+                            SoundCloud (SoundCloud Global Limited &amp; Co. KG, Rheinsberger Str. 76/77, 10115 Berlin)
+                        </li>
                     </ul>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+                        Beim Laden dieser Inhalte stellt dein Browser eine Verbindung zu den Servern des jeweiligen
+                        Anbieters her. Dabei werden mindestens deine IP-Adresse und die Information, dass du unsere
+                        Seite besucht hast, übertragen. Die Anbieter können außerdem Cookies setzen und Daten in die USA
+                        übermitteln. Die Übermittlung stützt sich auf das EU-US Data Privacy Framework. Weitere
+                        Informationen findest du in den Datenschutzerklärungen der Anbieter.
                     </p>
                 </section>
 
                 <section className="mb-12">
-                    <h2 className="mb-4 text-2xl font-bold text-black">6. Ihre Rechte</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-black">5. Deine Rechte</h2>
                     <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten
-                        personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie
-                        ein Recht auf Berichtigung oder Löschung dieser Daten.
-                    </p>
-                    <p className="mb-4 text-base leading-relaxed text-gray-800">
-                        Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im
-                        Impressum angegebenen Adresse an uns wenden.
+                        Du hast nach der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
+                        Verarbeitung, Datenübertragbarkeit und Widerspruch. Da die Analysedaten anonym sind, können wir
+                        sie allerdings keiner Person zuordnen (Art. 11 DSGVO). Für Daten bei den eingebetteten Diensten
+                        wende dich bitte direkt an den jeweiligen Anbieter.
                     </p>
                 </section>
 
                 <section className="mb-12">
-                    <p className="mt-8 text-sm text-gray-500 italic">Stand: Dezember 2025</p>
+                    <p className="mt-8 text-sm text-gray-500 italic">Stand: Oktober 2026</p>
                 </section>
             </div>
         </div>
