@@ -14,26 +14,23 @@ import {LabelLink, IconLink, LiveDate, Images} from './types';
 
 export const LIVE_DATES: LiveDate[] = [
     {
-        date: '29.08.2026',
-        city: 'Braunschweig',
-        venue: 'Organic Beats Festival',
-        description: '',
+        date: '04.01.2027',
+        city: 'Dresden',
+        venue: 'Groovestation',
+        description: 'Handreicher Newcomer-Reihe',
         button: {
-            text: 'Tickets',
-            url: 'https://organicbeats.org/tickets/',
+            text: 'Info',
+            url: 'https://landstreicher-konzerte.de/handreicher-2027',
         },
         activate: true,
     },
     {
-        date: '18.09.2026',
+        date: '22.12.2026',
         city: 'Oldenburg',
-        venue: 'umBAUbar',
-        description: 'Support: maresa',
-        button: {
-            text: 'Tickets',
-            url: 'https://rausgegangen.de/events/konzert-velo-club-0/',
-        },
-        activate: true,
+        venue: 'Oldenbloc',
+        description: 'Weihnachtskonzert',
+        button: {text: 'Info', url: 'https://www.oldenbloc.de/'},
+        activate: false,
     },
 ];
 
