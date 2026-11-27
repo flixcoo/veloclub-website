@@ -19,8 +19,8 @@ export const LIVE_DATES: LiveDate[] = [
         venue: 'Groovestation',
         description: 'Handreicher Newcomer-Reihe',
         button: {
-            text: 'Info',
-            url: 'https://landstreicher-konzerte.de/handreicher-2027',
+            text: 'Tickets',
+            url: 'https://landstreicher-konzerte.de/konzerte/handreicher-indie-dd-27',
         },
         activate: true,
     },
@@ -29,7 +29,7 @@ export const LIVE_DATES: LiveDate[] = [
         city: 'Oldenburg',
         venue: 'Oldenbloc',
         description: 'Weihnachtskonzert',
-        button: {text: 'Info', url: 'https://www.oldenbloc.de/'},
+        button: {text: 'Info', url: 'https://www.instagram.com/oldenbloc/'},
         activate: false,
     },
 ];
